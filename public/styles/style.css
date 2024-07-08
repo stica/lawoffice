@@ -196,7 +196,7 @@ a:hover, a:focus {
 .btn-primary {
   color: #ffffff;
   background-color: #ffffff;
-  border: 1px solid #ff2c9c;
+  border: 1px solid #E2CEC5;
 }
 .btn-primary::before {
   border-radius: 5px;

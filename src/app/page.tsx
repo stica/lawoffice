@@ -21,13 +21,13 @@ export default function Home() {
 
       <Services />
 
-      <OurWorks />
+      {/* <OurWorks />
 
-      <Feedback />
+      <Feedback /> */}
 
-      <About />
+      {/* <About />
 
-      <FunFacts />
+      <FunFacts /> */}
 
       <PartnerTwo />
 

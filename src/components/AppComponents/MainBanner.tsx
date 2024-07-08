@@ -20,7 +20,7 @@ const MainBanner: React.FC = () => {
         <div 
           className="hero-banner it-banner overly bg-fixed" 
           style={{ 
-            backgroundImage: `url(/images/scales-gavel-13165.jpg)` 
+            backgroundImage: `url(/images/banjaluka.jpg)` 
           }}
         >
           <div className="d-table">
@@ -70,7 +70,7 @@ const MainBanner: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-6">
+                  {/* <div className="col-lg-6">
                     <div
                       className="animate-banner-image"
                       data-aos="zoom-in"
@@ -83,7 +83,7 @@ const MainBanner: React.FC = () => {
                         height={600}
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
