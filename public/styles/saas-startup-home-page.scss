@@ -1,7 +1,7 @@
 // Global Variable
 
-$main-color: #ff2c9c;
-$gradient-color: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+$main-color: #E2CEC5;
+$gradient-color: #E2CEC5;
 $black-color: #18181b;
 $paragraph-color: #646464;
 $white-color: #ffffff;
@@ -391,7 +391,7 @@ $transition: all 0.6s ease;
             }
         }
         .default-btn {
-            border-color: #4d4d57;;
+            border-color: #4d4d57;
 
             &:hover {
                 background: $main-color;
@@ -639,16 +639,16 @@ $transition: all 0.6s ease;
                 color: $main-color;
             }
             .meta {
-                color: #fff;;
+                color: #fff;
     
                 li {
-                    color: #fff;;
+                    color: #fff;
     
                     i {
                         color: $main-color;
                     }
                     a {
-                        color: #fff;;
+                        color: #fff;
     
                         &:hover {
                             color: $main-color;

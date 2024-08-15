@@ -4,22 +4,8 @@ export const menus = [
 		link: "/about/",
 	},
   {
-		label: "Portfolio",
-		link: "#",
-		submenu: [
-			{
-				label: "Portfolio",
-				link: "/portfolio/",
-			},
-			{
-				label: "Portfolio Details",
-				link: "/portfolio/portfolio-details/",
-			},
-      		{
-				label: "Portfolio Details 2",
-				link: "/portfolio/portfolio-details-2/",
-			},
-		],
+		label: "Publications",
+		link: "/publications/",
 	},
 
 	// {

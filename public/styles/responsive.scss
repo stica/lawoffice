@@ -9,8 +9,8 @@ $value_five: 992px;
 $value_six: 1199px;
 $value_seven: 1650px;
 
-$main-color: #ff2c9c;
-$gradient-color: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+$main-color: #E2CEC5;
+$gradient-color: #E2CEC5;
 $font-size: 14px;
 $black-color: #000000;
 $paragraph-color: #646464;
@@ -61,7 +61,7 @@ $transition: .5s;
                 font-size: 25px;
 
                 img {
-                    max-width: 130px;
+                    max-height: 75px;
                 }
             }
             .navbar-nav {
@@ -1584,7 +1584,7 @@ $transition: .5s;
                 font-size: 22px;
 
                 img {
-                    max-width: 115px;
+                    max-height: 55px;
                 }
             }
 
@@ -2514,7 +2514,7 @@ $transition: .5s;
         nav {
             .navbar-brand {
                 img {
-                    max-width: 130px;
+                    max-height: 75px;
                 }
             }
             .navbar-nav {

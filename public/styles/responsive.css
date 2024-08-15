@@ -38,7 +38,7 @@
     font-size: 25px;
   }
   .navbar-area nav .navbar-brand img {
-    max-width: 130px;
+    max-height: 75px;
   }
   .navbar-area nav .navbar-nav {
     overflow-y: scroll;
@@ -1151,7 +1151,7 @@
     font-size: 22px;
   }
   .navbar-area nav .navbar-brand img {
-    max-width: 115px;
+    max-height: 55px;
   }
   .navbar-area nav .navbar-nav .nav-item {
     padding-left: 7px;
@@ -1788,7 +1788,7 @@
     font-size: 14px;
   }
   .navbar-area nav .navbar-brand img {
-    max-width: 130px;
+    max-height: 75px;
   }
   .navbar-area nav .navbar-nav .nav-item {
     padding-left: 10px;
@@ -1813,6 +1813,7 @@
   }
   .main-banner .row {
     align-items: center !important;
+    text-align: center;
   }
   .banner-animation-image {
     text-align: center;

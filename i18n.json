@@ -1,0 +1,10 @@
+{
+    "locales": ["sr", "en"],
+    "defaultLocale": "sr",
+    "pages": {
+      "/home": ["home", "example"],
+      "/about": ["about"],
+      "/publications": ["publications"],
+      "/contact": ["contact"]
+    }
+  }

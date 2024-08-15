@@ -1,75 +1,135 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import CommertialLawService from "./CommertialLawService";
+import MyModal from "../Common/modal";
 
 const servicesData = [
   {
-    iconName: "pe-7s-rocket bg-13c4a1",
-    title: "SEO Optimization",
+    iconName: "pe-7s-portfolio bg-13c4a1",
+    title: "Commercial Law",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Empowering your business with comprehensive legal solutions.",
     viewDetails: "/services/service-details/",
     aosDelay: "100",
   },
   {
-    iconName: "pe-7s-diamond bg-6610f2",
-    title: "Market Research",
+    iconName: "pe-7s-credit bg-6610f2",
+    title: "Obligation Law",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Upholding your contractual rights with steadfast legal support.",
     viewDetails: "/services/service-details/",
     aosDelay: "200",
   },
   {
-    iconName: "pe-7s-light bg-ffb700",
-    title: "Digital Marketing",
+    iconName: "pe-7s-monitor bg-ffb700",
+    title: "IT Law",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Ensuring your tech ventures thrive within a robust legal framework.",
     viewDetails: "/services/service-details/",
     aosDelay: "300",
   },
   {
-    iconName: "pe-7s-target bg-fc3549",
-    title: "Keyword Targeting",
+    iconName: "pe-7s-display2 bg-fc3549",
+    title: "Law and digital assets",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Navigating the complexities of digital assets with precision and expertise.",
     viewDetails: "/services/service-details/",
     aosDelay: "400",
   },
   {
-    iconName: "pe-7s-mail-open-file bg-00d280",
-    title: "Email Marketing",
+    iconName: "pe-7s-user-female bg-00d280",
+    title: "Personal Data Protection (GDPR)",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Protecting your privacy in the digital age with GDPR compliance.",
     viewDetails: "/services/service-details/",
     aosDelay: "500",
   },
   {
-    iconName: "pe-7s-users bg-ff612f",
-    title: "Marketing & Reporting",
+    iconName: "pe-7s-home bg-ff612f",
+    title: "Real estate",
     shortText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "Securing your property transactions with expert legal guidance.",
+    viewDetails: "/services/service-details/",
+    aosDelay: "600",
+  },
+  {
+    iconName: "pe-7s-news-paper bg-fc3549",
+    title: "Inheritance Law",
+    shortText:
+      "Preserving your legacy with expert inheritance legal services.",
+    viewDetails: "/services/service-details/",
+    aosDelay: "400",
+  },
+  {
+    iconName: "pe-7s-users bg-00d280",
+    title: "Family Law",
+    shortText:
+      "Navigating family matters with compassion and legal proficiency.",
+    viewDetails: "/services/service-details/",
+    aosDelay: "500",
+  },
+  {
+    iconName: "pe-7s-config bg-ff612f",
+    title: "Labor Law",
+    shortText:
+      "Championing your workplace rights with dedicated legal support.",
     viewDetails: "/services/service-details/",
     aosDelay: "600",
   },
 ];
 
 const Services: React.FC = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <>
+    
+    <div className="about-me">
+      <div className="about-me-controls">
+
+        <h2>
+          About lawyer
+        </h2>
+        <p className="lawyer-moto">
+          Our expertise, your security in business!
+        </p>
+        <Link href="/about" className="btn btn-primary">
+          More about lawyer
+        </Link>
+      </div>
+      <div className="about-me-image">
+        <Image
+          src="/images/new/img1.jpg"
+          alt="Animate image"
+          width={600}
+          height={600}
+        />
+      </div>
+    </div>
+
       <div className="bg-fcfbfb pt-100 pb-70">
         <div className="container">
           <div className="section-title">
             <h2>Our Services</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+            From securing your property transactions and protecting your digital privacy to navigating the complexities of digital assets, IT law, obligations, and commercial ventures, our expertise ensures your business and personal affairs are safeguarded with precision and confidence..
             </p>
           </div>
 
           <div className="row justify-content-center">
             {servicesData &&
-              servicesData.slice(0, 6).map((value, i) => (
+              servicesData.slice(0, 9).map((value, i) => (
                 <div 
                   className="col-lg-4 col-sm-6" 
                   key={i}
@@ -80,7 +140,8 @@ const Services: React.FC = () => {
                   <div className="service-card-one white-bg text-center radius-10">
                     <i className={value.iconName}></i>
                     <h3>
-                      <Link href={value.viewDetails}>{value.title}</Link>
+                      {/* <Link href="#" onClick={() => openModal()}>{value.title}</Link> */}
+                      {value.title}
                     </h3>
                     <p>{value.shortText}</p>
                   </div>
@@ -89,6 +150,9 @@ const Services: React.FC = () => {
           </div>
         </div>
       </div>
+      <MyModal isOpen={modalIsOpen} onRequestClose={closeModal}>
+        <CommertialLawService />
+      </MyModal>
     </>
   );
 };

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from '../../../public/images/logo.png';
+import logo from '../../../public/images/new/logo5.jpg';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -31,14 +31,8 @@ const Footer: React.FC = () => {
                   </Link>
                 </div>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-
                 <ul className="social-links">
-                  <li>
+                  {/* <li>
                     <a href="https://www.facebook.com/" target="_blank">
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
@@ -47,17 +41,17 @@ const Footer: React.FC = () => {
                     <a href="https://twitter.com/" target="_blank">
                       <i className="fa-brands fa-twitter"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="https://linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/in/nata%C5%A1a-tica-302b03153/" target="_blank">
                       <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="https://www.instagram.com/" target="_blank">
                       <i className="fa-brands fa-instagram"></i>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -83,62 +77,19 @@ const Footer: React.FC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/">
-                      Services
+                    <Link href="/publications/">
+                      Publications
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/portfolio/">
-                      Portfolio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/team/">
-                      Team
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6">
-              <div 
-                className="single-footer-widget ml-4"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
-                data-aos-delay="300"
-              >
-                <h3>Quick Links</h3>
-
-                <ul className="list">
                   <li>
                     <Link href="/contact/">
                       Contact
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/pricing/">
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/faq/">
-                      Faq
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/privacy-policy/">
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/terms-conditions/">
-                      Terms & Conditions
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
+
 
             <div className="col-lg-3 col-sm-6">
               <div 
@@ -151,14 +102,11 @@ const Footer: React.FC = () => {
 
                 <ul className="get-in-touch">
                   <li>
-                    <i className="fa-solid fa-location-dot"></i> 2750 Quadra Street
-                    Victoria, Canada.
+                    <i className="fa-solid fa-location-dot"></i> Novice Cerovića 32, 78000 Banja Luka
                   </li>
                   <li>
                     <i className="fa-solid fa-headset"></i>
-                    <a href="tel:+324-9442-515">+324-9442-515</a> 
-                    <br />
-                    <a href="tel:+324-9442-515">+324-9442-999</a>
+                    <a href="tel:+387 65 231-276">+387 65 231-276</a> 
                   </li>
                   <li>
                     <i className="fa-solid fa-envelope"></i>
@@ -174,10 +122,7 @@ const Footer: React.FC = () => {
         <div className="copyright-area">
           <div className="container">
             <p>
-              Copyright &copy; {currentYear} Pungent. All Rights Reserved By{" "}
-              <a href="https://envytheme.com" target="_blank">
-                EnvyTheme
-              </a>
+              Copyright &copy; {currentYear} Law office Nataša Tica
             </p>
           </div>
         </div>

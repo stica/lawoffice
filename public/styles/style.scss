@@ -45,8 +45,8 @@ This files table contents are outlined below >>>>>
 
 // Global Variable
 
-$main-color: #ff2c9c;
-$gradient-color: linear-gradient(to left top, #ff2c9c, #ff287b, #ff395a, #ff5137, #ff6a00);
+$main-color: #E2CEC5;
+$gradient-color: #E2CEC5;
 $font-size: 15px;
 $black-color: #18181b;
 $paragraph-color: #646464;
@@ -140,7 +140,16 @@ button {
     background-attachment: fixed;
 }
 .bg-fcfbfb {
-    background-color: #f6f3f3;
+    background-color: #3a2d36;
+
+    .section-title {
+        h2 {
+            color: #E2CEC5;
+        }
+        p {
+            color: #E2CEC5;
+        }
+    }
 }
 .bg-f9f6f6 {
     background-color: #f9f6f6;
@@ -196,7 +205,7 @@ a {
 }
 .btn-primary {
     color: $white-color;
-    background-color: $white-color;
+    background-color: #2f292d;
     border: 1px solid $main-color;
 
     &::before {
@@ -209,7 +218,7 @@ a {
         margin: 0 auto;
         width: 100%;
         height: 100%;
-        background: $gradient-color;
+        background-color: #2f292d;
         z-index: -1;
         transition: $transition;
     }
@@ -250,7 +259,6 @@ a {
         margin: 0 auto;
         width: 0;
         height: 100%;
-        background: $gradient-color;
         z-index: -1;
         transition: $transition;
     }
@@ -415,7 +423,8 @@ Navbar CSS
                     &::before {
                         bottom: -5px;
                         width: 0;
-                        background: $gradient-color;
+                        background-color: #3a2d36;
+                        
                         height: 3px;
                         transition: $transition;
                         left: 1px;
@@ -631,8 +640,9 @@ Navbar CSS
             top: 8px;
         }
         z-index: 999;
-        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-        background-color: $white-color !important;
+        // box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+        // background-color: $white-color !important;
+        opacity: 100%;
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     }
     &.navbar-style-2 {
@@ -1099,7 +1109,7 @@ Main Banner CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #ff2c9c;
+                border: 1px solid #E2CEC5;
             }
         }
     }
@@ -1278,7 +1288,7 @@ Main Banner CSS
                     transition: $transition !important;
                 }
                 .btn-primary {
-                    background-color: $white-color;
+                    background-color: #2f292d;
 
                     &:hover, &:focus {
                         border-color: $white-color;
@@ -1794,7 +1804,7 @@ Case Studies CSS
         font-size: 14px;
 
         &::before {
-            background: $white-color;
+            background-color: #2f292d;
         }
         &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
             color: $white-color;
@@ -2008,7 +2018,7 @@ Case Studies CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #ff2c9c;
+                border: 1px solid #E2CEC5;
             }
         }
     }
@@ -2275,22 +2285,22 @@ Services CSS
 }
 
 .bg-13c4a1 {
-    background-color: #13c4a1;
+    background-color: #3a2d36;
 }
 .bg-6610f2 {
-    background-color: #6610f2;
+    background-color: #3a2d36;
 }
 .bg-ffb700 {
-    background-color: #ffb700;
+    background-color: #3a2d36;
 }
 .bg-fc3549 {
-    background-color: #fc3549;
+    background-color: #3a2d36;
 }
 .bg-00d280 {
-    background-color: #00d280;
+    background-color: #3a2d36;
 }
 .bg-ff612f {
-    background-color: #ff612f;
+    background-color: #3a2d36;
 }
 /* Service card one */
 .service-card-one {
@@ -2339,16 +2349,16 @@ Services CSS
             }
 
             h3 {
-                color: $white-color;
+                color: #3a2d36;
                 a {
-                    color: $white-color;
+                    color: #3a2d36;
                     &:hover {
                         text-decoration: underline;
                     }
                 }
             }
             p {
-                color: $white-color;
+                color: #3a2d36;
             }
         }
     }
@@ -2637,7 +2647,7 @@ Feedback CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #ff2c9c;
+                border: 1px solid #E2CEC5;
             }
         }
     }
@@ -3165,7 +3175,7 @@ Pricing CSS
         }
         .btn-primary {
             &::after, &::before {
-                background: $main-color;
+                background-color: #2f292d;
             }
         }
     }
@@ -3520,7 +3530,7 @@ CTA CSS
                 font-size: 16px;
 
                 &::before {
-                    background: $white-color;
+                    background-color: #2f292d;
                 }
                 &:hover, &:focus {
                     color: $white-color;
@@ -4195,7 +4205,7 @@ Blog CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #ff2c9c;
+                border: 1px solid #E2CEC5;
             }
         }
     }
@@ -5616,10 +5626,46 @@ FAQ CSS
 Footer CSS
 =================================================*/
 .footer-area {
-    background-color: #f6f9fc;
+    background-color: #3a2d36;
     padding-top: 100px;
     position: relative;
     z-index: 1;
+    p {
+        color: #E2CEC5;
+    }
+    a {
+        color: #E2CEC5;
+    }
+
+    h3 {
+        color: #E2CEC5;
+    }
+
+    .single-footer-widget ul.list li a {
+        color: #E2CEC5;
+    }
+
+    li {
+        color: #E2CEC5;
+    }
+
+    .single-footer-widget ul.get-in-touch li a {
+        color: #E2CEC5;
+    }
+
+    .logo {
+        a {
+            height: 100%;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .single-footer-widget .social-links {
+        margin-left: 20px;
+    }
 }
 .single-footer-widget {
     .logo {
@@ -5939,7 +5985,7 @@ span.new {
 				right: 20px;
 			}
 			span {
-				color: $main-color;;
+				color: $main-color;
 				font: {
 					size: 40px;
 					weight: 700;
@@ -6002,7 +6048,7 @@ span.new {
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #ff2c9c;
+                border: 1px solid #E2CEC5;
             }
         }
     }
@@ -6030,6 +6076,143 @@ span.new {
         &:after {
             color: $main-color;
             font-size: 26px;
+        }
+    }
+}
+
+.main-banner-content-wrapper {
+    text-align: center !important;
+}
+
+.navbar-area.navbar-style-2 {
+    padding: 0;
+
+    .navbar-light{
+        background-color: #3a2d36;
+        color: #fafbfe;
+        opacity: 70%;
+        padding: 0;
+
+        img{
+            height: 95px;
+            width: auto;
+        }
+
+        .container-fluid{
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-link {
+                        color: #fafbfe;
+
+                        &:hover {
+                            ::before {
+                            }
+                        }
+
+                        a::before {
+                            background-color: #3a2d36;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+    background-color: #fafbfe;
+    color: #3a2d36;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+
+    .about-me-controls {
+        height: 250px;
+        min-width: 500px ;
+        height: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .about-me-image {
+        margin: auto;
+        min-width: 300px;
+        height: 250px;
+
+        img {
+            height: 100%;
+            width: auto;
+            border-radius: 300px;
+            margin: auto;
+        }
+    }
+}
+
+.partner-area {
+    background-color: #fafbfe;
+
+    h2 {
+        color: #3a2d36;
+    }
+
+    p {
+        color: #3a2d36;
+    }
+}
+
+.single-footer-widget ul.get-in-touch li i {
+    color: #3a2d36;
+}
+
+.copyright-area {
+    background-color: #3a2d36;
+
+    p{
+        color: #E2CEC5;
+    }
+}
+
+.lawyer-moto {
+    font-size: 24px;
+}
+
+.about-lawyer {
+    margin-top: 140px;
+    margin-bottom: 50px;
+
+    .about-lawyer-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .about-lawyer-content {
+            min-width: 400px;
+            width: 700px;
+            margin: auto;
+            margin-top: 20px;
+
+            .section-title {
+                h2 {
+                    color: #E2CEC5;
+                }
+            }
+
+            .container {
+                p, li {
+                    color: #E2CEC5; 
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .about-lawyer-image {
+            min-width: 300px;
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
         }
     }
 }

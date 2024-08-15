@@ -232,7 +232,8 @@
         height: 585px;
         position: absolute;
         border-radius: 50%;
-        background: linear-gradient(76.8deg, #2BA6AC 0%, #36CE83 53.03%, #42E695 100%);
+        background-color: #3a2d36;
+
     }
 }
 .app-about-img {
@@ -281,13 +282,10 @@
         }
     }
     &.bg1 {
-        background: linear-gradient(45.24deg, #9F5FF1 5.99%, #FF54B0 91.87%);
     }
     &.bg2 {
-        background: linear-gradient(44.44deg, #3F75FF 7.79%, #4ADEFF 94.18%);
     }
     &.bg3 {
-        background: linear-gradient(44.44deg, #FF4B3F 7.79%, #FFAC30 94.18%);
     }
 }
 
@@ -319,7 +317,6 @@
         color: var(--whiteColor);
         transition: var(--transition);
         box-shadow: 5px 15px 35px rgba(38, 42, 55, 0.12);
-        background: linear-gradient(45.24deg, #9F5FF1 5.99%, #FF54B0 91.87%);
         
         i {
             left: 0;
@@ -329,19 +326,14 @@
             transform: translateY(-50%);
         }
         &.bg2 {
-            background: linear-gradient(44.44deg, #FF4B3F 7.79%, #FFAC30 94.18%);
         }
         &.bg3 {
-            background: linear-gradient(45deg, #ED2775 0%, #FF7448 100%);
         }
         &.bg4 {
-            background: linear-gradient(44.44deg, #3F75FF 7.79%, #4ADEFF 94.18%);
         }
         &.bg5 {
-            background: linear-gradient(43.32deg, #6A55F8 14.73%, #CA48F6 86.35%, #CA48F6 86.35%);
         }
         &.bg6 {
-            background: linear-gradient(45deg, #6A55F8 0%, #EE6C74 100%);
         }
     }
     h3 {
@@ -522,7 +514,7 @@
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: var(--gradientColor);
-                border: 1px solid #ff2c9c;
+                border: 1px solid #E2CEC5;
             }
         } 
     }
@@ -602,7 +594,7 @@
         z-index: -1;
         bottom: 0;
         border-radius: 5px;
-        background: linear-gradient(279.99deg, #9F5FF1 -1.19%, #FF54B0 50.99%, #FF9F5A 100%);
+        background-color: #3a2d36;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .sub-title {
@@ -678,7 +670,8 @@
             transition: var(--transition);
         }
         .tag {
-            background: linear-gradient(279.99deg, #9F5FF1 -1.19%, #FF54B0 50.99%, #FF9F5A 100%);
+            
+            background-color: #3a2d36;
             color: var(--whiteColor);
             position: absolute;
             border-radius: 2px;
@@ -811,8 +804,8 @@
                 top: 1px;
                 left: -2px;
                 font-size: 18px;
-                color: #36CC72;
                 position: absolute;
+                color: #36CC72;
 
                 &.fa-xmark {
                     color: red;

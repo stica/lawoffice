@@ -26,7 +26,7 @@ import "../../public/styles/freelancer-portfolio-home-page.css";
 import "../../public/styles/cyber-security-agency-home-page.css";
 
 // Global Style
-import "../../public/styles/style.css";
+import "../../public/styles/style.scss";
 import "../../public/styles/responsive.css";
 import "./globals.css";
 
@@ -65,7 +65,6 @@ export default function RootLayout({
       <body className={`${inter.variable} ${saira.variable}`}>
         {children}
         <AosAnimation />
-
         <GoTop />
       </body>
     </html>

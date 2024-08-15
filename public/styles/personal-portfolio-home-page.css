@@ -51,7 +51,7 @@
   content: "";
   position: absolute;
   transform: translateY(-50%);
-  background-color: #ff2c9c;
+  background-color: #E2CEC5;
 }
 .personal-portfolio-banner-content h1 {
   margin-bottom: 15px;
@@ -380,7 +380,7 @@
   font-size: 18px;
 }
 .pp-testimonials-slides .swiper-button-prev:hover, .pp-testimonials-slides .swiper-button-next:hover {
-  background-color: #ff2c9c;
+  background-color: #E2CEC5;
 }
 .pp-testimonials-slides .swiper-button-prev:hover::after, .pp-testimonials-slides .swiper-button-next:hover::after {
   color: #fff;
@@ -448,7 +448,7 @@
   color: #111;
 }
 .pp-post-item .post-content h3 a:hover {
-  color: #ff2c9c;
+  color: #E2CEC5;
 }
 .pp-post-item .post-content .link-btn {
   font-weight: 600;
@@ -500,7 +500,7 @@
   font-weight: 600;
 }
 .pp-contact-area .contact-title p a:hover {
-  color: #ff2c9c;
+  color: #E2CEC5;
 }
 
 /* Responsive CSS 
