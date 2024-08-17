@@ -9,6 +9,7 @@ import logo from "../../../public/images/new/LOGO2.svg";
 import whiteLogo from "../../../public/images/new/logo5.jpg";
 import MenuItem from "./MenuItem";
 import MegaMenu from "./MegaMenu";
+import LangSwitcher from "../Common/LngSwitcher";
 
 const NavbarTwo: React.FC = () => {
   const [menu, setMenu] = useState<boolean>(true);
@@ -78,6 +79,8 @@ const NavbarTwo: React.FC = () => {
                 ))}
               </ul>
             </div>
+
+            <LangSwitcher></LangSwitcher>
           </div>
         </nav>
       </div>

@@ -2,13 +2,14 @@
 
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
-import Link from 'next/link';
 import Image from "next/image";
-import useTranslation from 'next-translate/useTranslation'
 
 import ovalShape from '../../../public/images/oval-shape.png';
+import { useTranslations } from "next-intl";
 
 const MainBanner: React.FC = () => {
+  const t = useTranslations("Home");
+
   return (
       <>
         <div 
@@ -28,7 +29,7 @@ const MainBanner: React.FC = () => {
                         data-aos-duration="1000" 
                         data-aos-delay="100"
                       >
-                        t('title')
+                        {t("title")}
                       </h1>
                       <h1
                         data-aos="fade-up" 
