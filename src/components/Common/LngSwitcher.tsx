@@ -32,13 +32,14 @@ const LangSwitcher: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center bg-gray-100">
+    <div className="flex items-center justify-center bg-gray-100 lng-switcher">
       {visibleOption && (
         <button
           className=""
           onClick={() => handleFlagClick(visibleOption)}
         >
           <Image
+            className="lng-switcher-flag"
             src={visibleOption.flag}
             alt={`${visibleOption.country} flag`}
           />

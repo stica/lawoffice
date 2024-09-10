@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const partnersData = [
   {
@@ -50,8 +51,8 @@ const partnersData = [
     aosDelay: "900",
   },
   {
-    image: "/images/clients/ashaauto.jpg",
-    link: "https://www.facebook.com/ashaauto/",
+    image: "/images/clients/agro.jpg",
+    link: "#",
     aosDelay: "1000",
   },
   {
@@ -67,16 +68,20 @@ const partnersData = [
 ];
 
 const PartnerTwo: React.FC = () => {
+  const t = useTranslations("Clients");
+
   return (
     <>
       <div className="partner-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
-            <h2>Our Loving Clients</h2>
-            <p>
+            <h2>
+              {t("clients")}
+            </h2>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
           </div>
 
           <div className="row align-items-center justify-content-center">

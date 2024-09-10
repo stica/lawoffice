@@ -1,37 +1,29 @@
-export const menus = [
-  {
-		label: "About",
-		link: "/about/",
-	},
-  {
-		label: "Publications",
-		link: "/publications/",
-	},
+import { usePathname } from "next/navigation";
 
-	// {
-	// 	label: "Blog",
-	// 	link: "#",
-	// 	submenu: [
-	// 		{
-	// 			label: "Blog Grid",
-	// 			link: "/blog/",
-	// 		},
-	// 		{
-	// 			label: "Blog With Right Sidebar",
-	// 			link: "/blog/blog-with-right-sidebar/",
-	// 		},
-	// 		{
-	// 			label: "Blog With Left Sidebar",
-	// 			link: "/blog/blog-with-left-sidebar/",
-	// 		},
-	// 		{
-	// 			label: "Blog Details",
-	// 			link: "/blog/blog-details/",
-	// 		},
-	// 	],
-	// },
-  {
-		label: "Contact",
-		link: "/contact/",
-	},
-];
+export function menus(t: any): {
+	label: string,
+	link: string
+}[] {
+	const pathname = usePathname();
+
+	const currentCode = pathname.split("/")[1] || "en"; // Default to 'en' if pathname is '/'
+
+	return [
+		{
+			label: t("about"),
+			link: `/${currentCode}/about/`,
+		},
+		{
+			label: t("publications"),
+			link: `/${currentCode}/publications/`,
+		},
+		{
+			label: t("partners"),
+			link: `/${currentCode}/partners/`,
+		},
+		{
+			label: t("contact"),
+			link: `/${currentCode}/contact/`,
+		},
+	]
+};

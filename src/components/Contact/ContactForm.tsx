@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface FormState {
   name: string;
@@ -11,6 +12,8 @@ interface FormState {
 }
 
 const ContactForm: React.FC = () => {
+  const t = useTranslations('ContactForm');
+  
   const [formData, setFormData] = useState<FormState>({
     name: "",
     email: "",
@@ -43,12 +46,11 @@ const ContactForm: React.FC = () => {
   return (
     <>
       <div className="contact-form">
+    <br></br>
+    <br></br>
+
         <div className="contact-title">
-          <h2>Get In Touch</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h2>{t('getInTouch')}</h2>
         </div>
 
         <form onSubmit={handleSubmit}>
@@ -60,7 +62,7 @@ const ContactForm: React.FC = () => {
                     <input
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder={t('name')}
                       className="form-control"
                       value={formData.name}
                       onChange={handleChange}
@@ -74,7 +76,7 @@ const ContactForm: React.FC = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder={t('email')}
                       className="form-control"
                       value={formData.email}
                       onChange={handleChange}
@@ -88,7 +90,7 @@ const ContactForm: React.FC = () => {
                     <input
                       type="tel"
                       name="number"
-                      placeholder="Phone number"
+                      placeholder={t('number')}
                       className="form-control"
                       value={formData.number}
                       onChange={handleChange}
@@ -102,7 +104,7 @@ const ContactForm: React.FC = () => {
                     <input
                       type="text"
                       name="subject"
-                      placeholder="Subject"
+                      placeholder={t('subject')}
                       className="form-control"
                       value={formData.subject}
                       onChange={handleChange}
@@ -117,7 +119,7 @@ const ContactForm: React.FC = () => {
                       name="message"
                       cols={30}
                       rows={6}
-                      placeholder="Write your message..."
+                      placeholder={t('message')}
                       className="form-control"
                       value={formData.message}
                       onChange={handleChange}
@@ -128,7 +130,7 @@ const ContactForm: React.FC = () => {
 
                 <div className="col-lg-12 col-sm-12">
                   <button type="submit" className="btn btn-primary">
-                    Send Message
+                    {t('sendMessage')}
                   </button>
                 </div>
               </div>

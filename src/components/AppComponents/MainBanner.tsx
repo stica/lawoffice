@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
 import ovalShape from '../../../public/images/oval-shape.png';
@@ -9,7 +8,6 @@ import { useTranslations } from "next-intl";
 
 const MainBanner: React.FC = () => {
   const t = useTranslations("Home");
-
   return (
       <>
         <div 
@@ -43,7 +41,7 @@ const MainBanner: React.FC = () => {
                         data-aos-duration="1000" 
                         data-aos-delay="200"
                       >
-                        Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests.
+                        {t("law_office_description")}
                       </p>
 
                       <div
@@ -51,7 +49,7 @@ const MainBanner: React.FC = () => {
                         data-aos-duration="1300" 
                         data-aos-delay="300"
                       >
-  
+
                       </div>
                     </div>
                   </div>

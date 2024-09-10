@@ -193,7 +193,7 @@ a {
     border-radius: 5px;
     transition: $transition;
     position: relative;
-    text-transform: capitalize;
+    
     z-index: 1;
     font: {
         weight: 600;
@@ -383,7 +383,6 @@ Navbar CSS
     padding-top: 15px;
     width: 100%;
     z-index: 999;
-    height: auto;
 
     nav {
         ul {
@@ -408,7 +407,7 @@ Navbar CSS
                 }
                 a {
                     color: $black-color;
-                    text-transform: capitalize;
+                    
                     position: relative;
                     font: {
                         weight: 500;
@@ -723,7 +722,7 @@ Navbar CSS
 // Navbar toggler 
 .navbar-toggler {
     border: none;
-    background: #eee !important;
+    background: #3a2d36 !important;
     padding: 10px;
     border-radius: 0;
 
@@ -852,6 +851,7 @@ Main Banner CSS
 }
 .main-banner-boxes {
     .container-fluid {
+
         padding: {
             left: 85px;
             right: 85px;
@@ -1134,7 +1134,6 @@ Main Banner CSS
             weight: 800;
         }
         margin: 12px 0 30px;
-        text-transform: capitalize;
     }
     p {
         margin-bottom: 30px;
@@ -3592,7 +3591,7 @@ CTA CSS
         h3 {
             color: $white-color;
             font-size: 70px;
-            text-transform: capitalize;
+            
         }
         p {
             color: $white-color;
@@ -3762,7 +3761,7 @@ Subscribe CSS
         right: auto;
     }
     h4 {
-        text-transform: capitalize;
+        
         margin-bottom: 35px;
         font: {
             size: 35px;
@@ -4796,22 +4795,22 @@ Contact CSS
     transition: $transition;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     background: $white-color;
-    padding: 30px 30px 30px 120px;
+    padding: 30px 30px 30px 70px;
     margin-bottom: 30px;
     position: relative;
     
     .icon {
         display: inline-block;
-        width: 65px;
-        height: 65px;
-        line-height: 65px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
         background: #f7fafd;
         border-radius: 50%;
         font-size: 30px;
         color: $main-color;
         transition: $transition;
         position: absolute;
-        left: 30px;
+        left: 10px;
         text-align: center;
     }
     h3 {
@@ -4942,7 +4941,7 @@ textarea.form-control {
             outline: 0;
             box-shadow: unset;
             padding-left: 15px;
-            text-transform: capitalize;
+            
             font-weight: 600;
             border: 1px solid #eeeeee;
         }
@@ -5022,7 +5021,7 @@ Sidebar CSS
             border-bottom: 1px solid #eeeeee;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            text-transform: capitalize;
+            
         }
         ul {
             padding: 0;
@@ -5503,7 +5502,7 @@ Portfolio Details CSS
             display: inline-block;
             padding: 12px 30px;
             color: #ffffff;
-            text-transform: capitalize;
+            
             background-color: $main-color;
             border: 1px solid $main-color;
             -webkit-transition: 0.5s;
@@ -6082,6 +6081,16 @@ span.new {
 
 .main-banner-content-wrapper {
     text-align: center !important;
+
+    .main-banner-content {
+        h1 {
+            color: #E2CEC5!important;
+        }
+
+        p {
+            color: #E2CEC5!important;
+        }
+    }
 }
 
 .navbar-area.navbar-style-2 {
@@ -6102,8 +6111,8 @@ span.new {
             .navbar-collapse {
                 .navbar-nav {
                     .nav-link {
-                        color: #fafbfe;
-
+                        color: #E2CEC5!important;
+                        text-transform: uppercase;
                         &:hover {
                             ::before {
                             }
@@ -6214,5 +6223,46 @@ span.new {
             margin: auto;
             margin-top: 50px;
         }
+    }
+}
+
+.lng-switcher {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .lng-switcher-flag {
+        height: 20px !important;
+        width: 30px !important;
+    }
+}
+
+ul {
+    &.navbar-nav {
+        overflow-y: hidden!important;
+    }
+}
+
+.publications-item {
+    height: 300px;
+    min-width: 456px;
+    width: 456px;
+    margin-top: 20px;
+
+    .work-card {
+        height: 100%;
+        margin-bottom: 20px;
+
+        .publications-item-image {
+            height: 100%;
+        }
+    }
+}
+
+.partners-about {
+    text-align: center;
+    .btn {
+        margin: auto;
+        margin-top: 20px;
     }
 }

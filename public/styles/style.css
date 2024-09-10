@@ -184,7 +184,7 @@ a:hover, a:focus {
   border-radius: 5px;
   transition: all 0.5s ease;
   position: relative;
-  text-transform: capitalize;
+  
   z-index: 1;
   font-weight: 600;
   font-size: 15px;
@@ -389,7 +389,7 @@ Navbar CSS
 }
 .navbar-area nav .navbar-nav .nav-item a {
   color: #18181b;
-  text-transform: capitalize;
+  
   position: relative;
   font-weight: 500;
   font-size: 15px;
@@ -974,7 +974,7 @@ Main Banner CSS
   font-size: 62px;
   font-weight: 800;
   margin: 12px 0 30px;
-  text-transform: capitalize;
+  
 }
 .main-banner-content p {
   margin-bottom: 30px;
@@ -3128,7 +3128,7 @@ CTA CSS
 .cta-area-two .cta-content h3 {
   color: #ffffff;
   font-size: 70px;
-  text-transform: capitalize;
+  
 }
 .cta-area-two .cta-content p {
   color: #ffffff;
@@ -3282,7 +3282,7 @@ Subscribe CSS
   margin-right: auto;
 }
 .newsletter h4 {
-  text-transform: capitalize;
+  
   margin-bottom: 35px;
   font-size: 35px;
 }
@@ -4212,9 +4212,9 @@ Contact CSS
 }
 .contact-info-box .icon {
   display: inline-block;
-  width: 65px;
-  height: 65px;
-  line-height: 65px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
   background: #f7fafd;
   border-radius: 50%;
   font-size: 30px;
@@ -4333,7 +4333,7 @@ textarea.form-control {
   outline: 0;
   box-shadow: unset;
   padding-left: 15px;
-  text-transform: capitalize;
+  
   font-weight: 600;
   border: 1px solid #eeeeee;
 }
@@ -4404,7 +4404,7 @@ Sidebar CSS
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  text-transform: capitalize;
+  
 }
 .widget-area .widget ul {
   padding: 0;
@@ -4789,7 +4789,7 @@ Portfolio Details CSS
   display: inline-block;
   padding: 12px 30px;
   color: #ffffff;
-  text-transform: capitalize;
+  
   background-color: #E2CEC5;
   border: 1px solid #E2CEC5;
   transition: 0.5s;

@@ -3,99 +3,83 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const ourWorksData = [
-  {
-    image: "/images/works/work1.jpg",
-    title: "Designing a better cinema experience",
-    category: "SEO Optimization",
-    viewDetails: "/portfolio/portfolio-details/",
-    aosDelay: "100",
-  },
-  {
-    image: "/images/works/work2.jpg",
-    title: "Building design process within teams",
-    category: "Digital Marketing",
-    viewDetails: "/portfolio/portfolio-details/",
-    aosDelay: "200",
-  },
-  {
-    image: "/images/works/work3.jpg",
-    title: "How intercom brings play into their design process",
-    category: "Keyword Targeting",
-    viewDetails: "/portfolio/portfolio-details/",
-    aosDelay: "300",
-  },
-  {
-    image: "/images/works/work4.jpg",
-    title: "Stuck with to-do list, I created a new app for myself",
-    category: "Email Marketing",
-    viewDetails: "/portfolio/portfolio-details/",
-    aosDelay: "400",
-  },
-  {
-    image: "/images/works/work5.jpg",
-    title: "Examples of different types of sprints",
-    category: "Marketing & Reporting",
-    viewDetails: "/portfolio/portfolio-details/",
-    aosDelay: "500",
-  },
-  {
-    image: "/images/works/work6.jpg",
-    title: "Redesigning the New York times app",
-    category: "App Development",
-    viewDetails: "/portfolio/portfolio-details/",
-    aosDelay: "600",
-  },
-];
+function ourWorksData(t: any): {
+  image: string;
+  title: any;
+  category: any;
+  viewDetails: string;
+  aosDelay: string;
+}[] {
+  return [
+    {
+      image: "/images/publications/p3.jpg",
+      title: t('digital_assets_guide'),
+      category: t('seminar'),
+      viewDetails: "https://komorars.ba/odrzan-seminar-digitalna-imovina-u-praksi-vodic-za-pravna-i-fizicka-lica/",
+      aosDelay: "100",
+    },
+    {
+      image: "/images/publications/p4.jpg",
+      title: t('virtual_currency_integration'),
+      category: t('seminar'),
+      viewDetails: "https://cryptoadria.com/portal/2024/04/30/odrzana-radionica-o-integraciji-virtuelnih-valuta-u-svakodnevnom-poslovanju/",
+      aosDelay: "200",
+    },
+    {
+      image: "/images/publications/p2.jpg",
+      title: t('local_government'),
+      category: t('law_faculty'),
+      viewDetails: "/portfolio/portfolio-details/",
+      aosDelay: "300",
+    },
+    {
+      image: "/images/publications/p1.jpg",
+      title: t('crypto_market_regulation'),
+      category: t('podcast'),
+      viewDetails: "https://www.youtube.com/watch?v=RqkejbOagaM&t=48s",
+      aosDelay: "400",
+    },
+  ];
+}
 
 const OurWorks: React.FC = () => {
+  const t = useTranslations("Services");
+
   return (
     <>
       <section className="case-studies-area ptb-100">
         <div className="container">
-          <div className="section-title">
-            <h2>Our Projects</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
 
           <div className="row justify-content-center">
-            {ourWorksData &&
-              ourWorksData.slice(0, 6).map((value, i) => (
-                <div className="col-lg-4 col-sm-6" key={i}>
+            {ourWorksData(t) &&
+              ourWorksData(t).slice(0, 6).map((value, i) => (
+                <div className="col-lg-6 col-sm-6 publications-item" key={i}>
                   <div
                     className="work-card text-center"
                     data-aos="fade-in"
                     data-aos-duration="1000"
                     data-aos-delay={value.aosDelay}
                   >
-                    <Image src={value.image} alt="image" width={510} height={700} />
+                    <Image src={value.image} alt="image" width={510} height={700} className="publications-item-image" />
 
                     <div className="content">
                       <span>
-                        <Link href={value.viewDetails}>{value.category}</Link>
+                        <Link target="_blank" href={value.viewDetails} rel="noopener noreferrer">{value.category}</Link>
                       </span>
 
                       <h3>
                         <Link href={value.viewDetails}>{value.title}</Link>
                       </h3>
 
-                      <Link href={value.viewDetails} className="custom-btn">
-                        View Details
+                      <Link target="_blank" href={value.viewDetails} className="custom-btn">
+                        {t("more_details")}
                       </Link>
                     </div>
                   </div>
                 </div>
               ))}
-          </div>
-    
-          <div className="view-more-work">
-            <Link href="/portfolio" className="btn btn-primary">
-              <i className="fa-solid fa-list-check me-1"></i> View More
-            </Link>
           </div>
         </div>
       </section>

@@ -5,11 +5,13 @@ import Image from "next/image";
 
 import aboutImg from "../../../public/images/new/img1.jpg";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-const AboutContent: React.FC = () => {
-  const t = useTranslations("About");
-
+const PartnersAbout: React.FC = () => {
   const [toggler, setToggler] = useState(false);
+
+  const t = useTranslations("Partners");
+
   return (
     <>
       <div className="about-lawyer">
@@ -27,24 +29,23 @@ const AboutContent: React.FC = () => {
 
             <div className="about-lawyer-content">
               <div className="section-title">
-              <h2>{t('about')}</h2>
+                <h2>Drobnjak Legal & Partners</h2>
               </div>
 
               <div className="container">
-                <p>{t('paragraphs.p1')}</p>
-                <p>{t('paragraphs.p2')}</p>
-                <p>{t('paragraphs.p3')}</p>
-                <p>{t('paragraphs.p4')}</p>
-                <p>{t('paragraphs.p5')}</p>
-                <p>{t('paragraphs.p6')}</p>
-                <ul>
-                  <li>{t('paragraphs.listItem1')}</li>
-                  <li>{t('paragraphs.listItem2')}</li>
-                  <li>{t('paragraphs.listItem3')}</li>
-                </ul>
-                <p>{t('paragraphs.p7')}</p>
+                <p>
+                  {t("about1")}
+                </p>
+                <p>
+                  {t("about2")}
+                </p>
               </div>
 
+              <div className="partners-about">
+                <Link href="https://drobnjaklegal.com/" target="_blank" className="btn btn-primary">
+                  <i className="fa-solid fa-list-check me-1"></i> {t("more")}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -53,4 +54,4 @@ const AboutContent: React.FC = () => {
   );
 };
 
-export default AboutContent;
+export default PartnersAbout;

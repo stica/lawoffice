@@ -3,11 +3,25 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import logo from '../../../public/images/new/logo5.jpg';
+import { usePathname } from "next/navigation";
 
 const Footer: React.FC = () => {
+  const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+
+	const currentCode = pathname.split("/")[1] || "en";
+
+  const path = `/${currentCode}`;
+  const abouthPath = `/${currentCode}/about`;
+  const homePath = `/${currentCode}/home`;
+  const publicationsPath = `/${currentCode}/publications`;
+  const partnersPath = `/${currentCode}/partners`;
+  const contactPath = `/${currentCode}/contact`;
+
   return (
     <>
       <footer className="footer-area">
@@ -21,7 +35,7 @@ const Footer: React.FC = () => {
                 data-aos-delay="100"
               >
                 <div className="logo">
-                  <Link href="/">
+                  <Link href={path}>
                     <Image 
                       src={logo}
                       alt="Logo" 
@@ -44,9 +58,10 @@ const Footer: React.FC = () => {
                   </li> */}
                   <li>
                     <a href="https://www.linkedin.com/in/nata%C5%A1a-tica-302b03153/" target="_blank">
-                      <i className="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i> {t('linkedin')}
                     </a>
                   </li>
+
                   {/* <li>
                     <a href="https://www.instagram.com/" target="_blank">
                       <i className="fa-brands fa-instagram"></i>
@@ -63,27 +78,32 @@ const Footer: React.FC = () => {
                 data-aos-duration="1000" 
                 data-aos-delay="200"
               >
-                <h3>Explore</h3>
+                <h3>{t('explore')}</h3>
 
                 <ul className="list">
                   <li>
-                    <Link href="/">
-                      Home
+                    <Link href={homePath}>
+                      {t('home')}
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about/">
-                      About
+                    <Link href={abouthPath}>
+                      {t('about')}
                     </Link>
                   </li>
                   <li>
-                    <Link href="/publications/">
-                      Publications
+                    <Link href={publicationsPath}>
+                      {t('publications')}
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact/">
-                      Contact
+                    <Link href={partnersPath}>
+                      {t('partners')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={contactPath}>
+                      {t('contact')}
                     </Link>
                   </li>
                 </ul>
@@ -98,20 +118,19 @@ const Footer: React.FC = () => {
                 data-aos-duration="1000" 
                 data-aos-delay="400"
               >
-                <h3>Get in Touch</h3>
+                <h3>{t('getInTouch')}</h3>
 
                 <ul className="get-in-touch">
                   <li>
-                    <i className="fa-solid fa-location-dot"></i> Novice Cerovića 32, 78000 Banja Luka
+                    <i className="fa-solid fa-location-dot"></i> {t('address')}
                   </li>
                   <li>
                     <i className="fa-solid fa-headset"></i>
-                    <a href="tel:+387 65 231-276">+387 65 231-276</a> 
+                    <a href="tel:+387 65 231-276">{t('phone')}</a> 
                   </li>
                   <li>
                     <i className="fa-solid fa-envelope"></i>
-                    <a href="mailto:hello@pungent.com">hello@pungent.com</a>
-                    <a href="mailto:support@pungent.com">support@pungent.com</a>
+                    <a href="mailto:natasa.tica@natasaticalawoffice.com">{t('email')}</a>
                   </li>
                 </ul>
               </div>

@@ -5,14 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
 
-import clientImg1 from '../../../public/images/clients/client1.png';
-import clientImg2 from '../../../public/images/clients/client2.png';
-import clientImg3 from '../../../public/images/clients/client3.png';
-import clientImg4 from '../../../public/images/clients/client4.png';
-import clientImg5 from '../../../public/images/clients/client5.png';
-import clientImg6 from '../../../public/images/clients/client6.png';
-import clientImg7 from '../../../public/images/clients/client7.png';
-import clientImg8 from '../../../public/images/clients/client8.png';
+import clientImg1 from '../../../public/images/publications/p1.jpg';
+import clientImg2 from '../../../public/images/publications/p1.jpg';
+import clientImg3 from '../../../public/images/publications/p1.jpg';
+import clientImg4 from '../../../public/images/publications/p1.jpg';
+import clientImg5 from '../../../public/images/publications/p1.jpg';
+import clientImg6 from '../../../public/images/publications/p1.jpg';
+import clientImg7 from '../../../public/images/publications/p1.jpg';
+import clientImg8 from '../../../public/images/publications/p1.jpg';
 
 import leftQuote from '../../../public/images/left-quote-white.png';
 

@@ -10,8 +10,11 @@ import whiteLogo from "../../../public/images/new/logo5.jpg";
 import MenuItem from "./MenuItem";
 import MegaMenu from "./MegaMenu";
 import LangSwitcher from "../Common/LngSwitcher";
+import { useTranslations } from "next-intl";
 
 const NavbarTwo: React.FC = () => {
+  const t = useTranslations("Menu");
+
   const [menu, setMenu] = useState<boolean>(true);
 
   const toggleNavbar = () => {
@@ -74,7 +77,7 @@ const NavbarTwo: React.FC = () => {
               <ul className="navbar-nav">
                 <MegaMenu />
 
-                {menus.map((menuItem) => (
+                {menus(t).map((menuItem) => (
                   <MenuItem key={menuItem.label} {...menuItem} />
                 ))}
               </ul>
