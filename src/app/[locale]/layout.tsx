@@ -31,10 +31,11 @@ import "../../../public/styles/responsive.css";
 import "./../globals.css";
 
 import type { Metadata } from "next";
-import { Inter, Saira } from "next/font/google";
+import { Inter, Saira, Roboto } from "next/font/google";
 import AosAnimation from "@/components/Layouts/AosAnimation";
 import GoTop from "@/components/Layouts/GoTop";
-import {NextIntlClientProvider, useMessages} from 'next-intl';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 // For all body text font
 const inter = Inter({
@@ -51,8 +52,15 @@ const saira = Saira({
   display: "swap",
 });
 
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'], // Define the font weights you need
+  subsets: ["latin"],
+  variable: "--font-roboto", // Define a custom CSS variable for Roboto
+  display: "swap", // Optional, to improve loading performance
+});
+
 export const metadata: Metadata = {
-  title: "Law Office Nataša Tica",
+  title: "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
   description: "Law Office Nataša Tica offers modern, innovative legal solutions with personalized attention. Specializing in [practice areas such as family law, business law, real estate law], we combine advanced technology and expert counsel to meet your legal needs. Serving Banja Luka, we are committed to providing exceptional legal support and results.",
 };
 
@@ -63,17 +71,52 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children, locale }: RootLayoutProps) {
   const messages = useMessages();
+  const t = useTranslations("Layout");
 
   return (
     <html lang={locale}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
 
-      <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
-            <AosAnimation />
-            <GoTop />
-          </NextIntlClientProvider>
+        <head>
+        <title>{t('title')}</title>
+        <meta name="description" content={t('description')} />
+        <meta name="keywords" content={t('keywords')} />
+
+        {/* hreflang for English */}
+        <link rel="alternate" href="https://www.natasaticalawoffice.com/en" hrefLang="en" />
+        
+        {/* hreflang for Serbian */}
+        <link rel="alternate" href="https://www.natasaticalawoffice.com/sr" hrefLang="sr" />
+
+        {/* JSON-LD structured data with translations */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `
+          {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Law Office Nataša Tica",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Novice Cerovića 32",
+              "addressLocality": "Banja Luka",
+              "postalCode": "78000",
+              "addressCountry": "Bosnia and Herzegovina"
+            },
+            "telephone": "+38765231276",
+            "url": "https://www.natasaticalawoffice.com/${locale}",
+            "description": "${t('schemaDescription')}",
+            "openingHours": "Mo-Fri 8:00-16:00"
+          }
+          `
+        }} />
+        </head>
+        <body className={roboto.className}>
+          {children}
+          <AosAnimation />
+          <GoTop />
         </body>
+      </NextIntlClientProvider>
+
     </html>
   );
 }

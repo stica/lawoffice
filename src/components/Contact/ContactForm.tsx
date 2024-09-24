@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import { POST } from "@/app/api/send-email/route";
 
 interface FormState {
   name: string;
@@ -22,6 +23,10 @@ const ContactForm: React.FC = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -29,11 +34,32 @@ const ContactForm: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
-    // Reset form data after submission if needed
+    setLoading(true);
+  
+    try {
+      const res = await fetch("http://localhost:3000/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (res.ok) {
+        setSuccessMessage(t('emailSentSuccess'));
+      } else {
+        setErrorMessage(t('emailSentError'));
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setErrorMessage(t('emailSentError'));
+    }
+  
+    setLoading(false);
+  
+    // Reset form data after submission
     setFormData({
       name: "",
       email: "",
@@ -46,12 +72,15 @@ const ContactForm: React.FC = () => {
   return (
     <>
       <div className="contact-form">
-    <br></br>
-    <br></br>
+        <br />
+        <br />
 
         <div className="contact-title">
           <h2>{t('getInTouch')}</h2>
         </div>
+
+        {successMessage && <p className="success-message">{successMessage}</p>}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
 
         <form onSubmit={handleSubmit}>
           <div className="container">
@@ -129,8 +158,8 @@ const ContactForm: React.FC = () => {
                 </div>
 
                 <div className="col-lg-12 col-sm-12">
-                  <button type="submit" className="btn btn-primary">
-                    {t('sendMessage')}
+                  <button type="submit" className="btn btn-primary" disabled={loading}>
+                    {loading ? t('sending') : t('sendMessage')}
                   </button>
                 </div>
               </div>

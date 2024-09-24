@@ -1,97 +1,106 @@
 {
-    "Home": {
-        "title": "Advokatska kancelarija",
-        "law_office_description": "Doživite budućnost pravne prakse u našoj modernoj advokatskoj kancelariji, gde se tradicija i tehnologija ujedinjuju kako bi vam pružile najbolju uslugu."
-    },
-    "Menu": {
-        "home": "Početna",
-        "about": "O advokatu",
-        "publications": "Publikacije",
-        "partners": "Partnerske kancelarije",
-        "contact":"Kontakt",
-        "more_details":"Više detalja" 
-    },
-    "Services": {
-        "aboutLawyer": "O advokatu",
-        "lawyerMoto": "Naša stručnost, vaša sigurnost u poslovanju!",
-        "moreAboutLawyer": "Više o advokatu",
-        "ourServices": "Naše usluge",
-        "servicesDescription": "Od obezbeđivanja vaših transakcija nekretninama i zaštite vaše digitalne privatnosti do navigacije kroz složenost digitalne imovine, IT prava, obaveza i poslovnih poduhvata, naša stručnost osigurava da su vaši poslovni i lični poslovi zaštićeni sa preciznošću i poverenjem.",
-        "commercialLaw": "Privredno pravo",
-        "commercialLawShortText": "Osnaživanje vašeg poslovanja sveobuhvatnim pravnim rešenjima.",
-        "obligationLaw": "Obligaciono pravo",
-        "obligationLawShortText": "Podržavamo vaša ugovorna prava sa postojanom pravnom podrškom.",
-        "itLaw": "IT pravo",
-        "itLawShortText": "Obezbeđujemo da vaši tehnološki poduhvati uspevaju u čvrstom pravnom okviru.",
-        "lawDigitalAssets": "Pravo i digitalna imovina",
-        "lawDigitalAssetsShortText": "Navigacija kroz složenost digitalne imovine sa preciznošću i stručnošću.",
-        "personalDataProtection": "Zaštita ličnih podataka (GDPR)",
-        "personalDataProtectionShortText": "Zaštita vaše privatnosti u digitalnom dobu u skladu sa GDPR-om.",
-        "realEstate": "Nekretnine",
-        "realEstateShortText": "Osiguranje vaših transakcija nekretninama uz stručne pravne smernice.",
-        "inheritanceLaw": "Nasledno pravo",
-        "inheritanceLawShortText": "Očuvanje vašeg nasleđa uz stručne pravne usluge u oblasti naslednog prava.",
-        "familyLaw": "Porodično pravo",
-        "familyLawShortText": "Navigacija kroz porodične stvari sa saosećanjem i pravnom stručnošću.",
-        "laborLaw": "Radno pravo",
-        "laborLawShortText": "Zastupamo vaša prava na radnom mestu uz posvećenu pravnu podršku.",
-        "more_details":"Više detalja",
-        "digital_assets_guide": "Digitalna imovina u praksi: vodič za pravna i fizička lica",
-        "virtual_currency_integration": "Integracija virtuelnih valuta u svakodnevnom poslovanju",
-        "local_government": "Lokalna samouprava u RS",
-        "crypto_market_regulation": "Koliko je zakonski (ne)uređeno tržište kriptovaluta u BiH?",
-        "seminar": "Seminar",
-        "law_faculty": "Pravni fakultet univerziteta u Banjoj Luci",
-        "podcast": "Podcast"
-      },
-      "Partners": {
-        "about1": "Advokatska kancelarija Drobnjak Legal & Partners, osnovana od strane advokata Drobnjak Bojane 2012. godine, predstavlja pouzdanog partnera u vašem poslovanju, čiji rast je zasnovan na poverenju, dobrim rezultatima i konstantnom usavršavanju.",
-        "about2": "U dugoj tradiciji savetovanja klijenata u svim oblastima korporativnog prava, ističemo se kvalitetom, fleksibilnošću, inovacijama i praktičnim rešavanjem kompleksnih poslovnih problema. Naši klijenti su renomirane kompanije iz industrije farmacije, bankarstva, građevinarstva, razvoja nekretnina, ugostiteljstva, faktoringa i transporta.",
-        "more": "Više detalja"
-      },
-      "About": {
-        "about": "O meni",
-        "paragraphs": {
-          "p1": "Moje obrazovanje započeto je u Gimnaziji \"Sveti Sava\" u Prijedoru, nakon čega sam diplomirala na Pravnom fakultetu Univerziteta u Banjoj Luci. Položila sam pravosudni i advokatski ispit, te se dodatno osposobila kao Certified Data Protection Officer u organizaciji Mobes Quality.",
-          "p2": "Prvo radno iskustvo stekla sam kao volonter u Agenciji za ekonomski razvoj „PREDA-PD“ u Prijedoru, gde sam radila na implementaciji projekata. Zatim sam bila saradnik u notarskoj kancelariji u Prijedoru, gde sam se bavila notarskim obrađivanjem različitih vrsta ugovora, ostavinskim postupcima, kao i radom u oblasti privrednog prava, uključujući osnivanje privrednih društava, statusne promene, izmene i dopune osnivačkih akata.",
-          "p3": "Nakon toga, provela sam nekoliko mjeseci kao praktikant u firmi Obsidian Media u Banjoj Luci, gde sam radila na usklađivanju sajtova sa pravnom regulativom EU i internim pravilima firme. Od decembra 2020. do novembra 2021. godine, radila sam kao pravni konsultant u međunarodnij kompaniji Molson Coors BH d.o.o. u Banjoj Luci, gde sam bila zadužena za pripremu i pisanje ugovora, donošenje odluka, pripremu internih akata, kao i za rješavanje pravnih pitanja u vezi sa GDPR regulativom i marketinškim kriznim situacijama.",
-          "p4": "Od maja 2022. do januara 2024. godine, radila sam kao stručni saradnik u notarskoj kancelariji u Banjoj Luci, gde sam nastavila sa obrađivanjem ugovora i drugim notarskim poslovima. Od februara 2024.godine do juna 2024.godine bila sam zaposlena kao diplomirani pravnik u firmi \"MB nekretnine i savjetovanje\" d.o.o. u Banjoj Luci.Paralelno sa tim, od februara 2023. do maja 2024. godine, bila sam pravni savjetnik za startup firme i digitalnu imovinu, te sam radila na pitanjima iz oblasti prava informacionih tehnologija.",
-          "p5": "Sa bogatim iskustvom u notarskoj kancelariji, gde sam osnivala privredna društva, vršila njihove statusne promene i izmene osnivačkih akata, kao i radom u međunarodnoj korporaciji, te kao pravni savetnik startup-ovima i malim firmama, razvila sam se u odličan profil advokata za kompanijsko pravo. Upoznata sam sa svim problemima privrednih društava, od njihovog osnivanja, početka poslovanja, pa do razvoja.",
-          "p6": "Dodatno, bila sam predavač i panelista na više konferencija i stručnih radionica, kao što su:",
-          "listItem1": "\"Digitalna imovina u praksi: Vodič za pravna i fizička lica\" u Privrednoj komori Republike Srpske.",
-          "listItem2": "\"Integracija virtuelnih valuta u svakodnevnom poslovanju\" na Jahorini.",
-          "listItem3": "\"Lokalna samouprava u RS\" na Pravnom fakultetu Univerziteta u Banjoj Luci.",
-          "p7": "Takođe sam koautor Priručnika za sprovođenje mjera prevencije rizika od pranja novca i finansiranja terorističkih aktivnosti putem virtuelnih valuta."
-        }
-      },
-      "Clients": {
-          "clients": "Naši klijenti"
-      },
-      "Footer": {
-        "explore": "Istraži",
-        "home": "Početna",
-        "about": "O nama",
-        "publications": "Publikacije",
-        "contact": "Kontakt",
-        "getInTouch": "Kontaktirajte nas",
-        "address": "Novice Cerovića 32, 78000 Banja Luka",
-        "phone": "+387 65 231-276",
-        "email": "natasa.tica@natasaticalawoffice.com",
-        "linkedin": "LinkedIn",
-        "partners": "Partnerske kancelarije"
-      },
-      "ContactForm": {
-        "getInTouch": "Kontaktirajte nas",
-        "name": "Ime",
-        "email": "Email",
-        "number": "Broj telefona",
-        "subject": "Naslov",
-        "message": "Napišite vašu poruku...",
-        "sendMessage": "Pošalji poruku"
-      },
-      "ContactInfo": {
-        "mailHere": "Pošaljite ovde",
-        "visitHere": "Posetite ovde",
-        "callHere": "Pozovite ovde"
-      }    
+  "Home": {
+    "title": "Advokatska kancelarija",
+    "law_office_description": "Doživite budućnost pravne prakse u našoj modernoj advokatskoj kancelariji, gde se tradicija i tehnologija ujedinjuju kako bi vam pružile najbolju uslugu."
+  },
+  "Menu": {
+    "home": "Početna",
+    "about": "O advokatu",
+    "publications": "Publikacije",
+    "partners": "Partnerske kancelarije",
+    "contact": "Kontakt",
+    "more_details": "Više detalja"
+  },
+  "Services": {
+    "aboutLawyer": "O advokatu",
+    "lawyerMoto": "Naša stručnost, vaša sigurnost u poslovanju!",
+    "moreAboutLawyer": "Više o advokatu",
+    "ourServices": "Naše usluge",
+    "servicesDescription": "Od obezbeđivanja vaših transakcija nekretninama i zaštite vaše digitalne privatnosti do navigacije kroz složenost digitalne imovine, IT prava, obaveza i poslovnih poduhvata, naša stručnost osigurava da su vaši poslovni i lični poslovi zaštićeni sa preciznošću i poverenjem.",
+    "commercialLaw": "Privredno pravo",
+    "commercialLawShortText": "Osnaživanje vašeg poslovanja sveobuhvatnim pravnim rešenjima.",
+    "obligationLaw": "Obligaciono pravo",
+    "obligationLawShortText": "Podržavamo vaša ugovorna prava sa postojanom pravnom podrškom.",
+    "itLaw": "IT pravo",
+    "itLawShortText": "Obezbeđujemo da vaši tehnološki poduhvati uspevaju u čvrstom pravnom okviru.",
+    "lawDigitalAssets": "Pravo i digitalna imovina",
+    "lawDigitalAssetsShortText": "Navigacija kroz složenost digitalne imovine sa preciznošću i stručnošću.",
+    "personalDataProtection": "Zaštita ličnih podataka (GDPR)",
+    "personalDataProtectionShortText": "Zaštita vaše privatnosti u digitalnom dobu u skladu sa GDPR-om.",
+    "realEstate": "Nekretnine",
+    "realEstateShortText": "Osiguranje vaših transakcija nekretninama uz stručne pravne smernice.",
+    "inheritanceLaw": "Nasledno pravo",
+    "inheritanceLawShortText": "Očuvanje vašeg nasleđa uz stručne pravne usluge u oblasti naslednog prava.",
+    "familyLaw": "Porodično pravo",
+    "familyLawShortText": "Navigacija kroz porodične stvari sa saosećanjem i pravnom stručnošću.",
+    "laborLaw": "Radno pravo",
+    "laborLawShortText": "Zastupamo vaša prava na radnom mestu uz posvećenu pravnu podršku.",
+    "more_details": "Više detalja",
+    "digital_assets_guide": "Digitalna imovina u praksi: vodič za pravna i fizička lica",
+    "virtual_currency_integration": "Integracija virtuelnih valuta u svakodnevnom poslovanju",
+    "local_government": "Lokalna samouprava u RS",
+    "crypto_market_regulation": "Koliko je zakonski (ne)uređeno tržište kriptovaluta u BiH?",
+    "seminar": "Seminar",
+    "law_faculty": "Pravni fakultet univerziteta u Banjoj Luci",
+    "podcast": "Podcast"
+  },
+  "Partners": {
+    "about1": "Advokatska kancelarija Drobnjak Legal & Partners, osnovana od strane advokata Drobnjak Bojane 2012. godine, predstavlja pouzdanog partnera u vašem poslovanju, čiji rast je zasnovan na poverenju, dobrim rezultatima i konstantnom usavršavanju.",
+    "about2": "U dugoj tradiciji savetovanja klijenata u svim oblastima korporativnog prava, ističemo se kvalitetom, fleksibilnošću, inovacijama i praktičnim rešavanjem kompleksnih poslovnih problema. Naši klijenti su renomirane kompanije iz industrije farmacije, bankarstva, građevinarstva, razvoja nekretnina, ugostiteljstva, faktoringa i transporta.",
+    "more": "Više detalja"
+  },
+  "About": {
+    "about": "O meni",
+    "paragraphs": {
+      "p1": "Moje obrazovanje započeto je u Gimnaziji \"Sveti Sava\" u Prijedoru, nakon čega sam diplomirala na Pravnom fakultetu Univerziteta u Banjoj Luci. Položila sam pravosudni i advokatski ispit, te se dodatno osposobila kao Certified Data Protection Officer u organizaciji Mobes Quality.",
+      "p2": "Prvo radno iskustvo stekla sam kao volonter u Agenciji za ekonomski razvoj „PREDA-PD“ u Prijedoru, gde sam radila na implementaciji projekata. Zatim sam bila saradnik u notarskoj kancelariji u Prijedoru, gde sam se bavila notarskim obrađivanjem različitih vrsta ugovora, ostavinskim postupcima, kao i radom u oblasti privrednog prava, uključujući osnivanje privrednih društava, statusne promene, izmene i dopune osnivačkih akata.",
+      "p3": "Nakon toga, provela sam nekoliko mjeseci kao praktikant u firmi Obsidian Media u Banjoj Luci, gde sam radila na usklađivanju sajtova sa pravnom regulativom EU i internim pravilima firme. Od decembra 2020. do novembra 2021. godine, radila sam kao pravni konsultant u međunarodnij kompaniji Molson Coors BH d.o.o. u Banjoj Luci, gde sam bila zadužena za pripremu i pisanje ugovora, donošenje odluka, pripremu internih akata, kao i za rješavanje pravnih pitanja u vezi sa GDPR regulativom i marketinškim kriznim situacijama.",
+      "p4": "Od maja 2022. do januara 2024. godine, radila sam kao stručni saradnik u notarskoj kancelariji u Banjoj Luci, gde sam nastavila sa obrađivanjem ugovora i drugim notarskim poslovima. Od februara 2024.godine do juna 2024.godine bila sam zaposlena kao diplomirani pravnik u firmi \"MB nekretnine i savjetovanje\" d.o.o. u Banjoj Luci.Paralelno sa tim, od februara 2023. do maja 2024. godine, bila sam pravni savjetnik za startup firme i digitalnu imovinu, te sam radila na pitanjima iz oblasti prava informacionih tehnologija.",
+      "p5": "Sa bogatim iskustvom u notarskoj kancelariji, gde sam osnivala privredna društva, vršila njihove statusne promene i izmene osnivačkih akata, kao i radom u međunarodnoj korporaciji, te kao pravni savetnik startup-ovima i malim firmama, razvila sam se u odličan profil advokata za kompanijsko pravo. Upoznata sam sa svim problemima privrednih društava, od njihovog osnivanja, početka poslovanja, pa do razvoja.",
+      "p6": "Dodatno, bila sam predavač i panelista na više konferencija i stručnih radionica, kao što su:",
+      "listItem1": "\"Digitalna imovina u praksi: Vodič za pravna i fizička lica\" u Privrednoj komori Republike Srpske.",
+      "listItem2": "\"Integracija virtuelnih valuta u svakodnevnom poslovanju\" na Jahorini.",
+      "listItem3": "\"Lokalna samouprava u RS\" na Pravnom fakultetu Univerziteta u Banjoj Luci.",
+      "p7": "Takođe sam koautor Priručnika za sprovođenje mjera prevencije rizika od pranja novca i finansiranja terorističkih aktivnosti putem virtuelnih valuta."
+    }
+  },
+  "Clients": {
+    "clients": "Naši klijenti"
+  },
+  "Footer": {
+    "explore": "Istraži",
+    "home": "Početna",
+    "about": "O nama",
+    "publications": "Publikacije",
+    "contact": "Kontakt",
+    "getInTouch": "Kontaktirajte nas",
+    "address": "Novice Cerovića 32, 78000 Banja Luka",
+    "phone": "+387 65 231-276",
+    "email": "natasa.tica@natasaticalawoffice.com",
+    "linkedin": "LinkedIn",
+    "partners": "Partnerske kancelarije"
+  },
+  "ContactForm": {
+    "getInTouch": "Kontaktirajte nas",
+    "name": "Ime",
+    "email": "Email",
+    "number": "Broj telefona",
+    "subject": "Naslov",
+    "message": "Napišite vašu poruku...",
+    "sendMessage": "Pošalji poruku",
+    "emailSentError": "Greška pri slanju",
+    "emailSentSuccess": "Poruka uspješno poslana",
+    "sending": "Slanje"
+  },
+  "ContactInfo": {
+    "mailHere": "Pošaljite ovde",
+    "visitHere": "Posetite ovde",
+    "callHere": "Pozovite ovde"
+  },
+  "Layout": {
+    "title": "Advokatska kancelarija Nataša Tica | Porodično pravo, Poslovno pravo, Nekretnine",
+    "description": "Advokatska kancelarija Nataša Tica nudi stručne pravne usluge iz oblasti porodičnog prava, poslovnog prava i nekretnina. Personalizovana pravna podrška u Banja Luci.",
+    "schemaDescription": "Stručne pravne usluge iz oblasti porodičnog prava, poslovnog prava i nekretnina. Personalizovana pravna podrška u Banja Luci.",
+    "keywords": "advokat, porodično pravo, poslovno pravo, nekretnine"
+  }
 }

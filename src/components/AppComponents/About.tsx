@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
 import aboutImg from '/images/new/img1.jpg';
@@ -10,10 +9,7 @@ const About: React.FC = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
+
 
       <section className="about-area ptb-100">
         <div className="container">

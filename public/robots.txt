@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.natasaticalawoffice.com
+
+# Sitemaps
+Sitemap: https://www.natasaticalawoffice.com/sitemap.xml

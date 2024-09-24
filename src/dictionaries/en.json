@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "Law office",
-        "law_office_description":"Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests."
+        "law_office_description": "Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests."
     },
     "Menu": {
         "home": "Home",
@@ -9,7 +9,7 @@
         "publications": "Publications",
         "partners": "Partner Law offices",
         "contact": "Contact",
-        "more_details":"More details" 
+        "more_details": "More details"
     },
     "Services": {
         "aboutLawyer": "About lawyer",
@@ -35,7 +35,7 @@
         "familyLawShortText": "Navigating family matters with compassion and legal proficiency.",
         "laborLaw": "Labor Law",
         "laborLawShortText": "Championing your workplace rights with dedicated legal support.",
-        "more_details":"More details",
+        "more_details": "More details",
         "digital_assets_guide": "Digital Assets in Practice: A Guide for Legal and Natural Persons",
         "virtual_currency_integration": "Integration of Virtual Currencies in Everyday Business",
         "local_government": "Local Government in RS",
@@ -52,16 +52,16 @@
     "About": {
         "about": "About",
         "paragraphs": {
-          "p1": "My education began at the Gymnasium \"Sveti Sava\" in Prijedor, after which I graduated from the Faculty of Law at the University of Banja Luka. I passed the bar exam and the attorney exam, and further qualified as a Certified Data Protection Officer through Mobes Quality.",
-          "p2": "My first work experience was as a volunteer at the Agency for Economic Development \"PREDA-PD\" in Prijedor, where I worked on project implementation. I then worked as an associate in a notary office in Prijedor, where I handled various types of contracts, inheritance proceedings, and worked in commercial law, including the establishment of companies, status changes, and amendments to founding acts.",
-          "p3": "After that, I spent several months as an intern at Obsidian Media in Banja Luka, where I worked on aligning websites with EU legal regulations and the company's internal rules. From December 2020 to November 2021, I worked as a legal consultant at the international company Molson Coors BH d.o.o. in Banja Luka, where I was responsible for preparing and drafting contracts, making decisions, preparing internal acts, and resolving legal issues related to GDPR regulations and marketing crisis situations.",
-          "p4": "From May 2022 to January 2024, I worked as a senior associate in a notary office in Banja Luka, where I continued to handle contracts and other notary work. From February 2024 to June 2024, I was employed as a graduate lawyer at the company \"MB Real Estate and Consulting\" d.o.o. in Banja Luka. Concurrently, from February 2023 to May 2024, I was a legal advisor for startups and digital assets, working on issues in the field of IT law.",
-          "p5": "With extensive experience in a notary office, where I founded companies, handled their status changes and amendments to founding acts, as well as work in an international corporation and as a legal advisor to startups and small companies, I have developed an excellent profile as a corporate lawyer. I am familiar with all the problems of companies, from their establishment, start of operations, to development.",
-          "p6": "Additionally, I have been a lecturer and panelist at several conferences and professional workshops, such as:",
-          "listItem1": "\"Digital Assets in Practice: A Guide for Legal and Physical Entities\" at the Chamber of Commerce of the Republic of Srpska",
-          "listItem2": "\"Integration of Virtual Currencies in Everyday Business\" at Jahorina",
-          "listItem3": "\"Local Self-Government in RS\" at the Faculty of Law, University of Banja Luka",
-          "p7": "I am also a co-author of the Handbook for the Implementation of Risk Prevention Measures for Money Laundering and Terrorist Financing through Virtual Currencies."
+            "p1": "My education began at the Gymnasium \"Sveti Sava\" in Prijedor, after which I graduated from the Faculty of Law at the University of Banja Luka. I passed the bar exam and the attorney exam, and further qualified as a Certified Data Protection Officer through Mobes Quality.",
+            "p2": "My first work experience was as a volunteer at the Agency for Economic Development \"PREDA-PD\" in Prijedor, where I worked on project implementation. I then worked as an associate in a notary office in Prijedor, where I handled various types of contracts, inheritance proceedings, and worked in commercial law, including the establishment of companies, status changes, and amendments to founding acts.",
+            "p3": "After that, I spent several months as an intern at Obsidian Media in Banja Luka, where I worked on aligning websites with EU legal regulations and the company's internal rules. From December 2020 to November 2021, I worked as a legal consultant at the international company Molson Coors BH d.o.o. in Banja Luka, where I was responsible for preparing and drafting contracts, making decisions, preparing internal acts, and resolving legal issues related to GDPR regulations and marketing crisis situations.",
+            "p4": "From May 2022 to January 2024, I worked as a senior associate in a notary office in Banja Luka, where I continued to handle contracts and other notary work. From February 2024 to June 2024, I was employed as a graduate lawyer at the company \"MB Real Estate and Consulting\" d.o.o. in Banja Luka. Concurrently, from February 2023 to May 2024, I was a legal advisor for startups and digital assets, working on issues in the field of IT law.",
+            "p5": "With extensive experience in a notary office, where I founded companies, handled their status changes and amendments to founding acts, as well as work in an international corporation and as a legal advisor to startups and small companies, I have developed an excellent profile as a corporate lawyer. I am familiar with all the problems of companies, from their establishment, start of operations, to development.",
+            "p6": "Additionally, I have been a lecturer and panelist at several conferences and professional workshops, such as:",
+            "listItem1": "\"Digital Assets in Practice: A Guide for Legal and Physical Entities\" at the Chamber of Commerce of the Republic of Srpska",
+            "listItem2": "\"Integration of Virtual Currencies in Everyday Business\" at Jahorina",
+            "listItem3": "\"Local Self-Government in RS\" at the Faculty of Law, University of Banja Luka",
+            "p7": "I am also a co-author of the Handbook for the Implementation of Risk Prevention Measures for Money Laundering and Terrorist Financing through Virtual Currencies."
         }
     },
     "Clients": {
@@ -87,11 +87,20 @@
         "number": "Phone number",
         "subject": "Subject",
         "message": "Write your message...",
-        "sendMessage": "Send Message"
+        "sendMessage": "Send Message",
+        "emailSentError": "Error during sending",
+        "emailSentSuccess": "Email successfully sent",
+        "sending": "Sending"
     },
     "ContactInfo": {
         "mailHere": "Mail Here",
         "visitHere": "Visit Here",
         "callHere": "Call Here"
-      }
+    },
+    "Layout": {
+        "title": "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
+        "description": "Law Office Nataša Tica offers expert legal services in family law, business law, and real estate law. Personalized legal support in Banja Luka.",
+        "schemaDescription": "Expert legal services in family law, business law, and real estate law. Providing personalized legal support in Banja Luka.",
+        "keywords": "lawyer, family law, business law, real estate"
+    }
 }
