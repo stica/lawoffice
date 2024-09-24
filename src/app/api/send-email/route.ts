@@ -17,17 +17,17 @@ export async function POST(request: NextRequest) {
     debug: true,
     logger:true,
     auth: {
-      user: 'natasa.tica@natasaticalawoffice.com', // Sender email from environment variables
-      pass: 'natasasrdjan14', // Sender email password from environment variables
+      user: process.env.EMAIL_USER, // Sender email from environment variables
+      pass: process.env.EMAIL_PASS, // Sender email password from environment variables
     },
   });
 
   try {
     // Send the email
     await transporter.sendMail({
-      from: 'natasa.tica@natasaticalawoffice.com', // Use the email from the form as the sender
-      to: 'natasa.tica@natasaticalawoffice.com', // Receiver email
-      replyTo:email,
+      from: process.env.EMAIL_USER, // Use the email from the form as the sender
+      to: process.env.EMAIL_USER, // Receiver email
+      replyTo: email,
       sender: email,
       subject: `New Message from ${name} - ${subject}`, // Subject of the email
       text: `You have received a new message from your contact form:\n\nName: ${name}\nEmail: ${email}\nPhone: ${number}\nSubject: ${subject}\nMessage: ${message}`,
