@@ -31,32 +31,17 @@ import "../../../public/styles/responsive.css";
 import "./../globals.css";
 
 import type { Metadata } from "next";
-import { Inter, Saira, Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import AosAnimation from "@/components/Layouts/AosAnimation";
 import GoTop from "@/components/Layouts/GoTop";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { useTranslations } from "next-intl";
 
-// For all body text font
-const inter = Inter({
+const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-poppins",
   display: "swap",
-});
-
-// For all heading font
-const saira = Saira({
-  subsets: ["latin"],
-  variable: "--font-saira",
-  display: "swap",
-});
-
-const roboto = Roboto({
-  weight: ['100', '300', '400', '500', '700', '900'], // Define the font weights you need
-  subsets: ["latin"],
-  variable: "--font-roboto", // Define a custom CSS variable for Roboto
-  display: "swap", // Optional, to improve loading performance
 });
 
 export const metadata: Metadata = {
@@ -110,7 +95,7 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
           `
         }} />
         </head>
-        <body className={roboto.className}>
+        <body className={poppins.className}>
           {children}
           <AosAnimation />
           <GoTop />

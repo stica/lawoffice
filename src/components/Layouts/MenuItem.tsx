@@ -44,7 +44,9 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, link, submenu }) => {
 
   return (
     <li className="nav-item" key={label}>
-      <Link href={link} className="nav-link">
+      <Link href={link}
+          className={`nav-link ${label.toLowerCase() === 'contact' || label.toLowerCase() === 'kontakt' ? 'contact-class-name' : ''}`}
+          >
         {label}
       </Link>
     </li>

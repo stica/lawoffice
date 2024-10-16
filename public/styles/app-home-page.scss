@@ -232,7 +232,7 @@
         height: 585px;
         position: absolute;
         border-radius: 50%;
-        background-color: #3a2d36;
+        background-color: #513D48;
 
     }
 }
@@ -514,7 +514,7 @@
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: var(--gradientColor);
-                border: 1px solid #E2CEC5;
+                border: 1px solid #f7f0e8;
             }
         } 
     }
@@ -594,7 +594,7 @@
         z-index: -1;
         bottom: 0;
         border-radius: 5px;
-        background-color: #3a2d36;
+        background-color: #513D48;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .sub-title {
@@ -671,7 +671,7 @@
         }
         .tag {
             
-            background-color: #3a2d36;
+            background-color: #513D48;
             color: var(--whiteColor);
             position: absolute;
             border-radius: 2px;

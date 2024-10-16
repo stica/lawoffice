@@ -31,7 +31,7 @@ const ContactInfo: React.FC = () => {
                 </div>
                 <h3>{t('visitHere')}</h3>
                 <p>
-                  Novice Cerovića 32, <br /> 78000 Banja Luka
+                  Novice Cerovića 32, 78000 Banja Luka
                 </p>
               </div>
             </div>

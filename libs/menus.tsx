@@ -10,6 +10,10 @@ export function menus(t: any): {
 
 	return [
 		{
+			label: t("home"),
+			link: `/${currentCode}/`,
+		},
+		{
 			label: t("about"),
 			link: `/${currentCode}/about/`,
 		},

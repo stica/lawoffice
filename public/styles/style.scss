@@ -45,8 +45,8 @@ This files table contents are outlined below >>>>>
 
 // Global Variable
 
-$main-color: #E2CEC5;
-$gradient-color: #E2CEC5;
+$main-color: #f7f0e8;
+$gradient-color: #f7f0e8;
 $font-size: 15px;
 $black-color: #18181b;
 $paragraph-color: #646464;
@@ -140,14 +140,14 @@ button {
     background-attachment: fixed;
 }
 .bg-fcfbfb {
-    background-color: #3a2d36;
+    background-color: #513D48;
 
     .section-title {
         h2 {
-            color: #E2CEC5;
+            color: #f7f0e8;
         }
         p {
-            color: #E2CEC5;
+            color: #f7f0e8;
         }
     }
 }
@@ -205,7 +205,7 @@ a {
 }
 .btn-primary {
     color: $white-color;
-    background-color: #2f292d;
+    background-color: #513D48;
     border: 1px solid $main-color;
 
     &::before {
@@ -218,7 +218,7 @@ a {
         margin: 0 auto;
         width: 100%;
         height: 100%;
-        background-color: #2f292d;
+        background-color: #513D48;
         z-index: -1;
         transition: $transition;
     }
@@ -422,7 +422,7 @@ Navbar CSS
                     &::before {
                         bottom: -5px;
                         width: 0;
-                        background-color: #3a2d36;
+                        background-color: #513D48;
                         
                         height: 3px;
                         transition: $transition;
@@ -722,7 +722,7 @@ Navbar CSS
 // Navbar toggler 
 .navbar-toggler {
     border: none;
-    background: #3a2d36 !important;
+    background: #f7f0e8 !important;
     padding: 10px;
     border-radius: 0;
 
@@ -1109,7 +1109,7 @@ Main Banner CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #E2CEC5;
+                border: 1px solid #f7f0e8;
             }
         }
     }
@@ -1287,7 +1287,7 @@ Main Banner CSS
                     transition: $transition !important;
                 }
                 .btn-primary {
-                    background-color: #2f292d;
+                    background-color: #513D48;
 
                     &:hover, &:focus {
                         border-color: $white-color;
@@ -1803,7 +1803,7 @@ Case Studies CSS
         font-size: 14px;
 
         &::before {
-            background-color: #2f292d;
+            background-color: #513D48;
         }
         &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
             color: $white-color;
@@ -2017,7 +2017,7 @@ Case Studies CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #E2CEC5;
+                border: 1px solid #f7f0e8;
             }
         }
     }
@@ -2284,22 +2284,22 @@ Services CSS
 }
 
 .bg-13c4a1 {
-    background-color: #3a2d36;
+    background-color: #513D48;
 }
 .bg-6610f2 {
-    background-color: #3a2d36;
+    background-color: #513D48;
 }
 .bg-ffb700 {
-    background-color: #3a2d36;
+    background-color: #513D48;
 }
 .bg-fc3549 {
-    background-color: #3a2d36;
+    background-color: #513D48;
 }
 .bg-00d280 {
-    background-color: #3a2d36;
+    background-color: #513D48;
 }
 .bg-ff612f {
-    background-color: #3a2d36;
+    background-color: #513D48;
 }
 /* Service card one */
 .service-card-one {
@@ -2344,20 +2344,21 @@ Services CSS
 
             i {
                 background-color: $white-color !important;
-                color: $main-color;
+                color: #513D48!important;
+                border: 1px solid #513D48!important;
             }
 
             h3 {
-                color: #3a2d36;
+                color: #513D48;
                 a {
-                    color: #3a2d36;
+                    color: #513D48;
                     &:hover {
                         text-decoration: underline;
                     }
                 }
             }
             p {
-                color: #3a2d36;
+                color: #513D48;
             }
         }
     }
@@ -2646,7 +2647,7 @@ Feedback CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #E2CEC5;
+                border: 1px solid #f7f0e8;
             }
         }
     }
@@ -3174,7 +3175,7 @@ Pricing CSS
         }
         .btn-primary {
             &::after, &::before {
-                background-color: #2f292d;
+                background-color: #513D48;
             }
         }
     }
@@ -3529,7 +3530,7 @@ CTA CSS
                 font-size: 16px;
 
                 &::before {
-                    background-color: #2f292d;
+                    background-color: #513D48;
                 }
                 &:hover, &:focus {
                     color: $white-color;
@@ -4204,7 +4205,7 @@ Blog CSS
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #E2CEC5;
+                border: 1px solid #f7f0e8;
             }
         }
     }
@@ -4858,28 +4859,7 @@ Contact CSS
         }
     }
 }
-.contact-form {
-    background-color: $white-color;
-    text-align: center;
 
-    .contact-form-box {
-        padding: 30px;
-        border: 1px solid #eee;
-    }
-
-    .contact-title {
-        margin-bottom: 30px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        h2 {
-            font: {
-                size: 36px;
-            }
-            margin-bottom: 15px;
-        }
-    }
-}
 textarea.form-control {
     height: auto !important;
 }
@@ -5625,31 +5605,31 @@ FAQ CSS
 Footer CSS
 =================================================*/
 .footer-area {
-    background-color: #3a2d36;
+    background-color: #513D48;
     padding-top: 100px;
     position: relative;
     z-index: 1;
     p {
-        color: #E2CEC5;
+        color: #f7f0e8;
     }
     a {
-        color: #E2CEC5;
+        color: #f7f0e8;
     }
 
     h3 {
-        color: #E2CEC5;
+        color: #f7f0e8;
     }
 
     .single-footer-widget ul.list li a {
-        color: #E2CEC5;
+        color: #f7f0e8;
     }
 
     li {
-        color: #E2CEC5;
+        color: #f7f0e8;
     }
 
     .single-footer-widget ul.get-in-touch li a {
-        color: #E2CEC5;
+        color: #f7f0e8;
     }
 
     .logo {
@@ -6047,7 +6027,7 @@ span.new {
             opacity: 1;
             &.swiper-pagination-bullet-active {
                 background: $gradient-color;
-                border: 1px solid #E2CEC5;
+                border: 1px solid #f7f0e8;
             }
         }
     }
@@ -6084,22 +6064,38 @@ span.new {
 
     .main-banner-content {
         h1 {
-            color: #E2CEC5!important;
+            color: #f7f0e8!important;
         }
 
         p {
-            color: #E2CEC5!important;
+            color: #f7f0e8!important;
         }
     }
 }
 
 .navbar-area.navbar-style-2 {
     padding: 0;
+    width: 62%;
+    left: 0;
+    margin-left: 38%;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    background-color: #f7f0e8;
+
+    &.is-sticky {
+        padding-top: 0;
+        padding-right: 0; 
+        margin-left: 0;
+        width: 100%;
+        padding-top: 0;
+        padding-right: 0;
+    }
 
     .navbar-light{
-        background-color: #3a2d36;
-        color: #fafbfe;
-        opacity: 70%;
+        background-color: #f7f0e8;
+        color: #513D48;
+        // opacity: 70%;
         padding: 0;
 
         img{
@@ -6111,15 +6107,27 @@ span.new {
             .navbar-collapse {
                 .navbar-nav {
                     .nav-link {
-                        color: #E2CEC5!important;
+                        color: #4d3f49!important;
                         text-transform: uppercase;
+                        height: 50px;
+                        padding-top: 17px;
+
                         &:hover {
                             ::before {
                             }
                         }
 
                         a::before {
-                            background-color: #3a2d36;
+                            background-color: #513D48;
+                        }
+
+                        &.contact-class-name {
+                            color:#f7f0e8!important;
+                            background-color: #4d3f49;
+                            height: 50px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            border-radius: 5px;
                         }
                     }
                 }
@@ -6128,59 +6136,35 @@ span.new {
     }
 }
 
-.about-me {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    padding: 10px;
-    background-color: #fafbfe;
-    color: #3a2d36;
-    flex-wrap: wrap-reverse;
-    text-align: center;
+.partner-area {
+    background-color: #f7f0e8;
 
-    .about-me-controls {
-        height: 250px;
-        min-width: 500px ;
-        height: 100%;
-        margin: auto;
-        margin-top: 30px;
+    h2 {
+        color: #513D48;
     }
 
-    .about-me-image {
-        margin: auto;
-        min-width: 300px;
-        height: 250px;
+    p {
+        color: #513D48;
+    }
 
-        img {
-            height: 100%;
-            width: auto;
-            border-radius: 300px;
-            margin: auto;
+    .d-table-cell {
+        &:hover {
+            img {
+                width: 72%;
+            }
         }
     }
 }
 
-.partner-area {
-    background-color: #fafbfe;
-
-    h2 {
-        color: #3a2d36;
-    }
-
-    p {
-        color: #3a2d36;
-    }
-}
-
 .single-footer-widget ul.get-in-touch li i {
-    color: #3a2d36;
+    color: #513D48;
 }
 
 .copyright-area {
-    background-color: #3a2d36;
+    background-color: transparent;
 
-    p{
-        color: #E2CEC5;
+    p {
+        color: #f7f0e8;
     }
 }
 
@@ -6198,20 +6182,20 @@ span.new {
         flex-wrap: wrap;
 
         .about-lawyer-content {
-            min-width: 400px;
+            min-width: 300px;
             width: 700px;
             margin: auto;
             margin-top: 20px;
 
             .section-title {
                 h2 {
-                    color: #E2CEC5;
+                    color: #f7f0e8;
                 }
             }
 
             .container {
                 p, li {
-                    color: #E2CEC5; 
+                    color: #f7f0e8; 
                     font-size: 18px;
                 }
             }
@@ -6221,14 +6205,29 @@ span.new {
             min-width: 300px;
             width: 500px;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 0;
+            @media (max-width: 1367px) {
+                width: 350px;  /* Reduce size to 350px for screens smaller than 768px */
+              }
+            .responsive-margin {
+                margin-top: 0;
+                margin-bottom: 50px;
+              }
+              
+              /* Styles for larger screens */
+              @media (min-width: 768px) {
+                .responsive-margin {
+                  margin-top: 140px;
+                  margin-bottom: 0;
+                }
+              }
         }
     }
 }
 
 .lng-switcher {
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 10px;
 
     .lng-switcher-flag {
@@ -6264,5 +6263,223 @@ ul {
     .btn {
         margin: auto;
         margin-top: 20px;
+    }
+}
+
+.ntl-main-page {
+    display: flex;
+    flex-direction: row;
+    // height: 100vh;
+    flex-wrap: wrap;
+
+    .ntl-main-page-left {
+        min-width: 380px;
+        flex: 1;
+        height: 100vh;
+
+        .svg1 {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            fill: #f7f0e8;
+        }
+    }
+
+    .ntl-main-page-right {
+        flex: 1 1 600px;
+        height: 100%;
+        background-color: #f7f0e8;
+        height: 100vh;
+        min-width: 300px;
+        position: relative;
+
+        .svg2 {
+            position: absolute;
+            right: -200px;
+            top: -20%;
+            height: 140%;
+            opacity: 15%;
+        }
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+        margin-top: 20%;
+        color: #513D48;
+        flex-wrap: wrap-reverse;
+        text-align: left;
+    
+        .about-me-controls {
+            min-width: 300px ;
+            height: 100%;
+            margin-left: 70px;
+            margin-top: 30px;
+
+            .lawyer-moto {
+                font-size: 45px;
+                font-weight: 600;
+                color: #513D48;
+            }
+
+            .btn-primary {
+                margin-top: 25px;
+                // height: 60px;
+                width: 250px;
+
+                &:hover {
+                    color: #513D48;
+                    border-color: #513D48;
+                }
+            }
+        }
+    }
+}
+
+.quotes {
+    display: flex;
+    flex-direction: row;
+    background-color: #513D48;
+    flex-wrap: wrap;
+
+    .quote {
+        flex: 1;
+        text-align: center;
+        font-style: italic;
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #f7f0e8;
+        padding: 1em;
+        height: 100%;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        min-width: 300px;
+        
+        p {
+            font-size: 33px;
+            color: #f7f0e8;
+        }
+    }
+}
+
+.section-title-new
+{
+    background-color: #f7f0e8!important;
+    height: 100%;
+    width: 100%;
+
+    h1 {
+        color: #513D48;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 55px;
+    }
+}
+
+.services-container-wrapper {
+    background-color: #f7f0e8;
+
+    .services-container {
+        background-color: #513D48;
+        width: 90%!important;
+        margin: auto;
+        padding: 50px;
+    }
+
+}
+
+.contact-form {
+    background-color: #513D48;
+    text-align: center;
+    margin-bottom: 50px;
+
+    .contact-form-box {
+        padding: 30px;
+
+        input, textarea {
+            background-color: #f7f0e8;
+            color: #513D48;
+
+        }
+    }
+
+    .contact-title {
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+            font: {
+                size: 36px;
+            }
+            margin-bottom: 15px;
+            color: #f7f0e8;
+        }
+    }
+
+    .btn-primary {
+        color: #f7f0e8;
+        border-color: #f7f0e8;
+    }
+}
+
+.contact-info-box {
+    background-color: #f7f0e8;
+
+    &:hover {
+        .icon {
+            color: #513D48;
+            background-color: #f7f0e8;
+    
+            &:hover {
+                color: #513D48;
+                border: #513D48 1px solid;
+            }
+        }  
+    }
+    .icon {
+        color: #513D48;
+        background-color: #f7f0e8;
+
+        &:hover {
+            color: #513D48;
+            border: #513D48 1px solid;
+        }
+    }
+
+}
+
+.case-studies-area {
+    background-color: #f7f0e8;
+
+    .container {
+        margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+
+        .custom-btn {
+            background-color: #f7f0e8;
+            color: #513D48 !important;
+        }
+
+        .link-title, .link-text {
+            color: #f7f0e8;
+        }
+    }
+}
+
+.container-fluid {
+    .navbar-toggler {
+        background-color: #513D48!important;
+
+        .icon-bar {
+            background-color: #f7f0e8;
+
+        }
     }
 }

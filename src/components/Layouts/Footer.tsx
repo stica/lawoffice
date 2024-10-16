@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const pathname = usePathname();
 
-	const currentCode = pathname.split("/")[1] || "en";
+  const currentCode = pathname.split("/")[1] || "en";
 
   const path = `/${currentCode}`;
   const abouthPath = `/${currentCode}/about`;
@@ -24,25 +24,33 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="footer-area">
-        <div className="container">
+      <footer className="footer-area" style={{
+        backgroundImage: `url(/images/new/footer.jpg)`,
+        backgroundSize: 'cover',     // Keep the image size as is
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center', // Center the image within the container
+        width: '100%',                // Ensure the container is full width
+        height: '100%'
+      }}>
+
+        <div className="container" >
           <div className="row justify-content-center">
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="100"
               >
                 <div className="logo">
-                  <Link href={path}>
+                  {/* <Link href={path}>
                     <Image 
                       src={logo}
                       alt="Logo" 
                       width={150}
                       height={40}
                     />
-                  </Link>
+                  </Link> */}
                 </div>
 
                 <ul className="social-links">
@@ -72,10 +80,10 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="col-lg-3 col-md-6 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget ml-4 pl-5"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="200"
               >
                 <h3>{t('explore')}</h3>
@@ -112,10 +120,10 @@ const Footer: React.FC = () => {
 
 
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="400"
               >
                 <h3>{t('getInTouch')}</h3>
@@ -126,7 +134,7 @@ const Footer: React.FC = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-headset"></i>
-                    <a href="tel:+387 65 231-276">{t('phone')}</a> 
+                    <a href="tel:+387 65 231-276">{t('phone')}</a>
                   </li>
                   <li>
                     <i className="fa-solid fa-envelope"></i>
@@ -136,15 +144,19 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
+          <p className="copyright-area">
+              Copyright &copy; {currentYear} Law office Nataša Tica
+            </p>
         </div>
 
-        <div className="copyright-area">
+        {/* <div className="copyright-area">
           <div className="container">
             <p>
               Copyright &copy; {currentYear} Law office Nataša Tica
             </p>
           </div>
-        </div>
+        </div> */}
+
       </footer>
     </>
   );

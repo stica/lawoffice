@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-import aboutImg from "../../../public/images/new/img1.jpg";
+import aboutImg from "../../../public/images/new/DrobnjakLegal.jpg";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ const PartnersAbout: React.FC = () => {
               <Image
                 src={aboutImg}
                 alt="image"
-                className="rounded-10"
+                className="rounded-10 responsive-margin"
                 width={500}
                 height={750}
               />

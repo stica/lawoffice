@@ -66,11 +66,11 @@ const OurWorks: React.FC = () => {
 
                     <div className="content">
                       <span>
-                        <Link target="_blank" href={value.viewDetails} rel="noopener noreferrer">{value.category}</Link>
+                        <Link className="link-title" target="_blank" href={value.viewDetails} rel="noopener noreferrer">{value.category}</Link>
                       </span>
 
                       <h3>
-                        <Link href={value.viewDetails}>{value.title}</Link>
+                        <Link className="link-text" href={value.viewDetails}>{value.title}</Link>
                       </h3>
 
                       <Link target="_blank" href={value.viewDetails} className="custom-btn">

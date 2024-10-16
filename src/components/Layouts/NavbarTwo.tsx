@@ -1,14 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { menus } from "../../../libs/menus";
 
-import logo from "../../../public/images/new/LOGO2.svg";
-import whiteLogo from "../../../public/images/new/logo5.jpg";
 import MenuItem from "./MenuItem";
-import MegaMenu from "./MegaMenu";
 import LangSwitcher from "../Common/LngSwitcher";
 import { useTranslations } from "next-intl";
 
@@ -44,7 +39,7 @@ const NavbarTwo: React.FC = () => {
       <div id="navbar" className="navbar-area navbar-style-2">
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container-fluid">
-            <Link href="/" className="navbar-brand">
+            {/* <Link href="/" className="navbar-brand">
             <div className="logo-wrapper">
               <Image
                 src={whiteLogo}
@@ -55,7 +50,7 @@ const NavbarTwo: React.FC = () => {
               />
             </div>
 
-            </Link>
+            </Link> */}
 
             {/* Toggle navigation */}
             <button
@@ -75,15 +70,16 @@ const NavbarTwo: React.FC = () => {
 
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav">
-                <MegaMenu />
+                {/* <MegaMenu /> */}
 
                 {menus(t).map((menuItem) => (
                   <MenuItem key={menuItem.label} {...menuItem} />
                 ))}
+                            <LangSwitcher></LangSwitcher>
+
               </ul>
             </div>
 
-            <LangSwitcher></LangSwitcher>
           </div>
         </nav>
       </div>

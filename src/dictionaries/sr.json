@@ -1,19 +1,25 @@
 {
   "Home": {
     "title": "Advokatska kancelarija",
-    "law_office_description": "Doživite budućnost pravne prakse u našoj modernoj advokatskoj kancelariji, gde se tradicija i tehnologija ujedinjuju kako bi vam pružile najbolju uslugu."
+    "law_office_description": "Doživite budućnost pravne prakse u našoj modernoj advokatskoj kancelariji, gde se tradicija i tehnologija ujedinjuju kako bi vam pružile najbolju uslugu.",
+    "aboutLawyer": "O advokatu",
+    "lawyerMoto1": "Naša stručnost,",
+    "lawyerMoto2": "vaša sigurnost u poslovanju!",
+    "moreAboutLawyer": "Više o advokatu",
+    "lawyerMoto": "Naša stručnost, vaša sigurnost u poslovanju!"
   },
   "Menu": {
     "home": "Početna",
     "about": "O advokatu",
     "publications": "Publikacije",
-    "partners": "Partnerske kancelarije",
+    "partners": "Partneri",
     "contact": "Kontakt",
     "more_details": "Više detalja"
   },
   "Services": {
     "aboutLawyer": "O advokatu",
-    "lawyerMoto": "Naša stručnost, vaša sigurnost u poslovanju!",
+    "lawyerMoto1": "Naša stručnost,",
+    "lawyerMoto2": "vaša sigurnost u poslovanju!",
     "moreAboutLawyer": "Više o advokatu",
     "ourServices": "Naše usluge",
     "servicesDescription": "Od obezbeđivanja vaših transakcija nekretninama i zaštite vaše digitalne privatnosti do navigacije kroz složenost digitalne imovine, IT prava, obaveza i poslovnih poduhvata, naša stručnost osigurava da su vaši poslovni i lični poslovi zaštićeni sa preciznošću i poverenjem.",

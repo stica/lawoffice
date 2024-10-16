@@ -97,34 +97,38 @@ const Services: React.FC = () => {
 
   const pathname = usePathname();
 
-	const currentCode = pathname.split("/")[1] || "en";
+  const currentCode = pathname.split("/")[1] || "en";
 
   const aboutPath = `/${currentCode}/about`
   return (
     <>
-      <div className="about-me">
-        <div className="about-me-controls">
-          <h2>{t("aboutLawyer")}</h2>
-          <p className="lawyer-moto">{t("lawyerMoto")}</p>
-          <Link href={aboutPath} className="btn btn-primary">
-            {t("moreAboutLawyer")}
-          </Link>
+      <div className="quotes">
+        <div className="quote quote1">
+          <p>
+            "Iustitia est constans et perpetua voluntas ius suum cuique tribuendi."
+          </p>
         </div>
-        <div className="about-me-image">
-          <Image
-            src="/images/new/img1.jpg"
-            alt="Animate image"
-            width={600}
-            height={600}
-          />
+        <div className="quote quote2">
+          <p>
+            "Ignorantia iuris nocet."
+          </p>
+        </div>
+        <div className="quote quote3">
+          <p>
+            "Nemo iudex in causa sua."
+          </p>
         </div>
       </div>
 
-      <div className="bg-fcfbfb pt-100 pb-70">
-        <div className="container">
-          <div className="section-title">
+      <div className="section-title-new">
+        <h1>{t("ourServices")}</h1>
+      </div>
+
+      <div className="bg-fcfbfb pt-100 pb-70 services-container-wrapper">
+        <div className="services-container">
+          {/* <div className="section-title">
             <h2>{t("ourServices")}</h2>
-          </div>
+          </div> */}
 
           <div className="row justify-content-center">
             {servicesData &&

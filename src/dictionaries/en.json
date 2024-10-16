@@ -1,19 +1,23 @@
 {
     "Home": {
         "title": "Law office",
-        "law_office_description": "Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests."
+        "law_office_description": "Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests.",
+        "aboutLawyer": "About lawyer",
+        "lawyerMoto1": "Our expertise,",
+        "lawyerMoto2": "your security in business!",
+        "lawyerMoto": "Our expertise, your security in business!",
+        "moreAboutLawyer": "More about lawyer"
     },
     "Menu": {
         "home": "Home",
         "about": "About",
         "publications": "Publications",
-        "partners": "Partner Law offices",
+        "partners": "Partners",
         "contact": "Contact",
         "more_details": "More details"
     },
     "Services": {
         "aboutLawyer": "About lawyer",
-        "lawyerMoto": "Our expertise, your security in business!",
         "moreAboutLawyer": "More about lawyer",
         "ourServices": "Our Services",
         "servicesDescription": "From securing your property transactions and protecting your digital privacy to navigating the complexities of digital assets, IT law, obligations, and commercial ventures, our expertise ensures your business and personal affairs are safeguarded with precision and confidence.",
