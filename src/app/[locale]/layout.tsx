@@ -66,6 +66,8 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
         <title>{t('title')}</title>
         <meta name="description" content={t('description')} />
         <meta name="keywords" content={t('keywords')} />
+        <meta property="og:description" content={t('description')} />
+        <meta property="og:image" content="/images/new/logopng.png" />
 
         {/* hreflang for English */}
         <link rel="alternate" href="https://www.natasaticalawoffice.com/en" hrefLang="en" />
