@@ -34,6 +34,9 @@ const PartnersAbout: React.FC = () => {
 
               <div className="container">
                 <p>
+                  {t("about0")}
+                </p>
+                <p>
                   {t("about1")}
                 </p>
                 <p>

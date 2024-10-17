@@ -76,13 +76,6 @@ const PartnerTwo: React.FC = () => {
         src="/images/new/sign-mockup.jpg"
         alt="Description of SVG"/>
 
-      {/* <img
-        src="/images/new/sign-mockup.jpg"
-        alt="Description of SVG"
-        style={{
-          filter: `invert(0%) sepia(98%) saturate(0%) hue-rotate(210deg) brightness(96%) contrast(100%)`
-        }}/> */}
-
       <div className="partner-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">

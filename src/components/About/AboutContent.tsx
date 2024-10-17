@@ -32,17 +32,47 @@ const AboutContent: React.FC = () => {
 
               <div className="container">
                 <p>{t('paragraphs.p1')}</p>
-                <p>{t('paragraphs.p2')}</p>
-                <p>{t('paragraphs.p3')}</p>
-                <p>{t('paragraphs.p4')}</p>
-                <p>{t('paragraphs.p5')}</p>
-                <p>{t('paragraphs.p6')}</p>
+
+                <p>{t('paragraphs.t1')}:</p>
                 <ul>
-                  <li>{t('paragraphs.listItem1')}</li>
-                  <li>{t('paragraphs.listItem2')}</li>
-                  <li>{t('paragraphs.listItem3')}</li>
+                  <li>{t('paragraphs.p2')}</li>
+                  <li>{t('paragraphs.p3')}</li>
                 </ul>
-                <p>{t('paragraphs.p7')}</p>
+
+                <p>{t('paragraphs.t2')}:</p>
+                <ul>
+                  <li>{t('paragraphs.p4')}</li>
+                </ul>
+
+                <p>{t('paragraphs.t3')}:</p>
+                <ul>
+                  <li>{t('paragraphs.r1')}</li>
+                  <li>{t('paragraphs.r2')}</li>
+                  <li>{t('paragraphs.r3')}</li>
+                  <li>{t('paragraphs.r4')}</li>
+                  <li>{t('paragraphs.r5')}</li>
+                  <li>{t('paragraphs.r6')}</li>
+                </ul>
+
+                <p>{t('paragraphs.p5')}</p>
+                <ul>
+                  <li>{t('paragraphs.pr1')}</li>
+                  <li>{t('paragraphs.pr2')}</li>
+                  <li>{t('paragraphs.pr3')}</li>
+                </ul>
+
+                <p>{t('paragraphs.p6')}</p>
+
+                <p>{t('paragraphs.t4')}</p>
+                <ul>
+                  <li>{t('paragraphs.c1')}</li>
+                </ul>
+
+                <p>{t('paragraphs.t5')}</p>
+                <ul>
+                  <li>{t('paragraphs.l1')}</li>
+                </ul>
+
               </div>
 
             </div>
