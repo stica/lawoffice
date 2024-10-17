@@ -17,7 +17,7 @@ const MainBanner: React.FC = () => {
       <div className="ntl-main-page">
 
         <div
-          className="hero-banner it-banner overly bg-fixed ntl-main-page-left"
+          className="hero-banner it-banner overly ntl-main-page-left"
           style={{
             backgroundImage: `url(/images/banjaluka.jpg)`
           }}
