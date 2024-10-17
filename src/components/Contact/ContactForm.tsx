@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
     setLoading(true);
   
     try {
-      const res = await fetch("http://localhost:3000/api/send-email", {
+      const res = await fetch("https://www.natasaticalawoffice.com/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
