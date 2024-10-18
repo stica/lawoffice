@@ -22,16 +22,16 @@ function ourWorksData(t: any): {
     },
     {
       image: "/images/publications/p4.jpg",
-      title: t('virtual_currency_integration'),
-      category: t('seminar'),
-      viewDetails: "https://cryptoadria.com/portal/2024/04/30/odrzana-radionica-o-integraciji-virtuelnih-valuta-u-svakodnevnom-poslovanju/",
+      title: t('local_government'),
+      category: t('law_faculty'),
+      viewDetails: "https://komorars.ba/bfc-see-primjeri-dobre-prakse-predstavljeni-na-5-konferenciji-lokalna-samouprava-u-republici-srpskoj/",
       aosDelay: "200",
     },
     {
       image: "/images/publications/p2.jpg",
-      title: t('local_government'),
-      category: t('law_faculty'),
-      viewDetails: "/portfolio/portfolio-details/",
+      title: t('virtual_currency_integration'),
+      category: t('seminar'),
+      viewDetails: "https://cryptoadria.com/portal/2024/04/30/odrzana-radionica-o-integraciji-virtuelnih-valuta-u-svakodnevnom-poslovanju/",
       aosDelay: "300",
     },
     {
