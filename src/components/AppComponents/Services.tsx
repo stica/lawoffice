@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import CommertialLawService from "./CommertialLawService";
@@ -82,24 +80,24 @@ function servicesData(t: any): {
   ];
 }
 
-const Services: React.FC = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+const Services: React.FC<{ messages: any }> = ({ messages }) => {
+  // const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const t = useTranslations("Services");
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
+  // const openModal = () => {
+  //   setModalIsOpen(true);
+  // };
 
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+  // const closeModal = () => {
+  //   setModalIsOpen(false);
+  // };
 
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
-  const currentCode = pathname.split("/")[1] || "en";
+  // const currentCode = pathname.split("/")[1] || "en";
 
-  const aboutPath = `/${currentCode}/about`
+  // const aboutPath = `/${currentCode}/about`
   return (
     <>
       <div className="quotes">
@@ -153,9 +151,9 @@ const Services: React.FC = () => {
           </div>
         </div>
       </div>
-      <MyModal isOpen={modalIsOpen} onRequestClose={closeModal}>
+      {/* <MyModal isOpen={modalIsOpen} onRequestClose={closeModal}>
         <CommertialLawService />
-      </MyModal>
+      </MyModal> */}
     </>
   );
 };

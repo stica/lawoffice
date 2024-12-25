@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -67,7 +65,7 @@ const partnersData = [
   },
 ];
 
-const PartnerTwo: React.FC = () => {
+const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
   const t = useTranslations("Clients");
 
   return (

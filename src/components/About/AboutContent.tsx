@@ -1,15 +1,13 @@
-"use client";
-
-import React, { useState } from "react";
+import React  from "react";
 import Image from "next/image";
 
 import aboutImg from "../../../public/images/new/aboutImage.jpg";
 import { useTranslations } from "next-intl";
 
-const AboutContent: React.FC = () => {
+const AboutContent: React.FC<{ messages: any }> = ({ messages }) => {
   const t = useTranslations("About");
 
-  const [toggler, setToggler] = useState(false);
+  // const [toggler, setToggler] = useState(false);
   return (
     <>
       <div className="about-lawyer">

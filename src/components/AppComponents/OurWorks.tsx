@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -44,7 +42,7 @@ function ourWorksData(t: any): {
   ];
 }
 
-const OurWorks: React.FC = () => {
+const OurWorks: React.FC<{ messages: any }> = ({ messages }) => {
   const t = useTranslations("Services");
 
   return (

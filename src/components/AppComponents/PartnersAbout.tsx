@@ -1,14 +1,11 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 import aboutImg from "../../../public/images/new/DrobnjakLegal.jpg";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-const PartnersAbout: React.FC = () => {
-  const [toggler, setToggler] = useState(false);
+const PartnersAbout: React.FC<{ messages: any }> = ({ messages }) => {
 
   const t = useTranslations("Partners");
 

@@ -1,16 +1,19 @@
-"use client";
-
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { headers } from 'next/headers';
 
-const MainBanner: React.FC = () => {
+const MainBanner: React.FC<{ messages: any }> = ({ messages }) => {
   const t = useTranslations("Home");
 
-  const pathname = usePathname();
-  const currentCode = pathname.split("/")[1] || "en";
-  const aboutPath = `/${currentCode}/about`
+  // const headerList = headers();
+  // const pathname = headerList.get("x-current-path");
+
+  // const url = pathname ? pathname.toString() : ''; 
+  // const language = url.split('/')[3] || 'en';
+
+  // const aboutPath = `/${language}/about`
 
   return (
     <>
