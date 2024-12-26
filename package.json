@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run minify-js && npm run minify-css",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "minify-js": "terser src/**/*.js --compress --mangle --output dist/",
+    "minify-css": "csso src/**/*.css --output dist/"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -39,8 +41,10 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-modal": "^3.16.3",
+    "csso-cli": "^4.0.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "terser": "^5.37.0",
     "typescript": "^5"
   }
 }
