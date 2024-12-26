@@ -111,6 +111,7 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
         </div>
       </div>
 
+
       <img
         src="/images/new/image-office.jpg"
         alt="Description of SVG"/>
