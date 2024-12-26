@@ -4,12 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run minify-js && npm run minify-css",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap",
-    "minify-js": "terser src/**/*.js --compress --mangle --output dist/",
-    "minify-css": "csso src/**/*.css --output dist/"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
