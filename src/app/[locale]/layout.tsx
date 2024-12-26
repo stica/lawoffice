@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../public/styles/bootstrap.min.css";
-import "../../../public/styles/animate.min.css";
-import "animate.css";
+// import "../../../public/styles/animate.min.css";
+// import "animate.css";
 import "../../../public/styles/all.min.css";
 import "../../../public/styles/pe-icon-7-stroke.css";
 import "react-accessible-accordion/dist/fancy-example.css";

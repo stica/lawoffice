@@ -13,9 +13,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
-    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
-    "fslightbox-react": "^1.7.6",
     "i18next": "^23.12.7",
     "next": "^14.2.5",
     "next-intl": "^3.17.3",
