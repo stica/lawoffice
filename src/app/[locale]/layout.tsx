@@ -3,7 +3,7 @@ import "../../../public/styles/bootstrap.min.css";
 // import "../../../public/styles/animate.min.css";
 // import "animate.css";
 import "../../../public/styles/all.min.css";
-import "react-accessible-accordion/dist/fancy-example.css";
+// import "react-accessible-accordion/dist/fancy-example.css";
 
 // Global Style
 import "../../../public/styles/style.scss";
