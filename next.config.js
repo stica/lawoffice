@@ -10,6 +10,9 @@ const nextConfig = {
     unoptimized: true,
   },
   swcMinify: true,
+  sassOptions: {
+    outputStyle: 'compressed'
+  }
 }
 
 module.exports = withNextIntl({ ... nextConfig});
