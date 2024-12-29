@@ -1,10 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import CommertialLawService from "./CommertialLawService";
-import MyModal from "../Common/modal";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
 
 function servicesData(t: any): {
   iconName: string,

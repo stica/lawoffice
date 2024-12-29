@@ -7,14 +7,6 @@ import { headers } from 'next/headers';
 const MainBanner: React.FC<{ messages: any }> = ({ messages }) => {
   const t = useTranslations("Home");
 
-  // const headerList = headers();
-  // const pathname = headerList.get("x-current-path");
-
-  // const url = pathname ? pathname.toString() : ''; 
-  // const language = url.split('/')[3] || 'en';
-
-  // const aboutPath = `/${language}/about`
-
   return (
     <>
       <div className="ntl-main-page">
