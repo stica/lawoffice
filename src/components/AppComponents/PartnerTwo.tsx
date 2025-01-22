@@ -71,7 +71,7 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
   return (
     <>
       <img
-        src="/images/new/sign-mockup.jpg"
+        src="/images/new/sign-mockup.webp"
         alt="Description of SVG"/>
 
       <div className="partner-area pt-100 pb-70">
@@ -113,7 +113,7 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
 
 
       <img
-        src="/images/new/image-office.jpg"
+        src="/images/new/image-office.webp"
         alt="Description of SVG"/>
     </>
   );
