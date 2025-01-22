@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer className="footer-area" style={{
-        backgroundImage: `url(/images/new/footer.jpg)`,
+        backgroundImage: `url(/images/new/footer.webp)`,
         backgroundSize: 'cover',     // Keep the image size as is
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center', // Center the image within the container
