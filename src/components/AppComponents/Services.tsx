@@ -97,19 +97,19 @@ const Services: React.FC<{ messages: any }> = ({ messages }) => {
     <>
       <div className="quotes">
         <div className="quote quote1">
-          <p>
+          <h1>
             "Iustitia est constans et perpetua voluntas ius suum cuique tribuendi."
-          </p>
+          </h1>
         </div>
         <div className="quote quote2">
-          <p>
+          <h1>
             "Ignorantia iuris nocet."
-          </p>
+          </h1>
         </div>
         <div className="quote quote3">
-          <p>
+          <h1>
             "Nemo iudex in causa sua."
-          </p>
+          </h1>
         </div>
       </div>
 
