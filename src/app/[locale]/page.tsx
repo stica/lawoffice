@@ -11,6 +11,7 @@ interface HomeProps {
 
 export default async function Home({ params }: { params: { locale: string } }) {
   // Fetch messages based on the locale from the URL
+  console.log('hit')
   const messages = await fetchMessages(params.locale);
 
   return (
@@ -26,6 +27,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
 
 // Fetch messages for the given locale
 async function fetchMessages(locale: string) {
+  console.log(locale);
   console.log(locale);
   try {
     const messages = await import(`../../dictionaries/${locale}.json`);
