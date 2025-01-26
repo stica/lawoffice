@@ -1,8 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { headers } from 'next/headers';
 
 const MainBanner: React.FC<{ messages: any }> = ({ messages }) => {
   const t = useTranslations("Home");
