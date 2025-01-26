@@ -1,18 +1,19 @@
 // app/[lang]/page.tsx
+import { unstable_setRequestLocale } from 'next-intl/server';
 import NavbarTwo from "@/components/Layouts/NavbarTwo";
 import MainBanner from "@/components/AppComponents/MainBanner";
 import Services from "@/components/AppComponents/Services";
 import PartnerTwo from "@/components/AppComponents/PartnerTwo";
 import Footer from "@/components/Layouts/Footer";
 
-interface HomeProps {
-  messages: any; // Replace `any` with a more specific type if possible
-}
+const supportedLanguages = ['en', 'sr']; // List of supported languages
 
 export default async function Home({ params }: { params: { locale: string } }) {
   // Fetch messages based on the locale from the URL
-  console.log('hit')
-  const messages = await fetchMessages(params.locale);
+  unstable_setRequestLocale(params.locale);
+
+  // Validate the `lang` parameter
+  const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';  const messages = await fetchMessages(params.locale);
 
   return (
     <main>
@@ -27,8 +28,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
 
 // Fetch messages for the given locale
 async function fetchMessages(locale: string) {
-  console.log(locale);
-  console.log(locale);
+
   try {
     const messages = await import(`../../dictionaries/${locale}.json`);
     return messages.default;
