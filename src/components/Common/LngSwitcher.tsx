@@ -42,6 +42,9 @@ const LangSwitcher: React.FC = () => {
             className="lng-switcher-flag"
             src={visibleOption.flag}
             alt={`${visibleOption.country} flag`}
+            width={24}
+            height={24}
+            priority
           />
         </button>
       )}

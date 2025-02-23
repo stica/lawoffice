@@ -70,9 +70,14 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
 
   return (
     <>
-      <img
+      <Image
         src="/images/new/sign-mockup.webp"
-        alt="Description of SVG"/>
+        alt="Description of SVG"
+        width={1920}
+        height={1080}
+        loading="lazy"
+        quality={75}
+      />
 
       <div className="partner-area pt-100 pb-70">
         <div className="container">
@@ -100,6 +105,8 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
                             alt="Partner Image"
                             width={100}
                             height={100}
+                            loading="lazy"
+                            quality={75}
                           />
                         </a>
                       </div>
@@ -112,9 +119,14 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
       </div>
 
 
-      <img
+      <Image
         src="/images/new/image-office.webp"
-        alt="Description of SVG"/>
+        alt="Law office interior"
+        width={1920}
+        height={1080}
+        loading="lazy"
+        className="w-full"
+      />
     </>
   );
 };
