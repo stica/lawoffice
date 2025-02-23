@@ -2,12 +2,7 @@
 import { Suspense, lazy } from 'react';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import NavbarTwo from "@/components/Layouts/NavbarTwo";
-import dynamic from 'next/dynamic';
-
-const MainBanner = dynamic(() => import("@/components/AppComponents/MainBanner"), {
-  loading: () => <div>Loading...</div>,
-  ssr: true,
-});
+import MainBanner from "@/components/AppComponents/MainBanner";
 
 // Lazy load non-critical components
 const Services = lazy(() => import("@/components/AppComponents/Services"));
@@ -20,16 +15,15 @@ const LoadingFallback = () => <div className="loading-placeholder">Loading...</d
 const supportedLanguages = ['en', 'sr'];
 
 export default async function Home({ params }: { params: { locale: string } }) {
-    
+  unstable_setRequestLocale(params.locale);
+  
   const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';
   const messages = await fetchMessages(params.locale);
 
   return (
     <>
       <NavbarTwo />
-      <div className="priority-content">
-        <MainBanner messages={messages} />
-      </div>
+      <MainBanner messages={messages} />
       <div id="main-content" style={{ minHeight: '100vh' }}>
         <Suspense fallback={<LoadingFallback />}>
           <Services messages={messages} />
