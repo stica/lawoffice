@@ -1,49 +1,60 @@
 // app/[lang]/page.tsx
+import { Suspense, lazy } from 'react';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import NavbarTwo from "@/components/Layouts/NavbarTwo";
 import MainBanner from "@/components/AppComponents/MainBanner";
-import Services from "@/components/AppComponents/Services";
-import PartnerTwo from "@/components/AppComponents/PartnerTwo";
-import Footer from "@/components/Layouts/Footer";
 
-const supportedLanguages = ['en', 'sr']; // List of supported languages
+// Lazy load non-critical components
+const Services = lazy(() => import("@/components/AppComponents/Services"));
+const PartnerTwo = lazy(() => import("@/components/AppComponents/PartnerTwo"));
+const Footer = lazy(() => import("@/components/Layouts/Footer"));
+
+// Loading fallbacks
+const LoadingFallback = () => <div className="loading-placeholder">Loading...</div>;
+
+const supportedLanguages = ['en', 'sr'];
 
 export default async function Home({ params }: { params: { locale: string } }) {
-  // Fetch messages based on the locale from the URL
   unstable_setRequestLocale(params.locale);
-
-  // Validate the `lang` parameter
-  const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';  const messages = await fetchMessages(params.locale);
+  
+  const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';
+  const messages = await fetchMessages(params.locale);
 
   return (
-    <main>
+    <>
       <NavbarTwo />
       <MainBanner messages={messages} />
-      <Services messages={messages} />
-      <PartnerTwo messages={messages} />
-      <Footer />
-    </main>
+      <Suspense fallback={<LoadingFallback />}>
+        <Services messages={messages} />
+        <PartnerTwo messages={messages} />
+        <Footer />
+      </Suspense>
+    </>
   );
 }
 
-// Fetch messages for the given locale
+// Optimize messages fetching with caching
 async function fetchMessages(locale: string) {
-
   try {
     const messages = await import(`../../dictionaries/${locale}.json`);
     return messages.default;
   } catch (error) {
     console.error(`Failed to load messages for locale: ${locale}`, error);
-    // Fallback to a default locale (e.g., 'en')
     const defaultMessages = await import(`../../dictionaries/en.json`);
     return defaultMessages.default;
   }
 }
 
-// Generate static paths for all supported locales
-export async function generateStaticParams() {
-  return [
-    { lang: 'en' }, // Pre-render English page
-    { lang: 'sr' }, // Pre-render Spanish page
-  ];
-}
+export const generateStaticParams = () => [
+  { lang: 'en' },
+  { lang: 'sr' },
+];
+
+// Add page-level metadata
+export const generateMetadata = ({ params }: { params: { locale: string } }) => ({
+  alternates: {
+    languages: {
+      [params.locale]: `https://www.natasaticalawoffice.com/${params.locale}`,
+    },
+  },
+});
