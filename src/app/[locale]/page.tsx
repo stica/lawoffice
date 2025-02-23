@@ -24,11 +24,13 @@ export default async function Home({ params }: { params: { locale: string } }) {
     <>
       <NavbarTwo />
       <MainBanner messages={messages} />
-      <Suspense fallback={<LoadingFallback />}>
-        <Services messages={messages} />
-        <PartnerTwo messages={messages} />
-        <Footer />
-      </Suspense>
+      <div id="main-content" style={{ minHeight: '100vh' }}>
+        <Suspense fallback={<LoadingFallback />}>
+          <Services messages={messages} />
+          <PartnerTwo messages={messages} />
+          <Footer />
+        </Suspense>
+      </div>
     </>
   );
 }
