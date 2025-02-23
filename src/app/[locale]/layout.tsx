@@ -25,9 +25,20 @@ const poppins = Poppins({
   preload: true,
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
-  description: "Law Office Nataša Tica offers modern, innovative legal solutions with personalized attention. Specializing in [practice areas such as family law, business law, real estate law], we combine advanced technology and expert counsel to meet your legal needs. Serving Banja Luka, we are committed to providing exceptional legal support and results.",
+  description: "Law Office Nataša Tica offers modern, innovative legal solutions with personalized attention...",
+  openGraph: {
+    title: "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
+    description: "Law Office Nataša Tica offers modern, innovative legal solutions...",
+    images: [{ url: '/images/new/logojpg.jpg' }],
+  },
+  alternates: {
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en',
+      'sr': 'https://www.natasaticalawoffice.com/sr',
+    },
+  },
 };
 
 interface RootLayoutProps {
@@ -44,17 +55,12 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
       <NextIntlClientProvider locale={locale} messages={messages}>
 
         <head>
-        <title>{t('title')}</title>
-        <meta name="description" content={t('description')} />
-        <meta name="keywords" content={t('keywords')} />
-        <meta property="og:description" content={t('description')} />
-        <meta property="og:image" content="/images/new/logojpg.jpg" />
-        <meta name="twitter:image" content="/images/new/logojpg.jpg" />
-        {/* hreflang for English */}
-        <link rel="alternate" href="https://www.natasaticalawoffice.com/en" hrefLang="en" />
-        
-        {/* hreflang for Serbian */}
-        <link rel="alternate" href="https://www.natasaticalawoffice.com/sr" hrefLang="sr" />
+        <link 
+            rel="preload" 
+            href="/images/new/logojpg.jpg" 
+            as="image"
+            fetchPriority="high"
+          />
 
         {/* JSON-LD structured data with translations */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
