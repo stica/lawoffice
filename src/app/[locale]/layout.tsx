@@ -50,8 +50,26 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
   const messages = useMessages();
   const t = useTranslations("Layout");
 
+    // Prepare schema data
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Law Office Nataša Tica",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Novice Cerovića 32",
+        "addressLocality": "Banja Luka",
+        "postalCode": "78000",
+        "addressCountry": "Bosnia and Herzegovina"
+      },
+      "telephone": "+38765231276",
+      "url": `https://www.natasaticalawoffice.com/${locale}`,
+      "description": t('schemaDescription'),
+      "openingHours": "Mo-Fri 8:00-16:00"
+    };
+    
   return (
-    <html lang={locale}>
+    <html lang={locale}  className={poppins.className}>
       <NextIntlClientProvider locale={locale} messages={messages}>
 
         <head>
@@ -84,8 +102,12 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
           `
         }} />
         </head>
-        <body className={poppins.className}>
+        <body>
           {children}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+          />
           <AosAnimation />
           <GoTop />
         </body>
