@@ -30,3 +30,12 @@ $main-color:#f7f0e8;$gradient-color:#f7f0e8;$font-size:15px;$black-color:#18181b
             font-size: 33px;
             color: #f7f0e8;
         }
+
+        .navbar-area.navbar-style-2 {
+            padding-top: 10px;
+
+            .navbar-brand-link-custom {
+                height: 100%;
+                width: 50px;
+            }
+        }
