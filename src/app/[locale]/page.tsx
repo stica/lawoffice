@@ -12,6 +12,11 @@ const Footer = lazy(() => import("@/components/Layouts/Footer"));
 // Loading fallbacks
 const LoadingFallback = () => <div className="loading-placeholder">Loading...</div>;
 
+export const metadata = {
+  title: "Advokatska Kancelarija Nataša Tica – Advokat Banja Luka",
+  description: "Advokatska Kancelarija Nataša Tica: Pravna pomoć i zastupanje u radnom, obligacionom, IT, porodičnom, nasljednom i privrednom pravu. Kontaktirajte nas!",
+};
+
 const supportedLanguages = ['en', 'sr'];
 
 export default async function Home({ params }: { params: { locale: string } }) {
@@ -53,10 +58,10 @@ export const generateStaticParams = () => [
 ];
 
 // Add page-level metadata
-export const generateMetadata = ({ params }: { params: { locale: string } }) => ({
-  alternates: {
-    languages: {
-      [params.locale]: `https://www.natasaticalawoffice.com/${params.locale}`,
-    },
-  },
-});
+// export const generateMetadata = ({ params }: { params: { locale: string } }) => ({
+//   alternates: {
+//     languages: {
+//       [params.locale]: `https://www.natasaticalawoffice.com/${params.locale}`,
+//     },
+//   },
+// });

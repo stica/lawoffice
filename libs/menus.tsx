@@ -15,19 +15,19 @@ export function menus(t: any): {
 		},
 		{
 			label: t("about"),
-			link: `/${currentCode}/about/`,
+			link: `/${currentCode}/o-advokatu/`,
 		},
 		{
 			label: t("publications"),
-			link: `/${currentCode}/publications/`,
+			link: `/${currentCode}/publikacije/`,
 		},
 		{
 			label: t("partners"),
-			link: `/${currentCode}/partners/`,
+			link: `/${currentCode}/partneri/`,
 		},
 		{
 			label: t("contact"),
-			link: `/${currentCode}/contact/`,
+			link: `/${currentCode}/kontakt/`,
 		},
 	]
 };

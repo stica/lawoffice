@@ -16,11 +16,11 @@ const Footer: React.FC = () => {
   const currentCode = pathname.split("/")[1] || "en";
 
   const path = `/${currentCode}`;
-  const abouthPath = `/${currentCode}/about`;
-  const homePath = `/${currentCode}/home`;
-  const publicationsPath = `/${currentCode}/publications`;
-  const partnersPath = `/${currentCode}/partners`;
-  const contactPath = `/${currentCode}/contact`;
+  const abouthPath = `/${currentCode}/o-advokatu`;
+  const homePath = `/${currentCode}/`;
+  const publicationsPath = `/${currentCode}/publikacije`;
+  const partnersPath = `/${currentCode}/partneri`;
+  const contactPath = `/${currentCode}/kontakt`;
 
   return (
     <>
