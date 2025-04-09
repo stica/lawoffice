@@ -19,7 +19,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
     <main>
       <NavbarTwo/>
       <ContactInfo messages={messages} />
-      <ContactForm messages={messages} />
+      <ContactForm />
       <Footer />
     </main>
   );
