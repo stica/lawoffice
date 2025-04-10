@@ -47,10 +47,10 @@ export async function generateStaticParams() {
 
 export const metadata = {
   title: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
-  description: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
+  description: "Saznajte više o značaju imenovanja službenika za zaštitu podataka (DPO) prema Zakonu o zaštiti ličnih podataka BiH i kako to može uticati na vašu organizaciju.",
   openGraph: {
     title: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
-    description: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
+    description: "Saznajte više o značaju imenovanja službenika za zaštitu podataka (DPO) prema Zakonu o zaštiti ličnih podataka BiH i kako to može uticati na vašu organizaciju.",
     images: [{ url: '/images/new/logojpg.jpg' }],
   },
   alternates: {
@@ -58,5 +58,10 @@ export const metadata = {
       'en': 'https://www.natasaticalawoffice.com/en',
       'sr': 'https://www.natasaticalawoffice.com/sr',
     },
+  },
+  linkedin: {
+    title: "Zakon o zaštiti ličnih podataka BiH",
+    description: "Pročitajte zašto je imenovanje službenika za zaštitu podataka (DPO) ključno za usklađenost sa Zakonom o zaštiti ličnih podataka BiH.",
+    image: '/images/new/logojpg.jpg',
   },
 };
