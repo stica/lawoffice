@@ -19,8 +19,11 @@ const Footer: React.FC = () => {
   const abouthPath = `/${currentCode}/o-advokatu`;
   const homePath = `/${currentCode}/`;
   const publicationsPath = `/${currentCode}/publikacije`;
+  const blogPath = `/${currentCode}/blog`;
   const partnersPath = `/${currentCode}/partneri`;
   const contactPath = `/${currentCode}/kontakt`;
+
+
 
   return (
     <>
@@ -97,6 +100,11 @@ const Footer: React.FC = () => {
                   <li>
                     <Link href={abouthPath}>
                       {t('about')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={blogPath}>
+                      Blog
                     </Link>
                   </li>
                   <li>

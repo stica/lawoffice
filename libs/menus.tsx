@@ -18,6 +18,10 @@ export function menus(t: any): {
 			link: `/${currentCode}/o-advokatu/`,
 		},
 		{
+			label: t("blog"),
+			link: `/${currentCode}/blog/`,
+		},
+		{
 			label: t("publications"),
 			link: `/${currentCode}/publikacije/`,
 		},
@@ -28,6 +32,6 @@ export function menus(t: any): {
 		{
 			label: t("contact"),
 			link: `/${currentCode}/kontakt/`,
-		},
+		}
 	]
 };

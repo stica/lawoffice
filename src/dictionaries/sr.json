@@ -14,7 +14,8 @@
     "publications": "Publikacije",
     "partners": "Partneri",
     "contact": "Kontakt",
-    "more_details": "Više detalja"
+    "more_details": "Više detalja",
+    "blog": "Blog"
   },
   "Services": {
     "aboutLawyer": "O advokatu",
@@ -121,5 +122,41 @@
     "description": "Advokatska kancelarija Nataša Tica nudi stručne pravne usluge iz oblasti porodičnog prava, poslovnog prava i nekretnina. Personalizovana pravna podrška u Banja Luci.",
     "schemaDescription": "Stručne pravne usluge iz oblasti porodičnog prava, poslovnog prava i nekretnina. Personalizovana pravna podrška u Banja Luci.",
     "keywords": "advokat, porodično pravo, poslovno pravo, nekretnine"
+  },
+  "Blog": {
+    "mailHere": "Pošaljite ovde",
+    "visitHere": "Posetite ovde",
+    "callHere": "Pozovite ovde",
+    "title": "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
+    "intro": "U posljednje vrijeme, mnogo pažnje izazvala je vijest da je Bosna i Hercegovina usvojila novi Zakon o zaštiti ličnih podataka, koji je u velikoj mjeri usklađen sa odredbama Uredbe (EU) 2016/679, odnosno sa tzv. General Data Protection Regulation (GDPR). Međutim, dok se u medijima i na društvenim mrežama mahom prenose suhoparne informacije o usvajanju zakona, izostaju konkretna pojašnjenja – šta to stvarno znači za kompanije u BiH?",
+    "topicIntro": "U današnjem tekstu izlažem potrebu za poštivanjem jedne od obaveza obrađivača/kontrolora sa osvrtom na evropsku praksu.",
+    "heading1": "Imenovanje DPO-a: Zakonska obaveza koja zahtijeva stručnost",
+    "dpoImportance": "U savremenom poslovnom okruženju, zaštita ličnih podataka postala je imperativ za organizacije svih veličina. Ključnu ulogu u ovom procesu ima službenik za zaštitu podataka (Data Protection Officer – DPO), čija je odgovornost da osigura usklađenost sa zakonodavstvom i zaštiti prava pojedinaca.",
+    "legalBasis": "Jedna od obaveza koju novi zakon propisuje jeste imenovanje službenika za zaštitu ličnih podataka (Data Protection Officer – DPO) u određenim slučajevima.",
+    "articleQuote": "Prema članu 39. stav (5) Zakona o zaštiti ličnih podataka BiH: ",
+    "articleQuote1": "\"Službenik za zaštitu ličnih podataka imenuje se na osnovu njegovih stručnih kvalifikacija, a posebno stručnog znanja o pravu i praksi u oblasti zaštite ličnih podataka i sposobnosti obavljanja zadataka iz člana 41. ovog zakona.\"",
+    "qualificationWarning": "Ovo znači da kompanije ne bi smjele formalno, bez stvarne procjene, imenovati bilo kojeg zaposlenog za službenika za zaštitu podataka samo radi ispunjenja zakonske obaveze. Zakon jasno zahtijeva da to lice posjeduje odgovarajuće pravne i stručne kvalifikacije, uključujući praktično iskustvo u oblasti zaštite podataka.",
+    "administrativeNote": "Zato je važno napomenuti da imenovanje službenika za zaštitu ličnih podataka ne može biti puki administrativni čin – kompanije koje imenuju nestručno lice mogu se suočiti s problemima u nadzoru, nepravilnim vođenjem evidencija, kršenjem prava lica na privatnost i na kraju – kaznama.",
+    "howToAppoint": "Kompanije mogu ovu zakonsku obavezu ispuniti na više načina – za funkciju službenika za zaštitu ličnih podataka (DPO) mogu imenovati kvalifikovano lice koje je već zaposleno u njihovoj organizaciji, lice angažovano putem ugovora o djelu, ili eksternog stručnjaka, poput advokata sa relevantnim znanjem i iskustvom.",
+    "heading2": "Lekcije iz prakse: Kako neadekvatno imenovanje DPO-a vodi do kazni",
+    "introCases": "Nedavni slučajevi iz evropske prakse jasno pokazuju da neadekvatan pristup ovoj funkciji može rezultirati ozbiljnim posljedicama – kako finansijskim, tako i reputacionim.",
+    "norwayCaseTitle": "Norveška: Telekom kažnjen sa 350.000 € zbog propusta u vezi sa DPO-om",
+    "norwayCaseBody": "Norveška Agencija za zaštitu podataka (Datatilsynet) izrekla je kaznu od 4.000.000 NOK (približno 351.478 €) telekomunikacionoj kompaniji Telenor ASA zbog nepoštovanja odredbi GDPR-a koje se odnose na imenovanje i funkciju službenika za zaštitu podataka (DPO), kao i zbog neadekvatnih organizacionih mjera za zaštitu podataka.",
+    "norwayFindings": {
+      "noDPO": "Neimenovanje DPO-a: Telenor ASA je ukinuo poziciju DPO-a, smatrajući da ne ispunjavaju kriterijume za njegovo imenovanje prema članu 37(1) GDPR-a. Međutim, nisu pružili dokumentaciju koja bi potkrepila ovu procjenu.",
+      "noContactInfo": "Nedostupnost kontakt informacija DPO-a: Kontakt podaci DPO-a nisu bili javno dostupni na veb sajtu kompanije, već samo na internom intranetu, čime su bili dostupni isključivo zaposlenima.",
+      "incompleteRecords": "Nepotpuni evidencioni zapisi o obradi podataka (ROPA): Istraga je otkrila da su evidencije o obradi podataka bile nepotpune, a DPO nije bio adekvatno uključen u pitanja zaštite podataka.",
+      "conflict": "Sukob interesa: DPO je istovremeno obavljao funkciju pravnika, što je dovelo do potencijalnog sukoba interesa."
+    },
+    "norwayConclusion": "Ovaj slučaj jasno pokazuje da površno shvatanje funkcije DPO-a i njegovih obaveza može imati ozbiljne posljedice. DPO mora biti nezavisan, stalno i proaktivno uključen u sve aktivnosti koje uključuju obradu podataka i mora biti vidljiv i dostupan kako zaposlenima, tako i javnosti.",
+    "greeceCaseTitle": "Grčka: Kazna zbog ignorisanja zahtjeva nadzornog tijela",
+    "greeceCaseBody": "Godine 2023., u sklopu šire inicijative koju vodi Evropski odbor za zaštitu podataka (EDPB), Hellenic Data Protection Authority (HDPA), zajedno sa većinom članova EDPB-a, sprovela je ispitivanje teme „Definicija i položaj službenika za zaštitu podataka“. HDPA je usvojila jedinstveni upitnik i poslala ga 31 javnom tijelu u Grčkoj, uključujući opštinu Atine. Opština nije odgovorila do datog roka, čime je prekršena obaveza saradnje s nadzornim tijelima (član 31. GDPR-a).",
+    "greeceConclusion": "Ovaj slučaj pokazuje da imenovanje DPO-a nije samo interni čin, već i obaveza koja uključuje otvorenu i kontinuiranu komunikaciju s regulatorima.",
+    "croatiaCaseTitle": "Hrvatska: 169.000 € kazni zbog nezakonite obrade i propusta u vezi sa DPO-om",
+    "croatiaCaseBody": "Hrvatski AZOP izrekao je kazne u ukupnom iznosu od 169.000 eura, između ostalog i kompaniji koja je obrađivala podatke iz MUP-ove evidencije bez pravnog osnova. Ovdje se jasno vidi značaj DPO-a u kontroli zakonitosti obrada i pravne osnove. Dodatno, izrečene su kazne zbog nepoštovanja obaveze imenovanja i položaja DPO-a: kazna od 12.000 € jednom kasinu i kazna od 10.000 € proizvođaču ulja i masti.",
+    "heading3": "Šta ovo znači za kompanije u BiH?",
+    "conclusion": "Novi Zakon o zaštiti ličnih podataka u BiH precizno definiše obaveze koje kompanije moraju ispuniti, ostavljajući minimalan prostor za izbjegavanje ili manipulisanje zakonskim odredbama. Kompanije su obavezne da usklade svoje poslovanje sa ovim zakonom najkasnije do 04.10.2025. godine.",
+    "finalNote": "Kao advokat specijalizovana za zaštitu ličnih podataka, nudim stručno savjetovanje koje vam pomaže da vaša organizacija bude u potpunosti usklađena sa Zakonom o zaštiti ličnih podataka. Ako niste sigurni da li vaša organizacija mora imenovati DPO-a, kako pravilno izvršiti ovu obavezu, kako uključiti DPO-a u poslovne procese ili kako izgraditi interne politike i procedure – sada je pravo vrijeme da se fokusirate na ovo važno pitanje i osigurate zaštitu svoje organizacije od potencijalnih zakonskih i reputacionih problema.",
+    "more": "Detaljnije"
   }
 }
