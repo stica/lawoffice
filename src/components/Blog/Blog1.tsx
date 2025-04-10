@@ -1,11 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-import aboutImg from "../../../public/images/new/DrobnjakLegal.jpg";
 import { useTranslations } from "next-intl";
 import hrFlag from "../../../public/images/flags/hr.png";
 import grFlag from "../../../public/images/flags/gr.png";
 import noFlag from "../../../public/images/flags/no.png";
+
+export const metadata = {
+  title: "Advokatska Kancelarija Nataša Tica – Advokat Banja Luka",
+  description: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
+};
 
 const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
 
