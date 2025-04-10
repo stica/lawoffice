@@ -4,8 +4,8 @@ import Image from "next/image";
 import aboutImg from "../../../public/images/new/DrobnjakLegal.jpg";
 import { useTranslations } from "next-intl";
 import hrFlag from "../../../public/images/flags/hr.png";
-import noFlag from "../../../public/images/flags/gr.png";
-import grFlag from "../../../public/images/flags/no.png";
+import grFlag from "../../../public/images/flags/gr.png";
+import noFlag from "../../../public/images/flags/no.png";
 
 const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
 
