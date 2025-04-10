@@ -1,13 +1,18 @@
 import React from "react";
 import Image from "next/image";
-
+import { GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 import hrFlag from "../../../public/images/flags/hr.png";
 import grFlag from "../../../public/images/flags/gr.png";
 import noFlag from "../../../public/images/flags/no.png";
 
-const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
+// Define props type
+interface Blog1Props {
+  messages: any;
+  locale: string;
+}
 
+const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
   const t = useTranslations("Blog");
 
   return (
@@ -49,7 +54,6 @@ const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
                 style={{ marginRight: '15px' }}
               />
               <h3 className="text-xl font-semibold">{t('norwayCaseTitle')}</h3>
-
             </div>
             <p>{t('norwayCaseBody')}</p>
             <ul className="list-disc pl-6">
@@ -65,7 +69,7 @@ const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <Image
                 src={grFlag}
-                alt="Norway Flag"
+                alt="Greece Flag"
                 width={32}
                 height={24}
                 className="inline-block mr-2"
@@ -81,7 +85,7 @@ const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <Image
                 src={hrFlag}
-                alt="Norway Flag"
+                alt="Croatia Flag"
                 width={32}
                 height={24}
                 className="inline-block mr-2"
@@ -97,9 +101,23 @@ const Blog1: React.FC<{ messages: any }> = ({ messages }) => {
           <p>{t('finalNote')}</p>
         </article>
       </div>
-
     </>
   );
 };
+
+// Add getStaticProps for SSG
+// export const getStaticProps: GetStaticProps = async ({ locale }) => {
+//   // Import the messages for the requested locale
+//   const messages = (await import(`../../../messages/${locale}.json`)).default;
+  
+//   return {
+//     props: {
+//       messages,
+//       locale: locale || 'en',
+//     },
+//     // Optional: specify revalidation time in seconds (for ISR)
+//     // revalidate: 3600, // revalidate every hour
+//   };
+// };
 
 export default Blog1;

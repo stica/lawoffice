@@ -16,7 +16,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
     <>
       <NavbarTwo />
 
-      <Blog1 messages={messages} />
+      <Blog1 messages={messages} locale={lang} />
 
       <Footer />
     </>
