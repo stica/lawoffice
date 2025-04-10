@@ -9,7 +9,8 @@ const supportedLanguages = ['en', 'sr']; // List of supported languages
 export default async function Page({ params }: { params: { locale: string } }) {
 
   unstable_setRequestLocale(params.locale);
-  const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';  const messages = await fetchMessages(params.locale);
+  const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';  
+  const messages = await fetchMessages(params.locale);
 
   return (
     <>
