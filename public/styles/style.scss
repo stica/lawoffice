@@ -96,7 +96,7 @@ $main-color:#f7f0e8;$gradient-color:#f7f0e8;$font-size:15px;$black-color:#18181b
 
         .about-me-controls {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
 
             .about-me-controls-headings {
@@ -108,15 +108,15 @@ $main-color:#f7f0e8;$gradient-color:#f7f0e8;$font-size:15px;$black-color:#18181b
                 min-width: 350px;
             }
 
-            .about-me-controls-button {
-                margin: auto;
+        }
 
-                a {
-                    :hover {
-                        background-color: #513D48;
-                        color: #f7f0e8;
-                    }
+        .about-me-controls-button {
+            margin: auto;
+
+            a {
+                &:hover {
+                    background-color: #513D48;
+                    color: #f7f0e8;
                 }
             }
-
         }

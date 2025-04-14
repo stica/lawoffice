@@ -29,8 +29,6 @@ const MainBanner: React.FC<{ messages: any, lang: string }> = ({ messages, lang 
                 <p className="lawyer-moto">{t("lawyerMoto1")}</p>
                 <p className="lawyer-moto">{t("lawyerMoto2")}</p>
               </div>
-            </div>
-            <div className="about-me-controls-button">
               <a
                 href={contactPath}
                 className="btn btn-primary"
@@ -38,6 +36,7 @@ const MainBanner: React.FC<{ messages: any, lang: string }> = ({ messages, lang 
                 {t('contact')}
               </a>
             </div>
+
 
           </div>
 
