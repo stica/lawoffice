@@ -6,6 +6,8 @@
         "lawyerMoto1": "Our expertise,",
         "lawyerMoto2": "your security in business!",
         "lawyerMoto": "Our expertise, your security in business!",
+        "lawyerBl": "Lawyer Banja Luka",
+        "contact": "Contact us",
         "moreAboutLawyer": "More about lawyer"
     },
     "Menu": {
@@ -156,5 +158,44 @@
         "conclusion": "The new Law on Personal Data Protection in Bosnia and Herzegovina precisely defines the obligations that companies must fulfill, leaving little room for evasion or manipulation of legal provisions. Companies are required to bring their operations into compliance with this law no later than October 4, 2025.",
         "finalNote": "As a lawyer specializing in personal data protection, I offer expert advice to help ensure your organization is fully compliant with the Law on Personal Data Protection. If you are unsure whether your organization needs to appoint a DPO, how to properly fulfill this obligation, how to include the DPO in business processes, or how to build internal policies and procedures – now is the right time to focus on this important issue and protect your organization from potential legal and reputational risks.",
         "more": "More details"
-    }
+    },
+    "lawtypes": {
+        "itLaw": {
+          "title": "IT Law",
+          "intro": "In the field of IT law, we provide comprehensive legal support to companies involved in the development, distribution, and use of software and digital solutions.",
+          "typesOfContractsTitle": "Types of contracts we handle:",
+      
+          "serviceAgreement": {
+            "title": "Service Agreements",
+            "description": "Define the obligations and rights between the service provider and the client, including timelines, scope of services, and compensation."
+          },
+      
+          "sow": {
+            "title": "Statements of Work (SOW)",
+            "description": "Provide detailed descriptions of specific tasks, goals, and deadlines within a broader cooperation agreement."
+          },
+      
+          "nda": {
+            "title": "Non-Disclosure Agreements (NDA)",
+            "description": "Protect confidential information exchanged during business cooperation between parties."
+          },
+      
+          "softwareLicense": {
+            "title": "Software Licensing Agreements",
+            "description": "Regulate the rights to use a software product, including limitations and duration of the license."
+          },
+      
+          "saasPaasIaas": {
+            "title": "Agreements for SaaS, PaaS, and IaaS models",
+            "description": "Legal regulation of cloud services, including access, security, maintenance, and data ownership."
+          },
+      
+          "sla": {
+            "title": "Service Level Agreements (SLA)",
+            "description": "Define metrics and quality standards the provider must meet, as well as consequences for non-compliance."
+          },
+      
+          "reviewAndPreparation": "We offer preparation, review, and revision services for the mentioned legal documents in accordance with best practices and the specific needs of the IT sector."
+        }
+      }      
 }

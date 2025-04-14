@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 function servicesData(t: any): {
   iconName: string,
@@ -75,7 +76,7 @@ function servicesData(t: any): {
   ];
 }
 
-const Services: React.FC<{ messages: any }> = ({ messages }) => {
+const Services: React.FC<{ messages: any, locale: string }> = ({ messages, locale }) => {
   // const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const t = useTranslations("Services");
@@ -136,8 +137,16 @@ const Services: React.FC<{ messages: any }> = ({ messages }) => {
                   <div className="service-card-one white-bg text-center radius-10">
                     <i className={value.iconName}></i>
                     <h3>
-                      {/* <Link href="#" onClick={() => openModal()}>{value.title}</Link> */}
-                      {value.title}
+                      <a
+                        href={
+                          value.title.toLowerCase() === "it law" || value.title.toLowerCase() === "it pravo"
+                            ? `/${locale}/it-pravo`
+                            : "#"
+                        }
+                      >
+                        {value.title}
+                      </a>
+
                     </h3>
                     <p>{value.shortText}</p>
                   </div>

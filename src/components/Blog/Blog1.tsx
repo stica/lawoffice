@@ -105,19 +105,4 @@ const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
   );
 };
 
-// Add getStaticProps for SSG
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   // Import the messages for the requested locale
-//   const messages = (await import(`../../../messages/${locale}.json`)).default;
-  
-//   return {
-//     props: {
-//       messages,
-//       locale: locale || 'en',
-//     },
-//     // Optional: specify revalidation time in seconds (for ISR)
-//     // revalidate: 3600, // revalidate every hour
-//   };
-// };
-
 export default Blog1;

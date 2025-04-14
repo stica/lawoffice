@@ -28,10 +28,10 @@ export default async function Home({ params }: { params: { locale: string } }) {
   return (
     <>
       <NavbarTwo />
-      <MainBanner messages={messages} />
+      <MainBanner messages={messages} lang={lang}/>
       <div id="main-content" style={{ minHeight: '100vh' }}>
         <Suspense fallback={<LoadingFallback />}>
-          <Services messages={messages} />
+          <Services messages={messages} locale={lang} />
           <PartnerTwo messages={messages} />
           <Footer />
         </Suspense>

@@ -6,6 +6,8 @@
     "lawyerMoto1": "Naša stručnost,",
     "lawyerMoto2": "vaša sigurnost u poslovanju!",
     "moreAboutLawyer": "Više o advokatu",
+    "lawyerBl": "Advokat Banja Luka",
+    "contact": "Kontaktirajte nas",
     "lawyerMoto": "Naša stručnost, vaša sigurnost u poslovanju!"
   },
   "Menu": {
@@ -158,5 +160,45 @@
     "conclusion": "Novi Zakon o zaštiti ličnih podataka u BiH precizno definiše obaveze koje kompanije moraju ispuniti, ostavljajući minimalan prostor za izbjegavanje ili manipulisanje zakonskim odredbama. Kompanije su obavezne da usklade svoje poslovanje sa ovim zakonom najkasnije do 04.10.2025. godine.",
     "finalNote": "Kao advokat specijalizovana za zaštitu ličnih podataka, nudim stručno savjetovanje koje vam pomaže da vaša organizacija bude u potpunosti usklađena sa Zakonom o zaštiti ličnih podataka. Ako niste sigurni da li vaša organizacija mora imenovati DPO-a, kako pravilno izvršiti ovu obavezu, kako uključiti DPO-a u poslovne procese ili kako izgraditi interne politike i procedure – sada je pravo vrijeme da se fokusirate na ovo važno pitanje i osigurate zaštitu svoje organizacije od potencijalnih zakonskih i reputacionih problema.",
     "more": "Detaljnije"
+  },
+  "lawtypes": {
+    "itLaw": {
+      "title": "IT pravo",
+      "intro": "U oblasti IT prava pružamo sveobuhvatnu pravnu podršku kompanijama koje se bave razvojem, distribucijom i korišćenjem softverskih i digitalnih rešenja.",
+      "typesOfContractsTitle": "Vrste ugovora koje pokrivamo:",
+      
+      "serviceAgreement": {
+        "title": "Ugovori o pružanju usluga",
+        "description": "Definišu obaveze i prava između pružaoca i korisnika usluga, uključujući rokove, obim usluga i naknade."
+      },
+      
+      "sow": {
+        "title": "Specifikacije obima rada (SOW)",
+        "description": "Detaljno opisuju konkretne zadatke, ciljeve i rokove unutar šireg ugovora o saradnji."
+      },
+      
+      "nda": {
+        "title": "Ugovori o poverljivosti (NDA)",
+        "description": "Štite poverljive informacije koje se razmenjuju tokom poslovne saradnje između strana."
+      },
+      
+      "softwareLicense": {
+        "title": "Ugovori o licenciranju softvera",
+        "description": "Regulišu prava korišćenja softverskog proizvoda, uključujući ograničenja i trajanje licence."
+      },
+      
+      "saasPaasIaas": {
+        "title": "Ugovori za SaaS, PaaS i IaaS modele",
+        "description": "Pravna regulativa usluga u oblaku, uključujući pristup, bezbednost, održavanje i vlasništvo nad podacima."
+      },
+      
+      "sla": {
+        "title": "Ugovori o nivou usluga (SLA)",
+        "description": "Utvrdjuju metrike i standarde kvaliteta usluge koje dobavljač mora ispuniti, kao i posledice u slučaju neispunjenja."
+      },
+  
+      "reviewAndPreparation": "Pružamo usluge pripreme, pregleda i revizije navedenih pravnih dokumenata u skladu sa najboljom praksom i specifičnim potrebama IT sektora."
+    }
   }
+  
 }
