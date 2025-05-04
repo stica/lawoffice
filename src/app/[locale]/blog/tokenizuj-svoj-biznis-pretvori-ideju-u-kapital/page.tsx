@@ -2,7 +2,7 @@ import React from "react";
 import NavbarTwo from "../../../../components/Layouts/NavbarTwo";
 import Footer from "../../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
-import Blog1 from "@/components/Blog/Blog1";
+import Blog2 from "@/components/Blog/Blog2";
 
 const supportedLanguages = ['en', 'sr']; // List of supported languages
 
@@ -16,12 +16,13 @@ export default async function Page({ params }: { params: { locale: string } }) {
     <>
       <NavbarTwo />
 
-      <Blog1 messages={messages} locale={lang} />
+      <Blog2 messages={messages} locale={lang} />
 
       <Footer />
     </>
   );
 }
+
 
 // Fetch messages for the given locale
 async function fetchMessages(locale: string) {
@@ -45,11 +46,11 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
-  description: "Saznajte više o značaju imenovanja službenika za zaštitu podataka (DPO) prema Zakonu o zaštiti ličnih podataka BiH i kako to može uticati na vašu organizaciju.",
+  title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
+  description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
   openGraph: {
-    title: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
-    description: "Saznajte više o značaju imenovanja službenika za zaštitu podataka (DPO) prema Zakonu o zaštiti ličnih podataka BiH i kako to može uticati na vašu organizaciju.",
+    title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
+    description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
     images: [{ url: '/images/new/logojpg.jpg' }],
   },
   alternates: {
@@ -59,8 +60,8 @@ export const metadata = {
     },
   },
   linkedin: {
-    title: "Zakon o zaštiti ličnih podataka BiH",
-    description: "Pročitajte zašto je imenovanje službenika za zaštitu podataka (DPO) ključno za usklađenost sa Zakonom o zaštiti ličnih podataka BiH.",
+    title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
+    description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
     image: '/images/new/logojpg.jpg',
   },
 };
