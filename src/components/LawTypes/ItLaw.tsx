@@ -1,60 +1,99 @@
 import React from "react";
-import Image from "next/image";
-import { GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
-import hrFlag from "../../../public/images/flags/hr.png";
-import grFlag from "../../../public/images/flags/gr.png";
-import noFlag from "../../../public/images/flags/no.png";
 
-// Define props type
-interface Blog1Props {
-  messages: any;
-  locale: string;
-}
-
-const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
+const Blog1: React.FC = () => {
   const t = useTranslations("lawtypes");
 
   return (
-    <>
-      <div className="blog-wrapper">
-        <section>
-          <h1>{t('itLaw.title')}</h1>
-          <p>{t('itLaw.intro')}</p>
+    <div className="blog-wrapper space-y-16">
 
-          <h2>{t('itLaw.typesOfContractsTitle')}</h2>
-          <ul>
-            <li>
-              <strong>{t('itLaw.serviceAgreement.title')}</strong><br />
-              {t('itLaw.serviceAgreement.description')}
-            </li>
-            <li>
-              <strong>{t('itLaw.sow.title')}</strong><br />
-              {t('itLaw.sow.description')}
-            </li>
-            <li>
-              <strong>{t('itLaw.nda.title')}</strong><br />
-              {t('itLaw.nda.description')}
-            </li>
-            <li>
-              <strong>{t('itLaw.softwareLicense.title')}</strong><br />
-              {t('itLaw.softwareLicense.description')}
-            </li>
-            <li>
-              <strong>{t('itLaw.saasPaasIaas.title')}</strong><br />
-              {t('itLaw.saasPaasIaas.description')}
-            </li>
-            <li>
-              <strong>{t('itLaw.sla.title')}</strong><br />
-              {t('itLaw.sla.description')}
-            </li>
-          </ul>
+      {/* Hero Section */}
+      <section className="text-center py-16 bg-gray-100 rounded-2xl">
+        <h1 className="text-4xl font-bold">{t('itLaw.hero.title')}</h1>
+        <p className="mt-4 text-lg">{t("itLaw.hero.subtitle")}</p>
+        <button className="btn primary">
+            {t("itLaw.hero.cta")}
+          </button>
+      </section>
 
-          <p>{t('itLaw.reviewAndPreparation')}</p>
-        </section>
+      {/* What is IT Law */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">{t("itLaw.whatIs.title")}</h2>
+        <p>{t("itLaw.whatIs.description")}</p>
+      </section>
 
-      </div>
-    </>
+      {/* Key Services */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.services.title")}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="service-card">
+            <h3>{t("itLaw.services.nda.title")}</h3>
+            <p>{t("itLaw.services.nda.description")}</p>
+          </div>
+          <div className="service-card">
+            <h3>{t("itLaw.services.sla.title")}</h3>
+            <p>{t("itLaw.services.sla.description")}</p>
+          </div>
+          <div className="service-card">
+            <h3>{t("itLaw.services.contracts.title")}</h3>
+            <p>{t("itLaw.services.contracts.description")}</p>
+          </div>
+          <div className="service-card">
+            <h3>{t("itLaw.services.disputes.title")}</h3>
+            <p>{t("itLaw.services.disputes.description")}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Types */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.clients.title")}</h2>
+        <p>{t("itLaw.clients.description")}</p>
+      </section>
+
+      {/* Why Us - USPs */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">{t("itLaw.whyUs.title")}</h2>
+        <ul className="space-y-2 list-disc list-inside">
+          <li>{t("itLaw.whyUs.point1")}</li>
+          <li>{t("itLaw.whyUs.point2")}</li>
+          <li>{t("itLaw.whyUs.point3")}</li>
+          <li>{t("itLaw.whyUs.point4")}</li>
+          <li>{t("itLaw.whyUs.point5")}</li>
+        </ul>
+      </section>
+
+      {/* Testimonials */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.testimonials.title")}</h2>
+        <div className="space-y-6">
+          <blockquote>{t("itLaw.testimonials.quote1")}</blockquote>
+          <blockquote>{t("itLaw.testimonials.quote2")}</blockquote>
+          <blockquote>{t("itLaw.testimonials.quote3")}</blockquote>
+        </div>
+      </section>
+
+      {/* FAQ + CTA */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.faq.title")}</h2>
+        <div className="space-y-6">
+          <div>
+            <strong>{t("itLaw.faq.q1.q")}</strong>
+            <p>{t("itLaw.faq.q1.a")}</p>
+          </div>
+          <div>
+            <strong>{t("itLaw.faq.q2.q")}</strong>
+            <p>{t("itLaw.faq.q2.a")}</p>
+          </div>
+        </div>
+        <div className="text-center mt-8">
+          <button className="btn primary">
+            {t("itLaw.faq.cta")}
+          </button>
+        </div>
+      </section>
+
+    </div>
   );
 };
 

@@ -163,42 +163,124 @@
   },
   "lawtypes": {
     "itLaw": {
-      "title": "IT pravo",
-      "intro": "U oblasti IT prava pružamo sveobuhvatnu pravnu podršku kompanijama koje se bave razvojem, distribucijom i korišćenjem softverskih i digitalnih rešenja.",
-      "typesOfContractsTitle": "Vrste ugovora koje pokrivamo:",
-      
-      "serviceAgreement": {
-        "title": "Ugovori o pružanju usluga",
-        "description": "Definišu obaveze i prava između pružaoca i korisnika usluga, uključujući rokove, obim usluga i naknade."
+      "hero": {
+        "title": "Usluge iz oblasti IT prava",
+        "subtitle": "Pravna podrška za vaš softver, SaaS i digitalni biznis.",
+        "cta": "Kontaktirajte nas"
       },
-      
-      "sow": {
-        "title": "Specifikacije obima rada (SOW)",
-        "description": "Detaljno opisuju konkretne zadatke, ciljeve i rokove unutar šireg ugovora o saradnji."
+      "whatIs": {
+        "title": "Šta je IT pravo?",
+        "description": "IT pravo obuhvata pravnu podršku za razvoj softvera, licenciranje, cloud usluge, zaštitu podataka i tehnološke ugovore prilagođene digitalnom ekosistemu."
       },
-      
-      "nda": {
-        "title": "Ugovori o poverljivosti (NDA)",
-        "description": "Štite poverljive informacije koje se razmenjuju tokom poslovne saradnje između strana."
+      "services": {
+        "title": "Naše ključne IT pravne usluge",
+        "nda": {
+          "title": "Ugovori o poverljivosti (NDA)",
+          "description": "Zaštita poverljivih informacija tokom saradnje ili pregovora."
+        },
+        "sla": {
+          "title": "Ugovori o nivou usluge (SLA)",
+          "description": "Definisanje standarda, dostupnosti i kazni za neispunjenje."
+        },
+        "contracts": {
+          "title": "Izrada i revizija ugovora",
+          "description": "Prilagođeni ugovori za IT firme, uključujući SOW, SaaS i licence."
+        },
+        "disputes": {
+          "title": "Zastupanje u sporovima",
+          "description": "Pravna podrška i zastupanje pred sudovima i arbitražama u vezi sa tehnologijom."
+        }
       },
-      
-      "softwareLicense": {
-        "title": "Ugovori o licenciranju softvera",
-        "description": "Regulišu prava korišćenja softverskog proizvoda, uključujući ograničenja i trajanje licence."
+      "clients": {
+        "title": "Ko su naši klijenti?",
+        "description": "Startapi, SaaS provajderi, IT konsalting firme, razvojne agencije i dobavljači cloud usluga."
       },
-      
-      "saasPaasIaas": {
-        "title": "Ugovori za SaaS, PaaS i IaaS modele",
-        "description": "Pravna regulativa usluga u oblaku, uključujući pristup, bezbednost, održavanje i vlasništvo nad podacima."
+      "whyUs": {
+        "title": "Zašto odabrati Advokatsku kancelariju Nataša Tica?",
+        "point1": "Duboko razumevanje spoja tehnologije i prava",
+        "point2": "Ugovori prilagođeni IT ekosistemima",
+        "point3": "Dokazana saradnja sa startapima i rastućim kompanijama",
+        "point4": "Dvojezična pravna podrška (SR/EN)",
+        "point5": "Brz odziv i posvećena podrška"
       },
-      
-      "sla": {
-        "title": "Ugovori o nivou usluga (SLA)",
-        "description": "Utvrdjuju metrike i standarde kvaliteta usluge koje dobavljač mora ispuniti, kao i posledice u slučaju neispunjenja."
+      "testimonials": {
+        "title": "Šta naši klijenti kažu",
+        "quote1": "Profesionalni, pouzdani i brzi — pomogli su nam da legalno rastemo!",
+        "quote2": "Jasan savet i odličan ugovorni rad za naš SaaS startap.",
+        "quote3": "Pravi stručnjaci za IT pravo. Topla preporuka."
       },
-  
-      "reviewAndPreparation": "Pružamo usluge pripreme, pregleda i revizije navedenih pravnih dokumenata u skladu sa najboljom praksom i specifičnim potrebama IT sektora."
+      "faq": {
+        "title": "Često postavljana pitanja",
+        "cta": "Imate još pitanja? Kontaktirajte nas.",
+        "q1": {
+          "q": "Da li nudite fiksne cene za ugovore?",
+          "a": "Da, nudimo i fiksne i po satu obračunate usluge u zavisnosti od obima posla."
+        },
+        "q2": {
+          "q": "Da li možete pregledati strane ugovore?",
+          "a": "Da, sarađujemo sa međunarodnim partnerima i pregledamo ugovore na engleskom jeziku."
+        }
+      }
+    },
+    "cryptoLaw": {
+      "hero": {
+        "title": "Kripto i Blockchain pravo",
+        "subtitle": "Stručne pravne usluge za kriptovalute, blockchain i digitalne sredstva",
+        "cta": "Dobijte pravnu zaštitu"
+      },
+      "whatIs": {
+        "title": "Šta je Kripto pravo?",
+        "description": "Kripto pravo obuhvata pravne okvire i regulacije koje upravljaju kriptovalutama, blockchain tehnologijom, pametnim ugovorima i digitalnim sredstvima. Obuhvata oblasti kao što su tokenizacija, regulativna usklađenost i upravljanje digitalnim sredstvima."
+      },
+      "services": {
+        "title": "Naše usluge",
+        "tokenization": {
+          "title": "Tokenizacija",
+          "description": "Pravno strukturiranje i usklađenost za token ponude, NFT-e i stvaranje digitalnih sredstava"
+        },
+        "smartContracts": {
+          "title": "Pametni ugovori",
+          "description": "Pravna pregledavanja, izrada i usklađenost za implementacije pametnih ugovora"
+        },
+        "regulatory": {
+          "title": "Regulatorna usklađenost",
+          "description": "Vodstvo u regulativama za kriptovalute, zahtevima AML/KYC i međunarodnoj usklađenosti"
+        },
+        "disputes": {
+          "title": "Razrešenje sporova",
+          "description": "Pravno zastupanje u sporovima vezanim za kriptovalute i blockchain"
+        }
+      },
+      "clients": {
+        "title": "Ko su naši klijenti?",
+        "description": "Borze za kriptovalute, blockchain startapi, NFT projekti, DeFi platforme i firme za upravljanje digitalnim sredstvima"
+      },
+      "whyUs": {
+        "title": "Zašto odabrati Advokatsku kancelariju Nataša Tica?",
+        "point1": "Specializovana ekspertiza u pravu kriptovaluta i blockchain-a",
+        "point2": "Ažurirano znanje o globalnim regulacijama kriptovaluta",
+        "point3": "Iskustvo sa token ponudama i pametnim ugovorima",
+        "point4": "Dvijezična pravna podrška (EN/SRB)",
+        "point5": "Brz i pouzdan servis za kripto projekte"
+      },
+      "testimonials": {
+        "title": "Šta naši klijenti kažu",
+        "quote1": "Stručno pravno vodstvo za naš blockchain projekt. Veoma preporučljivo!",
+        "quote2": "Profesionalna podrška za našu token ponudu. Učinili su proces lagan.",
+        "quote3": "Odlično razumeju i kripto i pravne aspekte."
+      },
+      "faq": {
+        "title": "Često postavljana pitanja",
+        "cta": "Još pitanja? Kontaktirajte nas.",
+        "q1": {
+          "q": "Da li rukujete međunarodnim regulacijama kriptovaluta?",
+          "a": "Da, pružamo vodstvo u globalnim regulacijama kriptovaluta i zahtevima za usklađenost."
+        },
+        "q2": {
+          "q": "Da li možete pomoći sa token ponudama?",
+          "a": "Naravno! Pomagamo u strukturiranju i usklađivanju s pravnim zahtevima za token ponude."
+        }
+      }
     }
   }
-  
 }

@@ -22,7 +22,7 @@ const Blog: React.FC<{ messages: any }> = ({ messages }) => {
           <div className="col-lg-12 col-sm-12 blog-button-wrapper">
             <button
               type="submit"
-              className="btn btn-primary"
+              className="btn"
               onClick={() => window.location.href = blogPath}
             >
               {t('more')}

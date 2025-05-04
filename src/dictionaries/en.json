@@ -1,201 +1,284 @@
 {
-    "Home": {
-        "title": "Law office",
-        "law_office_description": "Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests.",
-        "aboutLawyer": "About lawyer",
-        "lawyerMoto1": "Our expertise,",
-        "lawyerMoto2": "your security in business!",
-        "lawyerMoto": "Our expertise, your security in business!",
-        "lawyerBl": "Lawyer Banja Luka",
-        "contact": "Contact us",
-        "moreAboutLawyer": "More about lawyer"
+  "Home": {
+    "title": "Law office",
+    "law_office_description": "Experience the future of legal practice at our modern law office, where tradition and technology unite to serve your best interests.",
+    "aboutLawyer": "About lawyer",
+    "lawyerMoto1": "Our expertise,",
+    "lawyerMoto2": "your security in business!",
+    "lawyerMoto": "Our expertise, your security in business!",
+    "lawyerBl": "Lawyer Banja Luka",
+    "contact": "Contact us",
+    "moreAboutLawyer": "More about lawyer"
+  },
+  "Menu": {
+    "home": "Home",
+    "about": "About",
+    "publications": "Publications",
+    "partners": "Partners",
+    "contact": "Contact",
+    "more_details": "More details",
+    "blog": "Blog"
+  },
+  "Services": {
+    "aboutLawyer": "About lawyer",
+    "moreAboutLawyer": "More about lawyer",
+    "ourServices": "Our Services",
+    "servicesDescription": "From securing your property transactions and protecting your digital privacy to navigating the complexities of digital assets, IT law, obligations, and commercial ventures, our expertise ensures your business and personal affairs are safeguarded with precision and confidence.",
+    "commercialLaw": "Commercial Law",
+    "commercialLawShortText": "Empowering your business with comprehensive legal solutions.",
+    "obligationLaw": "Obligation Law",
+    "obligationLawShortText": "We protect your rights and provide support in contractual relations.",
+    "itLaw": "IT Law",
+    "itLawShortText": "We ensure your technological ventures succeed within a solid legal framework.",
+    "lawDigitalAssets": "Digital Assets",
+    "lawDigitalAssetsShortText": "Protect and manage your digital assets with our legal support.",
+    "personalDataProtection": "Personal Data Protection (GDPR)",
+    "personalDataProtectionShortText": "Protecting your privacy in the digital age in compliance with GDPR.",
+    "realEstate": "Real Estate",
+    "realEstateShortText": "Legal services related to real estate transactions and ownership.",
+    "inheritanceLaw": "Inheritance Law",
+    "inheritanceLawShortText": "Reliable support in inheritance processes and asset distribution.",
+    "familyLaw": "Family Law",
+    "familyLawShortText": "Expert support in family matters, protection, and representation of your rights.",
+    "laborLaw": "Labor Law",
+    "laborLawShortText": "Professional support for employers and employees in all aspects of labor relations.",
+    "more_details": "More details",
+    "digital_assets_guide": "Digital Assets in Practice: A Guide for Legal Entities and Individuals",
+    "virtual_currency_integration": "Integration of Virtual Currencies into Everyday Business",
+    "local_government": "Local Government in RS",
+    "crypto_market_regulation": "How Legally (Un)regulated is the Cryptocurrency Market in BiH?",
+    "seminar": "Seminar",
+    "law_faculty": "Faculty of Law, University of Banja Luka",
+    "podcast": "Podcast"
+  },
+  "Partners": {
+    "about0": "Drobnjak Legal & Partners, our partner in Serbia, covers all areas of law and provides comprehensive legal services throughout Serbia. Thanks to this partnership, we can ensure expert support and legal representation for clients in Serbia at the highest level.",
+    "about1": "Drobnjak Legal & Partners, founded by attorney Bojana Drobnjak in 2012, is a reliable partner in your business, whose growth is based on trust, good results, and continuous improvement.",
+    "about2": "With a long tradition of advising clients in all areas of corporate law, they excel in quality, flexibility, innovation, and practical solutions to complex business challenges. Their clients are reputable companies in the pharmaceutical, banking, construction, real estate development, hospitality, factoring, and transportation industries.",
+    "more": "More details"
+  },
+  "About": {
+    "about": "About Me",
+    "paragraphs": {
+      "p1": "Nataša Tica is the founder of the Law Office Nataša Tica and has significant experience in commercial and property law in the Republic of Srpska and Bosnia and Herzegovina. With extensive experience in notary offices and international companies, as well as as an independent entrepreneur and legal advisor for startups, IT law, and digital assets, she brings advanced legal strategies and solutions. As a lecturer and panelist, she has participated in numerous conferences and workshops, including those at the Chamber of Commerce of the Republic of Srpska and the Faculty of Law, University of Banja Luka. Her experience and passion for the legal profession enable her to provide high-quality legal services and advice on complex legal issues.",
+      "t1": "Education",
+      "p2": "Sveti Sava Gymnasium, Prijedor",
+      "p3": "Faculty of Law, University of Banja Luka",
+      "t2": "Licenses",
+      "p4": "Certified Data Protection Officer (CDPO) - a professional qualification that confirms expertise in personal data protection, particularly in accordance with the GDPR (General Data Protection Regulation). The CDPO certification is increasingly important in the business world, as data protection regulations become stricter, and companies are required to ensure compliance.",
+      "t3": "Work Experience",
+      "r1": "Associate at the Agency for Economic Development of the City of Prijedor “PREDA-PD”",
+      "r2": "Associate in a notary office",
+      "r3": "Compliance Officer at Obsidian Media LLC",
+      "r4": "Legal Consultant at Molson Coors BH",
+      "r5": "Professional Associate in a notary office",
+      "r6": "Independent Legal Advisor for startups, IT law, and digital assets",
+      "p5": "Lecturer and panelist at several conferences and professional workshops, such as:",
+      "pr1": "“Digital Assets in Practice: A Guide for Legal Entities and Individuals” at the Chamber of Commerce of the Republic of Srpska",
+      "pr2": "“Integration of Virtual Currencies into Everyday Business” in Jahorina",
+      "pr3": "“Local Government in RS” at the Faculty of Law, University of Banja Luka.",
+      "p6": "Co-author of the Handbook on Implementing Anti-Money Laundering and Counter-Terrorism Financing Measures via Virtual Currencies.",
+      "t4": "Memberships",
+      "t5": "Languages",
+      "c1": "Bar Association of the Republic of Srpska",
+      "l1": "English"
+    }
+  },
+  "Clients": {
+    "clients": "Our Clients"
+  },
+  "Footer": {
+    "explore": "Explore",
+    "home": "Home",
+    "about": "About",
+    "publications": "Publications",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch",
+    "address": "Novice Cerovića 32, 78000 Banja Luka",
+    "phone": "+387 65 231-276",
+    "email": "natasa.tica@natasaticalawoffice.com",
+    "linkedin": "LinkedIn",
+    "partners": "Partner Law offices"
+  },
+  "ContactForm": {
+    "getInTouch": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "number": "Phone number",
+    "subject": "Subject",
+    "message": "Write your message...",
+    "sendMessage": "Send Message",
+    "emailSentError": "Error during sending",
+    "emailSentSuccess": "Email successfully sent",
+    "sending": "Sending"
+  },
+  "ContactInfo": {
+    "mailHere": "Mail Here",
+    "visitHere": "Visit Here",
+    "callHere": "Call Here"
+  },
+  "Layout": {
+    "title": "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
+    "description": "Law Office Nataša Tica offers expert legal services in family law, business law, and real estate law. Personalized legal support in Banja Luka.",
+    "schemaDescription": "Expert legal services in family law, business law, and real estate law. Providing personalized legal support in Banja Luka.",
+    "keywords": "lawyer, family law, business law, real estate"
+  },
+  "Blog": {
+    "mailHere": "Mail Here",
+    "visitHere": "Visit Here",
+    "callHere": "Call Here",
+    "title": "Personal Data Protection Law in Bosnia and Herzegovina: Why it is Important to Take the Appointment of a Data Protection Officer (DPO) Seriously?",
+    "intro": "Recently, a lot of attention has been drawn to the news that Bosnia and Herzegovina has adopted a new Law on Personal Data Protection, which is largely harmonized with the provisions of the General Data Protection Regulation (GDPR). However, while the media and social networks mostly relay dry information about the adoption of the law, concrete explanations are lacking – what does this really mean for companies in Bosnia and Herzegovina?",
+    "topicIntro": "In today’s article, I highlight the importance of complying with one of the obligations of controllers/processors, with reference to European practice.",
+    "heading1": "Appointment of a DPO: A Legal Obligation That Requires Expertise",
+    "dpoImportance": "In today’s business environment, the protection of personal data has become imperative for organizations of all sizes. A key role in this process is played by the Data Protection Officer (DPO), whose responsibility is to ensure compliance with the legislation and to protect individuals’ rights.",
+    "legalBasis": "One of the obligations introduced by the new law is the appointment of a Data Protection Officer (DPO) in certain cases.",
+    "articleQuote": "According to Article 39(5) of the Law on Personal Data Protection of Bosnia and Herzegovina:",
+    "articleQuote1": "\"The Data Protection Officer shall be appointed based on his or her professional qualifications, in particular expert knowledge of law and practice regarding personal data protection and the ability to perform the tasks referred to in Article 41 of this Law.\"",
+    "qualificationWarning": "This means that companies should not formally appoint just any employee as a DPO simply to fulfill the legal requirement, without conducting a real assessment. The law clearly requires that the person possess appropriate legal and professional qualifications, including practical experience in the field of data protection.",
+    "administrativeNote": "It is therefore important to emphasize that appointing a Data Protection Officer cannot be a mere administrative act – companies that appoint an unqualified person may face issues with oversight, improper record-keeping, violation of individuals' privacy rights, and ultimately – penalties.",
+    "howToAppoint": "Companies can fulfill this legal obligation in several ways – the role of the Data Protection Officer (DPO) can be assigned to a qualified person already employed in the organization, a person engaged through a service contract, or an external expert, such as a lawyer with relevant knowledge and experience.",
+    "heading2": "Lessons from Practice: How Inadequate Appointment of a DPO Leads to Fines",
+    "introCases": "Recent cases from European practice clearly show that an inadequate approach to this function can result in serious consequences – both financial and reputational.",
+    "norwayCaseTitle": "Norway: Telecom Fined €350,000 for DPO-Related Failures",
+    "norwayCaseBody": "The Norwegian Data Protection Authority (Datatilsynet) imposed a fine of NOK 4,000,000 (approximately €351,478) on the telecommunications company Telenor ASA for non-compliance with GDPR provisions relating to the appointment and role of the Data Protection Officer (DPO), as well as for inadequate organizational measures for data protection.",
+    "norwayFindings": {
+      "noDPO": "Failure to appoint a DPO: Telenor ASA abolished the DPO position, believing that it did not meet the criteria for appointment under Article 37(1) of the GDPR. However, it did not provide documentation to support this assessment.",
+      "noContactInfo": "Lack of public contact information: The DPO’s contact details were not publicly available on the company’s website but only on the internal intranet, making them accessible only to employees.",
+      "incompleteRecords": "Incomplete records of processing activities (ROPA): The investigation found that data processing records were incomplete, and the DPO was not adequately involved in data protection matters.",
+      "conflict": "Conflict of interest: The DPO simultaneously held a legal counsel position, creating a potential conflict of interest."
     },
-    "Menu": {
-        "home": "Home",
-        "about": "About",
-        "publications": "Publications",
-        "partners": "Partners",
-        "contact": "Contact",
-        "more_details": "More details",
-        "blog": "Blog"
-    },
-    "Services": {
-        "aboutLawyer": "About lawyer",
-        "moreAboutLawyer": "More about lawyer",
-        "ourServices": "Our Services",
-        "servicesDescription": "From securing your property transactions and protecting your digital privacy to navigating the complexities of digital assets, IT law, obligations, and commercial ventures, our expertise ensures your business and personal affairs are safeguarded with precision and confidence.",
-        "commercialLaw": "Commercial Law",
-        "commercialLawShortText": "Empowering your business with comprehensive legal solutions.",
-        "obligationLaw": "Obligation Law",
-        "obligationLawShortText": "We protect your rights and provide support in contractual relations.",
-        "itLaw": "IT Law",
-        "itLawShortText": "We ensure your technological ventures succeed within a solid legal framework.",
-        "lawDigitalAssets": "Digital Assets",
-        "lawDigitalAssetsShortText": "Protect and manage your digital assets with our legal support.",
-        "personalDataProtection": "Personal Data Protection (GDPR)",
-        "personalDataProtectionShortText": "Protecting your privacy in the digital age in compliance with GDPR.",
-        "realEstate": "Real Estate",
-        "realEstateShortText": "Legal services related to real estate transactions and ownership.",
-        "inheritanceLaw": "Inheritance Law",
-        "inheritanceLawShortText": "Reliable support in inheritance processes and asset distribution.",
-        "familyLaw": "Family Law",
-        "familyLawShortText": "Expert support in family matters, protection, and representation of your rights.",
-        "laborLaw": "Labor Law",
-        "laborLawShortText": "Professional support for employers and employees in all aspects of labor relations.",
-        "more_details": "More details",
-        "digital_assets_guide": "Digital Assets in Practice: A Guide for Legal Entities and Individuals",
-        "virtual_currency_integration": "Integration of Virtual Currencies into Everyday Business",
-        "local_government": "Local Government in RS",
-        "crypto_market_regulation": "How Legally (Un)regulated is the Cryptocurrency Market in BiH?",
-        "seminar": "Seminar",
-        "law_faculty": "Faculty of Law, University of Banja Luka",
-        "podcast": "Podcast"
-    },
-    "Partners": {
-        "about0": "Drobnjak Legal & Partners, our partner in Serbia, covers all areas of law and provides comprehensive legal services throughout Serbia. Thanks to this partnership, we can ensure expert support and legal representation for clients in Serbia at the highest level.",
-        "about1": "Drobnjak Legal & Partners, founded by attorney Bojana Drobnjak in 2012, is a reliable partner in your business, whose growth is based on trust, good results, and continuous improvement.",
-        "about2": "With a long tradition of advising clients in all areas of corporate law, they excel in quality, flexibility, innovation, and practical solutions to complex business challenges. Their clients are reputable companies in the pharmaceutical, banking, construction, real estate development, hospitality, factoring, and transportation industries.",
-        "more": "More details"
-    },
-    "About": {
-        "about": "About Me",
-        "paragraphs": {
-            "p1": "Nataša Tica is the founder of the Law Office Nataša Tica and has significant experience in commercial and property law in the Republic of Srpska and Bosnia and Herzegovina. With extensive experience in notary offices and international companies, as well as as an independent entrepreneur and legal advisor for startups, IT law, and digital assets, she brings advanced legal strategies and solutions. As a lecturer and panelist, she has participated in numerous conferences and workshops, including those at the Chamber of Commerce of the Republic of Srpska and the Faculty of Law, University of Banja Luka. Her experience and passion for the legal profession enable her to provide high-quality legal services and advice on complex legal issues.",
-            "t1": "Education",
-            "p2": "Sveti Sava Gymnasium, Prijedor",
-            "p3": "Faculty of Law, University of Banja Luka",
-            "t2": "Licenses",
-            "p4": "Certified Data Protection Officer (CDPO) - a professional qualification that confirms expertise in personal data protection, particularly in accordance with the GDPR (General Data Protection Regulation). The CDPO certification is increasingly important in the business world, as data protection regulations become stricter, and companies are required to ensure compliance.",
-            "t3": "Work Experience",
-            "r1": "Associate at the Agency for Economic Development of the City of Prijedor “PREDA-PD”",
-            "r2": "Associate in a notary office",
-            "r3": "Compliance Officer at Obsidian Media LLC",
-            "r4": "Legal Consultant at Molson Coors BH",
-            "r5": "Professional Associate in a notary office",
-            "r6": "Independent Legal Advisor for startups, IT law, and digital assets",
-            "p5": "Lecturer and panelist at several conferences and professional workshops, such as:",
-            "pr1": "“Digital Assets in Practice: A Guide for Legal Entities and Individuals” at the Chamber of Commerce of the Republic of Srpska",
-            "pr2": "“Integration of Virtual Currencies into Everyday Business” in Jahorina",
-            "pr3": "“Local Government in RS” at the Faculty of Law, University of Banja Luka.",
-            "p6": "Co-author of the Handbook on Implementing Anti-Money Laundering and Counter-Terrorism Financing Measures via Virtual Currencies.",
-            "t4": "Memberships",
-            "t5": "Languages",
-            "c1": "Bar Association of the Republic of Srpska",
-            "l1": "English"
-        }
-    },
-    "Clients": {
-        "clients": "Our Clients"
-    },
-    "Footer": {
-        "explore": "Explore",
-        "home": "Home",
-        "about": "About",
-        "publications": "Publications",
-        "contact": "Contact",
-        "getInTouch": "Get in Touch",
-        "address": "Novice Cerovića 32, 78000 Banja Luka",
-        "phone": "+387 65 231-276",
-        "email": "natasa.tica@natasaticalawoffice.com",
-        "linkedin": "LinkedIn",
-        "partners": "Partner Law offices"
-    },
-    "ContactForm": {
-        "getInTouch": "Get In Touch",
-        "name": "Name",
-        "email": "Email",
-        "number": "Phone number",
-        "subject": "Subject",
-        "message": "Write your message...",
-        "sendMessage": "Send Message",
-        "emailSentError": "Error during sending",
-        "emailSentSuccess": "Email successfully sent",
-        "sending": "Sending"
-    },
-    "ContactInfo": {
-        "mailHere": "Mail Here",
-        "visitHere": "Visit Here",
-        "callHere": "Call Here"
-    },
-    "Layout": {
-        "title": "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
-        "description": "Law Office Nataša Tica offers expert legal services in family law, business law, and real estate law. Personalized legal support in Banja Luka.",
-        "schemaDescription": "Expert legal services in family law, business law, and real estate law. Providing personalized legal support in Banja Luka.",
-        "keywords": "lawyer, family law, business law, real estate"
-    },
-    "Blog": {
-        "mailHere": "Mail Here",
-        "visitHere": "Visit Here",
-        "callHere": "Call Here",
-        "title": "Personal Data Protection Law in Bosnia and Herzegovina: Why it is Important to Take the Appointment of a Data Protection Officer (DPO) Seriously?",
-        "intro": "Recently, a lot of attention has been drawn to the news that Bosnia and Herzegovina has adopted a new Law on Personal Data Protection, which is largely harmonized with the provisions of the General Data Protection Regulation (GDPR). However, while the media and social networks mostly relay dry information about the adoption of the law, concrete explanations are lacking – what does this really mean for companies in Bosnia and Herzegovina?",
-        "topicIntro": "In today’s article, I highlight the importance of complying with one of the obligations of controllers/processors, with reference to European practice.",
-        "heading1": "Appointment of a DPO: A Legal Obligation That Requires Expertise",
-        "dpoImportance": "In today’s business environment, the protection of personal data has become imperative for organizations of all sizes. A key role in this process is played by the Data Protection Officer (DPO), whose responsibility is to ensure compliance with the legislation and to protect individuals’ rights.",
-        "legalBasis": "One of the obligations introduced by the new law is the appointment of a Data Protection Officer (DPO) in certain cases.",
-        "articleQuote": "According to Article 39(5) of the Law on Personal Data Protection of Bosnia and Herzegovina:",
-        "articleQuote1": "\"The Data Protection Officer shall be appointed based on his or her professional qualifications, in particular expert knowledge of law and practice regarding personal data protection and the ability to perform the tasks referred to in Article 41 of this Law.\"",
-        "qualificationWarning": "This means that companies should not formally appoint just any employee as a DPO simply to fulfill the legal requirement, without conducting a real assessment. The law clearly requires that the person possess appropriate legal and professional qualifications, including practical experience in the field of data protection.",
-        "administrativeNote": "It is therefore important to emphasize that appointing a Data Protection Officer cannot be a mere administrative act – companies that appoint an unqualified person may face issues with oversight, improper record-keeping, violation of individuals' privacy rights, and ultimately – penalties.",
-        "howToAppoint": "Companies can fulfill this legal obligation in several ways – the role of the Data Protection Officer (DPO) can be assigned to a qualified person already employed in the organization, a person engaged through a service contract, or an external expert, such as a lawyer with relevant knowledge and experience.",
-        "heading2": "Lessons from Practice: How Inadequate Appointment of a DPO Leads to Fines",
-        "introCases": "Recent cases from European practice clearly show that an inadequate approach to this function can result in serious consequences – both financial and reputational.",
-        "norwayCaseTitle": "Norway: Telecom Fined €350,000 for DPO-Related Failures",
-        "norwayCaseBody": "The Norwegian Data Protection Authority (Datatilsynet) imposed a fine of NOK 4,000,000 (approximately €351,478) on the telecommunications company Telenor ASA for non-compliance with GDPR provisions relating to the appointment and role of the Data Protection Officer (DPO), as well as for inadequate organizational measures for data protection.",
-        "norwayFindings": {
-          "noDPO": "Failure to appoint a DPO: Telenor ASA abolished the DPO position, believing that it did not meet the criteria for appointment under Article 37(1) of the GDPR. However, it did not provide documentation to support this assessment.",
-          "noContactInfo": "Lack of public contact information: The DPO’s contact details were not publicly available on the company’s website but only on the internal intranet, making them accessible only to employees.",
-          "incompleteRecords": "Incomplete records of processing activities (ROPA): The investigation found that data processing records were incomplete, and the DPO was not adequately involved in data protection matters.",
-          "conflict": "Conflict of interest: The DPO simultaneously held a legal counsel position, creating a potential conflict of interest."
+    "norwayConclusion": "This case clearly demonstrates that a superficial understanding of the DPO’s role and responsibilities can have serious consequences. The DPO must be independent, continuously and proactively involved in all activities involving data processing, and must be visible and accessible to both employees and the public.",
+    "greeceCaseTitle": "Greece: Fine for Ignoring Supervisory Authority’s Request",
+    "greeceCaseBody": "In 2023, as part of a broader initiative led by the European Data Protection Board (EDPB), the Hellenic Data Protection Authority (HDPA), along with most EDPB members, jointly conducted an investigation on the topic of \"Definition and Position of the Data Protection Officer\". The Hellenic DPA adopted a standardized questionnaire and sent it to 31 public bodies in Greece, including the Municipality of Athens. The Municipality failed to respond by the deadline, thereby violating the obligation to cooperate with supervisory authorities (Article 31 of the GDPR).",
+    "greeceConclusion": "This case shows that the appointment of a DPO is not just an internal act, but also an obligation that requires open and continuous communication with regulators.",
+    "croatiaCaseTitle": "Croatia: €169,000 in Fines for Unlawful Processing and DPO-Related Failures",
+    "croatiaCaseBody": "The Croatian Data Protection Authority (AZOP) issued fines totaling €169,000, including to a company that processed data from the Ministry of the Interior’s database without a legal basis. This highlights the importance of the DPO’s role in monitoring the lawfulness of processing and the legal grounds. Two other fines were issued for failures in appointing a DPO: one of €12,000 to a casino and another of €10,000 to a company producing oils and fats.",
+    "heading3": "What Does This Mean for Companies in Bosnia and Herzegovina?",
+    "conclusion": "The new Law on Personal Data Protection in Bosnia and Herzegovina precisely defines the obligations that companies must fulfill, leaving little room for evasion or manipulation of legal provisions. Companies are required to bring their operations into compliance with this law no later than October 4, 2025.",
+    "finalNote": "As a lawyer specializing in personal data protection, I offer expert advice to help ensure your organization is fully compliant with the Law on Personal Data Protection. If you are unsure whether your organization needs to appoint a DPO, how to properly fulfill this obligation, how to include the DPO in business processes, or how to build internal policies and procedures – now is the right time to focus on this important issue and protect your organization from potential legal and reputational risks.",
+    "more": "More details"
+  },
+  "lawtypes": {
+    "itLaw": {
+      "hero": {
+        "title": "IT Law Services",
+        "subtitle": "Legal support for your software, SaaS, and digital business.",
+        "cta": "Contact us"
+      },
+      "whatIs": {
+        "title": "What is IT Law?",
+        "description": "IT Law includes legal support for software development, licensing, cloud services, data protection, and technology contracts tailored to the digital ecosystem."
+      },
+      "services": {
+        "title": "Our Key IT Law Services",
+        "nda": {
+          "title": "Non-Disclosure Agreements (NDA)",
+          "description": "Protection of confidential information during partnerships or negotiations."
         },
-        "norwayConclusion": "This case clearly demonstrates that a superficial understanding of the DPO’s role and responsibilities can have serious consequences. The DPO must be independent, continuously and proactively involved in all activities involving data processing, and must be visible and accessible to both employees and the public.",
-        "greeceCaseTitle": "Greece: Fine for Ignoring Supervisory Authority’s Request",
-        "greeceCaseBody": "In 2023, as part of a broader initiative led by the European Data Protection Board (EDPB), the Hellenic Data Protection Authority (HDPA), along with most EDPB members, jointly conducted an investigation on the topic of \"Definition and Position of the Data Protection Officer\". The Hellenic DPA adopted a standardized questionnaire and sent it to 31 public bodies in Greece, including the Municipality of Athens. The Municipality failed to respond by the deadline, thereby violating the obligation to cooperate with supervisory authorities (Article 31 of the GDPR).",
-        "greeceConclusion": "This case shows that the appointment of a DPO is not just an internal act, but also an obligation that requires open and continuous communication with regulators.",
-        "croatiaCaseTitle": "Croatia: €169,000 in Fines for Unlawful Processing and DPO-Related Failures",
-        "croatiaCaseBody": "The Croatian Data Protection Authority (AZOP) issued fines totaling €169,000, including to a company that processed data from the Ministry of the Interior’s database without a legal basis. This highlights the importance of the DPO’s role in monitoring the lawfulness of processing and the legal grounds. Two other fines were issued for failures in appointing a DPO: one of €12,000 to a casino and another of €10,000 to a company producing oils and fats.",
-        "heading3": "What Does This Mean for Companies in Bosnia and Herzegovina?",
-        "conclusion": "The new Law on Personal Data Protection in Bosnia and Herzegovina precisely defines the obligations that companies must fulfill, leaving little room for evasion or manipulation of legal provisions. Companies are required to bring their operations into compliance with this law no later than October 4, 2025.",
-        "finalNote": "As a lawyer specializing in personal data protection, I offer expert advice to help ensure your organization is fully compliant with the Law on Personal Data Protection. If you are unsure whether your organization needs to appoint a DPO, how to properly fulfill this obligation, how to include the DPO in business processes, or how to build internal policies and procedures – now is the right time to focus on this important issue and protect your organization from potential legal and reputational risks.",
-        "more": "More details"
-    },
-    "lawtypes": {
-        "itLaw": {
-          "title": "IT Law",
-          "intro": "In the field of IT law, we provide comprehensive legal support to companies involved in the development, distribution, and use of software and digital solutions.",
-          "typesOfContractsTitle": "Types of contracts we handle:",
-      
-          "serviceAgreement": {
-            "title": "Service Agreements",
-            "description": "Define the obligations and rights between the service provider and the client, including timelines, scope of services, and compensation."
-          },
-      
-          "sow": {
-            "title": "Statements of Work (SOW)",
-            "description": "Provide detailed descriptions of specific tasks, goals, and deadlines within a broader cooperation agreement."
-          },
-      
-          "nda": {
-            "title": "Non-Disclosure Agreements (NDA)",
-            "description": "Protect confidential information exchanged during business cooperation between parties."
-          },
-      
-          "softwareLicense": {
-            "title": "Software Licensing Agreements",
-            "description": "Regulate the rights to use a software product, including limitations and duration of the license."
-          },
-      
-          "saasPaasIaas": {
-            "title": "Agreements for SaaS, PaaS, and IaaS models",
-            "description": "Legal regulation of cloud services, including access, security, maintenance, and data ownership."
-          },
-      
-          "sla": {
-            "title": "Service Level Agreements (SLA)",
-            "description": "Define metrics and quality standards the provider must meet, as well as consequences for non-compliance."
-          },
-      
-          "reviewAndPreparation": "We offer preparation, review, and revision services for the mentioned legal documents in accordance with best practices and the specific needs of the IT sector."
+        "sla": {
+          "title": "Service Level Agreements (SLA)",
+          "description": "Defining standards, uptime, and penalties for non-compliance."
+        },
+        "contracts": {
+          "title": "Contract Drafting & Review",
+          "description": "Tailored contracts for IT businesses including SOWs, SaaS, and licenses."
+        },
+        "disputes": {
+          "title": "Dispute Representation",
+          "description": "Legal support and representation in court or arbitration in tech-related disputes."
         }
-      }      
+      },
+      "clients": {
+        "title": "Who Are Our Clients?",
+        "description": "Startups, SaaS providers, IT consulting firms, development agencies, and cloud service vendors."
+      },
+      "whyUs": {
+        "title": "Why Choose Nataša Tica Law Office?",
+        "point1": "Deep understanding of tech and legal intersections",
+        "point2": "Tailored contracts for IT ecosystems",
+        "point3": "Proven track record with startups and scaleups",
+        "point4": "Bilingual legal support (EN/SRB)",
+        "point5": "Fast turnaround and dedicated support"
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "quote1": "Professional, reliable, and fast — they helped us scale legally!",
+        "quote2": "Clear advice and excellent contract work for our SaaS startup.",
+        "quote3": "True experts in IT law. Highly recommended."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "cta": "Still have questions? Contact us.",
+        "q1": {
+          "q": "Do you offer fixed prices for contracts?",
+          "a": "Yes, we offer both fixed and hourly billing depending on the scope."
+        },
+        "q2": {
+          "q": "Can you review foreign contracts?",
+          "a": "Yes, we work with international partners and review contracts in English."
+        }
+      }
+    },
+    "cryptoLaw": {
+      "hero": {
+        "title": "Crypto & Blockchain Law",
+        "subtitle": "Expert legal services for cryptocurrency, blockchain, and digital assets",
+        "cta": "Get Legal Protection"
+      },
+      "whatIs": {
+        "title": "What is Crypto Law?",
+        "description": "Crypto law encompasses legal frameworks and regulations governing cryptocurrency, blockchain technology, smart contracts, and digital assets. It covers areas such as tokenization, regulatory compliance, and digital asset management."
+      },
+      "services": {
+        "title": "Our Services",
+        "tokenization": {
+          "title": "Tokenization",
+          "description": "Legal structuring and compliance for token offerings, NFTs, and digital asset creation"
+        },
+        "smartContracts": {
+          "title": "Smart Contracts",
+          "description": "Legal review, drafting, and compliance for smart contract implementations"
+        },
+        "regulatory": {
+          "title": "Regulatory Compliance",
+          "description": "Guidance on cryptocurrency regulations, AML/KYC requirements, and international compliance"
+        },
+        "disputes": {
+          "title": "Dispute Resolution",
+          "description": "Legal representation in cryptocurrency and blockchain-related disputes"
+        }
+      },
+      "clients": {
+        "title": "Who Are Our Clients?",
+        "description": "Cryptocurrency exchanges, blockchain startups, NFT projects, DeFi platforms, and digital asset management firms"
+      },
+      "whyUs": {
+        "title": "Why Choose Nataša Tica Law Office?",
+        "point1": "Specialized expertise in cryptocurrency and blockchain law",
+        "point2": "Up-to-date knowledge of global crypto regulations",
+        "point3": "Experience with token offerings and smart contracts",
+        "point4": "Bilingual legal support (EN/SRB)",
+        "point5": "Fast and reliable service for crypto projects"
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "quote1": "Expert legal guidance for our blockchain project. Highly recommended!",
+        "quote2": "Professional support for our token launch. Made the process smooth.",
+        "quote3": "Great understanding of both crypto and legal aspects."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "cta": "Still have questions? Contact us.",
+        "q1": {
+          "q": "Do you handle international crypto regulations?",
+          "a": "Yes, we provide guidance on global crypto regulations and compliance requirements."
+        },
+        "q2": {
+          "q": "Can you assist with token offerings?",
+          "a": "Absolutely! We help structure and comply with legal requirements for token offerings."
+        }
+      }
+    }
+  }
 }
