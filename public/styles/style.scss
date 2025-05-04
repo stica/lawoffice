@@ -7217,7 +7217,7 @@ ul {
         .about-me-controls {
             min-width: 300px;
             height: 100%;
-            margin-left: 70px;
+            margin-left: 50px;
             margin-top: 30px;
 
             .lawyer-moto {
@@ -7226,15 +7226,9 @@ ul {
                 color: #513D48
             }
 
-            // .btn-primary {
-            //     margin-top: 25px;
-            //     width: 250px;
-
-            //     &:hover {
-            //         color: #513D48;
-            //         border-color: #513D48
-            //     }
-            // }
+            .btn.primary {
+                width: fit-content;
+            }
         }
     }
 }
@@ -8307,7 +8301,7 @@ ul {
             font-weight: 600;
         }
 
-        min-width: 350px;
+        min-width: 300px;
     }
 
 }
@@ -8601,4 +8595,11 @@ ul {
   .fade-in {
     animation: fadeIn 0.5s ease-out;
   }
+  
+  .btn.primary {
+    color: #f7f0e8;
+    background: #513D48 !important;
+    border: 1px solid rgba(81, 61, 72, 0.2);
+  }
+
   
