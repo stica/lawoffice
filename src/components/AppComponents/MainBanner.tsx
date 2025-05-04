@@ -19,7 +19,7 @@ const MainBanner: React.FC<{ messages: any, lang: string }> = ({ messages, lang 
 
         </div>
         <div className="ntl-main-page-right">
-          <svg className="svg2" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.84 484.37" style={{ width: '50%', height: '50%' }}><defs></defs><polygon points="195.68 364.12 208.44 376.88 221.2 364.07 221.2 287.04 195.68 261.52 195.68 364.12" /><polygon points="144.43 312.81 170.05 338.44 170.05 192.78 144.43 167.15 144.43 312.81" /><polygon points="246.92 153.96 272.56 128.34 144.43 128.34 170.05 153.96 195.68 153.96 195.68 218.63 221.3 244.25 221.3 153.96 246.92 153.96" /><polygon points="246.92 338.44 272.55 312.84 272.55 167.15 246.92 192.79 246.92 338.44" /></svg>
+          <svg className="svg2" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.84 484.37" style={{ width: '50%' }}><defs></defs><polygon points="195.68 364.12 208.44 376.88 221.2 364.07 221.2 287.04 195.68 261.52 195.68 364.12" /><polygon points="144.43 312.81 170.05 338.44 170.05 192.78 144.43 167.15 144.43 312.81" /><polygon points="246.92 153.96 272.56 128.34 144.43 128.34 170.05 153.96 195.68 153.96 195.68 218.63 221.3 244.25 221.3 153.96 246.92 153.96" /><polygon points="246.92 338.44 272.55 312.84 272.55 167.15 246.92 192.79 246.92 338.44" /></svg>
 
           <div className="about-me">
             <div className="about-me-controls">
