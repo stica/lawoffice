@@ -185,7 +185,10 @@
     "advantagesliquidity": "Veća likvidnost tokenizovane imovine.",
     "advantagescommunity": "Direktna povezanost sa zajednicom kroz inovativne modele vlasništva i nagrađivanja.",
     "contactInfo": "Dok čekamo donošenje Zakona o digitalnoj imovini u BiH, poslovna zajednica već sada može pilotirati modele tokenizacije, oslanjajući se na postojeće pravne institute. Tako se stvara praksa koja može podstaći i regulatorne promene.\n\nNapomena: Ovaj tekst je informativnog karaktera i ne predstavlja pravni savjet. Svaka situacija je jedinstvena i zahteva individualnu analizu.",
-    "contactUs": "Za pravnu pomoć prilagođenu vašem poslovanju, obratite se advokatskoj kancelariji Nataša Tica na adresu: natasa.tica@natasaticalawoffice.com.\n\nBilo da vam je potrebna pravna podrška u vezi sa digitalnom imovinom, tokenizacijom, korporativnim strukturama ili regulatornim pitanjima, stojimo Vam na raspolaganju da zajedno pronađemo rješenje koje odgovara vašim ciljevima."
+    "contactUs": "Za pravnu pomoć prilagođenu vašem poslovanju, obratite se advokatskoj kancelariji Nataša Tica na adresu: natasa.tica@natasaticalawoffice.com.\n\nBilo da vam je potrebna pravna podrška u vezi sa digitalnom imovinom, tokenizacijom, korporativnim strukturama ili regulatornim pitanjima, stojimo Vam na raspolaganju da zajedno pronađemo rješenje koje odgovara vašim ciljevima.",
+    "faq": {
+      "cta": "Kontaktirajte nas."
+    }
   },
   "lawtypes": {
     "itLaw": {

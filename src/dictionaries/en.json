@@ -183,7 +183,10 @@
     "advantagesliquidity": "Greater liquidity of tokenized assets.",
     "advantagescommunity": "Direct connection with the community through innovative ownership and reward models.",
     "contactInfo": "While we wait for a Digital Assets Law in Bosnia and Herzegovina, the business community can already begin piloting tokenization models, relying on existing legal mechanisms. This helps create a practical foundation that could encourage regulatory changes.\n\nNote: This text is for informational purposes only and does not constitute legal advice. Each case is unique and requires individual analysis.",
-    "contactUs": "For legal assistance tailored to your business, contact Nataša Tica Law Office at: natasa.tica@natasaticalawoffice.com.\n\nWhether you need legal support in digital assets, tokenization, corporate structures, or regulatory matters, we are here to help you find a solution that aligns with your goals."
+    "contactUs": "For legal assistance tailored to your business, contact Nataša Tica Law Office at: natasa.tica@natasaticalawoffice.com.\n\nWhether you need legal support in digital assets, tokenization, corporate structures, or regulatory matters, we are here to help you find a solution that aligns with your goals.",
+    "faq": {
+      "cta": "Contact us."
+    }
   },
   "lawtypes": {
     "itLaw": {

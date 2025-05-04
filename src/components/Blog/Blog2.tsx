@@ -66,9 +66,13 @@ export default function Blog2({ messages, locale }: Blog2Props) {
 
         <div className="contact-section">
           <p>{t('contactInfo')}</p>
-          <a href="mailto:natasa.tica@natasaticalawoffice.com" className="primary">
             {t('contactUs')}
-          </a>
+        </div>
+
+        <div className="text-center mt-8" style={{ marginTop: "20px" }}>
+          <button className="btn primary">
+            {t("faq.cta")}
+          </button>
         </div>
       </section>
     </div>
