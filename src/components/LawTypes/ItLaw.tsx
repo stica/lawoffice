@@ -1,7 +1,12 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-const Blog1: React.FC = () => {
+interface Blog1Props {
+  messages: any;
+  locale: string;
+}
+
+const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
   const t = useTranslations("lawtypes");
 
   return (
