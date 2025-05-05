@@ -8626,14 +8626,10 @@ ul {
 
   .blog-header-wrapper {
     display: flex;
-    flex-direction: row;
-    flex: 1 1;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     .blog-image-section {
         text-align: center;
-        width: 48%;
-        flex: 0.3;
         min-width: 300px;
         margin-right: 20px;
 
@@ -8646,7 +8642,6 @@ ul {
       }
 
       .blog-hero {
-        flex: 0.7;
         min-width: 300px;
       }
   }
