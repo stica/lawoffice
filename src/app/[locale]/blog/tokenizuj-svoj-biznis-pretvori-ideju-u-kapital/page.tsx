@@ -51,7 +51,7 @@ export const metadata = {
   openGraph: {
     title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
     description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-    images: [{ url: '/images/new/logojpg.jpg' }],
+    images: [{ url: '/images/new/tokenization.png' }],
   },
   alternates: {
     languages: {
@@ -62,6 +62,6 @@ export const metadata = {
   linkedin: {
     title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
     description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-    image: '/images/new/logojpg.jpg',
+    image: '/images/new/tokenization.png',
   },
 };
