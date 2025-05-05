@@ -51,8 +51,12 @@ export const metadata = {
   openGraph: {
     title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
     description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-    images: [{ url: '/images/new/tokenization.png' }],
-  },
+    images: [{ 
+      url: 'https://www.natasaticalawoffice.com/images/new/tokenization.png',
+      width: 1200,
+      height: 630,
+      alt: "Tokenizacija biznisa"
+    }],  },
   alternates: {
     languages: {
       'en': 'https://www.natasaticalawoffice.com/en',
@@ -62,6 +66,6 @@ export const metadata = {
   linkedin: {
     title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
     description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-    image: '/images/new/tokenization.png',
+    image: 'https://www.natasaticalawoffice.com/images/new/tokenization.png',
   },
 };
