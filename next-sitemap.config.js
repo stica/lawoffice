@@ -39,12 +39,16 @@ const blogPosts = [
 
 module.exports = {
   siteUrl,
-  generateRobotsTxt: true,
+  // Keep your hand-authored robots.txt; do not overwrite it
+  generateRobotsTxt: false,
   sitemapSize: 5000,
   changefreq: 'weekly',
   priority: 0.7,
   outDir: './public',
   exclude: [],
+  // Force a single sitemap file (no index or numbered files)
+  generateIndexSitemap: false,
+  autoLastmod: true,
 
   // Ensure homepage and locale roots get higher priority
   transform: async (config, path) => {
