@@ -58,6 +58,9 @@ export const metadata = {
       "kriptovalute",
       "NFT",
       "DeFi",
-      "digitalna imovina"
+      "digitalna imovina",
+      "GDPR",
+      "licni podaci",
+      "data protection",
     ]
 }
