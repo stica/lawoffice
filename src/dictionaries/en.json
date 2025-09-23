@@ -308,6 +308,156 @@
           "a": "Absolutely! We help structure and comply with legal requirements for token offerings."
         }
       }
+    },
+    "dataProtection": {
+      "hero": {
+        "title": "Data Protection & GDPR Compliance",
+        "subtitle": "Expert legal services for data protection, privacy, and GDPR compliance",
+        "cta": "Get Compliant Today"
+      },
+      "whatIs": {
+        "title": "What is Data Protection & GDPR?",
+        "description": "Data Protection Law and the General Data Protection Regulation (GDPR) establish rules for the collection, processing, and storage of personal data. These regulations protect individuals' privacy and give them control over their personal information while imposing strict requirements on organizations that handle such data."
+      },
+      "services": {
+        "title": "Our Services",
+        "gdprCompliance": {
+          "title": "GDPR Compliance",
+          "description": "Comprehensive GDPR compliance assessments and implementation strategies for your business"
+        },
+        "dataBreach": {
+          "title": "Data Breach Response",
+          "description": "Immediate legal assistance and compliance guidance in case of data security incidents"
+        },
+        "privacyPolicies": {
+          "title": "Privacy Policies & Documentation",
+          "description": "Drafting and reviewing privacy policies, data processing agreements, and related documentation"
+        },
+        "dpo": {
+          "title": "Data Protection Officer (DPO) Services",
+          "description": "Professional DPO services to ensure ongoing compliance with data protection regulations"
+        }
+      },
+      "clients": {
+        "title": "Who Needs Our Services?",
+        "description": "Businesses of all sizes that process personal data, including e-commerce platforms, healthcare providers, financial institutions, and technology companies"
+      },
+      "whyUs": {
+        "title": "Why Choose Nataša Tica Law Office?",
+        "point1": "Certified Data Protection Officer (CDPO) with extensive experience",
+        "point2": "Practical approach to implementing data protection measures",
+        "point3": "Up-to-date knowledge of BiH and EU data protection laws",
+        "point4": "Bilingual legal support (EN/SRB)",
+        "point5": "Customized solutions tailored to your specific business needs"
+      },
+      "testimonials": {
+        "title": "Client Testimonials",
+        "quote1": "Professional and thorough GDPR compliance service. They made a complex process manageable.",
+        "quote2": "Quick response to our data breach incident. Their expertise was invaluable in handling the situation.",
+        "quote3": "Clear and practical advice on data protection matters. Highly recommended for any business."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "cta": "Need Help with Data Protection? Contact Us.",
+        "q1": {
+          "q": "Is GDPR applicable to companies in Bosnia and Herzegovina?",
+          "a": "While GDPR is an EU regulation, it applies to any organization that processes personal data of EU residents, regardless of the company's location. Additionally, Bosnia and Herzegovina has its own data protection laws that align with GDPR principles."
+        },
+        "q2": {
+          "q": "What are the penalties for non-compliance with data protection laws?",
+          "a": "Penalties for non-compliance can be severe, including fines up to 4% of annual global turnover or €20 million (whichever is higher) under GDPR. Local laws in BiH also prescribe significant fines for violations of data protection regulations."
+        }
+      }
+    },
+    "commercialLaw": {
+      "hero": {"title": "Commercial Law Services", "subtitle": "Comprehensive legal support for companies and entrepreneurs.", "cta": "Contact us"},
+      "whatIs": {"title": "What is Commercial Law?", "description": "Commercial Law covers company formation, corporate governance, mergers and acquisitions, and commercial contracts that support business operations."},
+      "services": {
+        "title": "Our Services",
+        "companyFormation": {"title": "Company Formation", "description": "Establishing companies and branches, drafting articles, and registrations."},
+        "corporateGovernance": {"title": "Corporate Governance", "description": "Shareholders' agreements, management structures, and compliance."},
+        "mna": {"title": "M&A", "description": "Due diligence, structuring, and transaction documentation."},
+        "commercialContracts": {"title": "Commercial Contracts", "description": "Drafting and negotiating B2B and B2C agreements."}
+      },
+      "clients": {"title": "Who Are Our Clients?", "description": "SMEs, startups, investors, and corporate entities."},
+      "whyUs": {"title": "Why Choose Nataša Tica Law Office?", "point1": "Business-oriented legal advice", "point2": "Efficient transaction support", "point3": "Clear documentation and risk management", "point4": "Experience with startups and SMEs", "point5": "Bilingual support (EN/SRB)"},
+      "testimonials": {"title": "What Our Clients Say", "quote1": "Professional and precise advice.", "quote2": "They streamlined our company setup.", "quote3": "Great support in contract negotiations."},
+      "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Do you assist with company registration?", "a": "Yes, we provide end-to-end assistance for company formation."}, "q2": {"q": "Can you help with shareholder agreements?", "a": "Yes, we draft and review shareholder and investment agreements."}}
+    },
+    "obligationLaw": {
+      "hero": {"title": "Obligation Law Services", "subtitle": "Protection of your rights in contractual relations.", "cta": "Contact us"},
+      "whatIs": {"title": "What is Obligation Law?", "description": "Obligation Law regulates contracts, damages, fulfillment, and termination of obligations between parties."},
+      "services": {
+        "title": "Our Services",
+        "contractDrafting": {"title": "Contract Drafting & Review", "description": "Preparation and review of contracts tailored to your needs."},
+        "debtCollection": {"title": "Debt Collection", "description": "Legal actions and negotiations to collect receivables."},
+        "disputes": {"title": "Dispute Resolution", "description": "Representation in court and arbitration related to contracts."},
+        "mediation": {"title": "Mediation & Settlement", "description": "Out-of-court dispute resolution and settlements."}
+      },
+      "clients": {"title": "Who Are Our Clients?", "description": "Businesses and individuals in contractual relationships."},
+      "whyUs": {"title": "Why Choose Nataša Tica Law Office?", "point1": "Result-oriented approach", "point2": "Clear strategies", "point3": "Transparent communication", "point4": "Experience in litigation", "point5": "Efficient settlements"},
+      "testimonials": {"title": "What Our Clients Say", "quote1": "Recovered our receivables quickly.", "quote2": "Excellent contract drafting.", "quote3": "Strong courtroom representation."},
+      "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Do you offer fixed fees?", "a": "Yes, depending on the scope of work."}, "q2": {"q": "Can you negotiate settlements?", "a": "Yes, we actively negotiate to reach favorable outcomes."}}
+    },
+    "realEstate": {
+      "hero": {"title": "Real Estate Law", "subtitle": "Secure your property transactions with confidence.", "cta": "Contact us"},
+      "whatIs": {"title": "What is Real Estate Law?", "description": "Covers transactions, leases, due diligence, and property disputes for buyers, sellers, and investors."},
+      "services": {
+        "title": "Our Services",
+        "transactions": {"title": "Sales & Purchases", "description": "Drafting contracts, escrow arrangements, and registrations."},
+        "dueDiligence": {"title": "Legal Due Diligence", "description": "Checking ownership, encumbrances, and legal risks."},
+        "leases": {"title": "Leases", "description": "Commercial and residential leasing documentation."},
+        "disputes": {"title": "Disputes", "description": "Resolving property, boundary, and possession disputes."}
+      },
+      "clients": {"title": "Who Are Our Clients?", "description": "Individuals, developers, agencies, and investors."},
+      "whyUs": {"title": "Why Choose Nataša Tica Law Office?", "point1": "Thorough risk assessment", "point2": "Clear contracts", "point3": "End-to-end support", "point4": "Experience with notaries & registries", "point5": "Timely execution"},
+      "testimonials": {"title": "What Our Clients Say", "quote1": "Smooth apartment purchase.", "quote2": "Great lease contracts.", "quote3": "Efficient dispute resolution."},
+      "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Do you assist with land registry?", "a": "Yes, we handle registrations and checks."}, "q2": {"q": "Do you work with agencies?", "a": "Yes, we coordinate with agents and notaries."}}
+    },
+    "inheritanceLaw": {
+      "hero": {"title": "Inheritance Law", "subtitle": "Trusted support in inheritance processes.", "cta": "Contact us"},
+      "whatIs": {"title": "What is Inheritance Law?", "description": "Regulates transfer of assets after death, wills, probate, and inheritance disputes."},
+      "services": {
+        "title": "Our Services",
+        "wills": {"title": "Wills", "description": "Drafting and certifying wills and legacies."},
+        "probate": {"title": "Probate", "description": "Representation in probate procedures before courts and notaries."},
+        "disputes": {"title": "Disputes", "description": "Challenging wills and resolving inheritance conflicts."},
+        "advice": {"title": "Advisory", "description": "Strategic planning for inheritance and asset protection."}
+      },
+      "clients": {"title": "Who Are Our Clients?", "description": "Heirs, testators, and family members in inheritance matters."},
+      "whyUs": {"title": "Why Choose Nataša Tica Law Office?", "point1": "Sensitive and professional approach", "point2": "Clear guidance", "point3": "Efficient procedures", "point4": "Experienced representation", "point5": "Transparent fees"},
+      "testimonials": {"title": "What Our Clients Say", "quote1": "Compassionate and effective.", "quote2": "Helped us through a difficult process.", "quote3": "Great advice on wills."},
+      "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Can you draft living wills?", "a": "Yes, we prepare tailored documents."}, "q2": {"q": "Do you handle cross-border inheritance?", "a": "Yes, subject to applicable laws."}}
+    },
+    "familyLaw": {
+      "hero": {"title": "Family Law", "subtitle": "Expert support in family matters and rights protection.", "cta": "Contact us"},
+      "whatIs": {"title": "What is Family Law?", "description": "Covers marriage dissolution, custody, property division, and protection from violence."},
+      "services": {
+        "title": "Our Services",
+        "divorce": {"title": "Divorce", "description": "Representation and agreements for amicable or contentious divorce."},
+        "custody": {"title": "Custody & Visitation", "description": "Protecting the best interests of the child."},
+        "property": {"title": "Marital Property", "description": "Division and settlement of marital property."},
+        "protection": {"title": "Protection from Violence", "description": "Legal protection measures and representation."}
+      },
+      "clients": {"title": "Who Are Our Clients?", "description": "Spouses, parents, guardians, and family members."},
+      "whyUs": {"title": "Why Choose Nataša Tica Law Office?", "point1": "Empathetic and firm", "point2": "Child-centered approach", "point3": "Discretion and privacy", "point4": "Experienced litigation", "point5": "Clear communication"},
+      "testimonials": {"title": "What Our Clients Say", "quote1": "Supportive and professional.", "quote2": "Protected our rights and children.", "quote3": "Resolved complex property matters."},
+      "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Do you handle mediation?", "a": "Yes, we encourage amicable solutions."}, "q2": {"q": "Do you offer urgent protection?", "a": "Yes, we file urgent motions when necessary."}}
+    },
+    "laborLaw": {
+      "hero": {"title": "Labor Law", "subtitle": "Professional support for employers and employees.", "cta": "Contact us"},
+      "whatIs": {"title": "What is Labor Law?", "description": "Regulates employment contracts, workplace policies, compliance, and labor disputes."},
+      "services": {
+        "title": "Our Services",
+        "employmentContracts": {"title": "Employment Contracts", "description": "Drafting, reviewing, and terminating employment agreements."},
+        "policies": {"title": "Workplace Policies", "description": "Internal regulations, handbooks, and compliance."},
+        "disputes": {"title": "Disputes", "description": "Representation before labor inspectorates and courts."},
+        "compliance": {"title": "Compliance", "description": "Ensuring compliance with labor laws and regulations."}
+      },
+      "clients": {"title": "Who Are Our Clients?", "description": "Employers, employees, and HR departments."},
+      "whyUs": {"title": "Why Choose Nataša Tica Law Office?", "point1": "Balanced perspective", "point2": "Preventive advice", "point3": "Strong litigation skills", "point4": "Clear documentation", "point5": "Responsive and practical"},
+      "testimonials": {"title": "What Our Clients Say", "quote1": "Excellent HR policies.", "quote2": "Resolved workplace dispute.", "quote3": "Great advice on terminations."},
+      "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Do you support both employers and employees?", "a": "Yes, we represent both, subject to conflict checks."}, "q2": {"q": "Can you draft internal policies?", "a": "Yes, we prepare tailored policies and handbooks."}}
     }
   }
 }

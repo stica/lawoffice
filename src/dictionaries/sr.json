@@ -310,6 +310,156 @@
           "a": "Naravno! Pomagamo u strukturiranju i usklađivanju s pravnim zahtevima za token ponude."
         }
       }
+    },
+    "dataProtection": {
+      "hero": {
+        "title": "Zaštita podataka i GDPR usklađenost",
+        "subtitle": "Stručne pravne usluge za zaštitu podataka, privatnost i usklađenost sa GDPR-om",
+        "cta": "Postanite usklađeni danas"
+      },
+      "whatIs": {
+        "title": "Šta je zaštita podataka i GDPR?",
+        "description": "Zakon o zaštiti podataka i Opšta uredba o zaštiti podataka (GDPR) uspostavljaju pravila za prikupljanje, obradu i čuvanje ličnih podataka. Ovi propisi štite privatnost pojedinaca i daju im kontrolu nad njihovim ličnim podacima, dok nameću stroge zahteve organizacijama koje rukovode takvim podacima."
+      },
+      "services": {
+        "title": "Naše usluge",
+        "gdprCompliance": {
+          "title": "GDPR usklađenost",
+          "description": "Sveobuhvatne procjene usklađenosti sa GDPR-om i strategije implementacije za vaše poslovanje"
+        },
+        "dataBreach": {
+          "title": "Reagovanje na povredu podataka",
+          "description": "Neposredna pravna pomoć i uputstva o usklađenosti u slučaju sigurnosnih incidenata sa podacima"
+        },
+        "privacyPolicies": {
+          "title": "Politike privatnosti i dokumentacija",
+          "description": "Izrada i pregled politika privatnosti, ugovora o obradi podataka i srodne dokumentacije"
+        },
+        "dpo": {
+          "title": "Usluge službenika za zaštitu podataka (DPO)",
+          "description": "Profesionalne DPO usluge za kontinuiranu usklađenost sa propisima o zaštiti podataka"
+        }
+      },
+      "clients": {
+        "title": "Kome su namenjene naše usluge?",
+        "description": "Preduzećima svih veličina koja obrađuju lične podatke, uključujući e-trgovinske platforme, zdravstvene ustanove, finansijske institucije i tehnološke kompanije"
+      },
+      "whyUs": {
+        "title": "Zašto izabrati Advokatsku kancelariju Nataša Tica?",
+        "point1": "Certifikovani službenik za zaštitu podataka (CDPO) sa bogatim iskustvom",
+        "point2": "Praktičan pristup u implementaciji mera za zaštitu podataka",
+        "point3": "Ažurno poznavanje zakona o zaštiti podataka u BiH i EU",
+        "point4": "Dvojezična pravna podrška (SRB/EN)",
+        "point5": "Prilagođena rešenja skrojena prema vašim specifičnim poslovnim potrebama"
+      },
+      "testimonials": {
+        "title": "Šta kažu naši klijenti",
+        "quote1": "Profesionalna i temeljna usluga usklađenosti sa GDPR-om. Učinili su složen proces upravljivim.",
+        "quote2": "Brzi odgovor na naš incident sa povredom podataka. Njihova stručnost bila je neprocenjiva u rešavanju situacije.",
+        "quote3": "Jasni i praktični saveti o pitanjima zaštite podataka. Toplo preporučujem za svako preduzeće."
+      },
+      "faq": {
+        "title": "Često postavljana pitanja",
+        "cta": "Trebate pomoć oko zaštite podataka? Kontaktirajte nas.",
+        "q1": {
+          "q": "Da li se GDPR primenjuje na kompanije u Bosni i Hercegovini?",
+          "a": "Iako je GDPR uredba EU, primenjuje se na sve organizacije koje obrađuju lične podatke stanovnika EU, bez obzira na lokaciju kompanije. Osim toga, Bosna i Hercegovina ima svoje zakone o zaštiti podataka koji su usklađeni sa GDPR načelima."
+        },
+        "q2": {
+          "q": "Koje su kazne za nepoštovanje zakona o zaštiti podataka?",
+          "a": "Kazne za nepoštovanje mogu biti veoma ozbiljne, uključujući novčane kazne do 4% godišnjeg globalnog prihoda ili 20 miliona evra (šta je veće) prema GDPR-u. Lokalni zakoni u BiH takođe predviđaju značajne kazne za kršenje propisa o zaštiti podataka."
+        }
+      }
+    },
+    "commercialLaw": {
+      "hero": {"title": "Privredno pravo", "subtitle": "Sveobuhvatna pravna podrška za preduzeća i preduzetnike.", "cta": "Kontaktirajte nas"},
+      "whatIs": {"title": "Šta je privredno pravo?", "description": "Privredno pravo obuhvata osnivanje kompanija, korporativno upravljanje, spajanja i akvizicije i komercijalne ugovore koji podržavaju poslovanje."},
+      "services": {
+        "title": "Naše usluge",
+        "companyFormation": {"title": "Osnivanje društava", "description": "Osnivanje društava i ogranaka, izrada akata i registracije."},
+        "corporateGovernance": {"title": "Korporativno upravljanje", "description": "Ugovori članova, strukture upravljanja i usklađenost."},
+        "mna": {"title": "M&A", "description": "Due diligence, strukturiranje i dokumentacija transakcija."},
+        "commercialContracts": {"title": "Komercijalni ugovori", "description": "Izrada i pregovaranje B2B i B2C ugovora."}
+      },
+      "clients": {"title": "Ko su naši klijenti?", "description": "Mala i srednja preduzeća, startapi, investitori i korporativni klijenti."},
+      "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Poslovno orijentisan pravni savet", "point2": "Efikasna podrška transakcijama", "point3": "Jasna dokumentacija i upravljanje rizicima", "point4": "Iskustvo sa startapima i MSP", "point5": "Dvojezična podrška (SRB/EN)"},
+      "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Profesionalan i precizan savet.", "quote2": "Olakšali su nam osnivanje firme.", "quote3": "Odlična podrška u pregovorima."},
+      "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li pomažete oko registracije firme?", "a": "Da, pružamo kompletnu podršku pri osnivanju."}, "q2": {"q": "Da li radite ugovore članova?", "a": "Da, izrađujemo i revidiramo ugovore članova i investicione ugovore."}}
+    },
+    "obligationLaw": {
+      "hero": {"title": "Obligaciono pravo", "subtitle": "Zaštita vaših prava u ugovornim odnosima.", "cta": "Kontaktirajte nas"},
+      "whatIs": {"title": "Šta je obligaciono pravo?", "description": "Obligaciono pravo uređuje ugovore, štetu, ispunjenje i prestanak obaveza između strana."},
+      "services": {
+        "title": "Naše usluge",
+        "contractDrafting": {"title": "Izrada i revizija ugovora", "description": "Priprema i pregled ugovora prilagođenih vašim potrebama."},
+        "debtCollection": {"title": "Naplate potraživanja", "description": "Pravne radnje i pregovori radi naplate potraživanja."},
+        "disputes": {"title": "Sporovi", "description": "Zastupanje u sudskim i arbitražnim postupcima u vezi sa ugovorima."},
+        "mediation": {"title": "Medijacija i poravnanja", "description": "Vansudsko rešavanje sporova i poravnanja."}
+      },
+      "clients": {"title": "Ko su naši klijenti?", "description": "Privredni subjekti i fizička lica u ugovornim odnosima."},
+      "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Rezultatski pristup", "point2": "Jasne strategije", "point3": "Transparentna komunikacija", "point4": "Iskustvo u parnicama", "point5": "Efikasna poravnanja"},
+      "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Brzo naplaćena potraživanja.", "quote2": "Odlično izrađeni ugovori.", "quote3": "Snažno zastupanje na sudu."},
+      "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li nudite fiksne naknade?", "a": "Da, u zavisnosti od obima posla."}, "q2": {"q": "Da li pregovarate poravnanja?", "a": "Da, aktivno pregovaramo radi povoljnog ishoda."}}
+    },
+    "realEstate": {
+      "hero": {"title": "Nekretnine", "subtitle": "Sigurno sprovedite svoje transakcije nekretninama.", "cta": "Kontaktirajte nas"},
+      "whatIs": {"title": "Šta je pravo nekretnina?", "description": "Obuhvata kupoprodaje, zakup, due diligence i sporove vezane za imovinu za kupce, prodavce i investitore."},
+      "services": {
+        "title": "Naše usluge",
+        "transactions": {"title": "Kupoprodaje", "description": "Izrada ugovora, escrow aranžmani i registracije."},
+        "dueDiligence": {"title": "Pravna provjera", "description": "Provjera vlasništva, tereta i pravnih rizika."},
+        "leases": {"title": "Zakupi", "description": "Dokumentacija za poslovne i stambene zakupa."},
+        "disputes": {"title": "Sporovi", "description": "Rješavanje imovinskih, međaških i državno-pravnih sporova."}
+      },
+      "clients": {"title": "Ko su naši klijenti?", "description": "Fizička lica, investitori, agencije i developeri."},
+      "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Detaljna procjena rizika", "point2": "Jasni ugovori", "point3": "Podrška od početka do kraja", "point4": "Iskustvo sa notarima i registrima", "point5": "Pravovremena realizacija"},
+      "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Bez problema kupili stan.", "quote2": "Odlični ugovori o zakupu.", "quote3": "Efikasno riješen spor."},
+      "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li radite zemljišnoknjižne upise?", "a": "Da, vršimo upise i provjere."}, "q2": {"q": "Saradnja sa agencijama?", "a": "Da, koordiniramo sa agentima i notarima."}}
+    },
+    "inheritanceLaw": {
+      "hero": {"title": "Nasljedno pravo", "subtitle": "Pouzdana podrška u postupcima nasljeđivanja.", "cta": "Kontaktirajte nas"},
+      "whatIs": {"title": "Šta je nasljedno pravo?", "description": "Uređuje prenos imovine nakon smrtu, testamente, ostavinske postupke i nasljedne sporove."},
+      "services": {
+        "title": "Naše usluge",
+        "wills": {"title": "Testamenti", "description": "Izrada i ovjera testamenta i legata."},
+        "probate": {"title": "Ostavinski postupak", "description": "Zastupanje u ostavinskim postupcima pred sudovima i notarima."},
+        "disputes": {"title": "Sporovi", "description": "Pobijanje testamenta i rješavanje nasljednih sporova."},
+        "advice": {"title": "Savjetovanje", "description": "Strateško planiranje nasljeđivanja i zaštite imovine."}
+      },
+      "clients": {"title": "Ko su naši klijenti?", "description": "Nasljednici, ostavioci i članovi porodice u nasljednim pitanjima."},
+      "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Empatičan i profesionalan pristup", "point2": "Jasna uputstva", "point3": "Efikasni postupci", "point4": "Iskusan zastupnik", "point5": "Transparentne naknade"},
+      "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Saosjećajni i efikasni.", "quote2": "Pomogli su nam kroz težak proces.", "quote3": "Odličan savet oko testamenta."},
+      "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li izrađujete zaveštanja?", "a": "Da, pripremamo dokumenta po meri."}, "q2": {"q": "Da li radite prekogranična nasljeđivanja?", "a": "Da, u skladu sa primjenjivim pravom."}}
+    },
+    "familyLaw": {
+      "hero": {"title": "Porodično pravo", "subtitle": "Stručna podrška u porodičnim pitanjima i zaštiti prava.", "cta": "Kontaktirajte nas"},
+      "whatIs": {"title": "Šta je porodično pravo?", "description": "Obuhvata razvod braka, starateljstvo, podjelu imovine i zaštitu od nasilja."},
+      "services": {
+        "title": "Naše usluge",
+        "divorce": {"title": "Razvod", "description": "Zastupanje i sporazumi kod sporazumnog ili spornog razvoda."},
+        "custody": {"title": "Starateljstvo i viđanja", "description": "Zaštita najboljeg interesa djeteta."},
+        "property": {"title": "Bračna imovina", "description": "Podjela i uređenje bračne imovine."},
+        "protection": {"title": "Zaštita od nasilja", "description": "Mjere zaštite i zastupanje."}
+      },
+      "clients": {"title": "Ko su naši klijenti?", "description": "Bračni drugovi, roditelji, staratelji i članovi porodice."},
+      "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Empatični i odlučni", "point2": "Pristup usmjeren na dijete", "point3": "Diskrecija i privatnost", "point4": "Iskustvo u parnicama", "point5": "Jasna komunikacija"},
+      "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Podrška i profesionalnost.", "quote2": "Zaštitili su naša prava i djecu.", "quote3": "Riješeni kompleksni imovinski odnosi."},
+      "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li radite medijaciju?", "a": "Da, podstičemo mirna rješenja."}, "q2": {"q": "Da li nudite hitne mjere zaštite?", "a": "Da, podnosimo hitne prijedloge kada je potrebno."}}
+    },
+    "laborLaw": {
+      "hero": {"title": "Radno pravo", "subtitle": "Stručna podrška za poslodavce i zaposlene.", "cta": "Kontaktirajte nas"},
+      "whatIs": {"title": "Šta je radno pravo?", "description": "Uređuje ugovore o radu, interne akte, usklađenost i radne sporove."},
+      "services": {
+        "title": "Naše usluge",
+        "employmentContracts": {"title": "Ugovori o radu", "description": "Izrada, revizija i prestanak ugovora o radu."},
+        "policies": {"title": "Interni akti", "description": "Pravilnici, priručnici i usklađenost."},
+        "disputes": {"title": "Sporovi", "description": "Zastupanje pred inspekcijama i sudovima."},
+        "compliance": {"title": "Usklađenost", "description": "Osiguravanje usklađenosti sa zakonima o radu."}
+      },
+      "clients": {"title": "Ko su naši klijenti?", "description": "Poslodavci, zaposleni i HR odeljenja."},
+      "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Izbalansirana perspektiva", "point2": "Preventivno savetovanje", "point3": "Snažne parnične veštine", "point4": "Jasna dokumentacija", "point5": "Brzi i praktični"},
+      "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Odlični interni akti.", "quote2": "Rešen radni spor.", "quote3": "Odličan savet pri otkazima."},
+      "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li zastupate i poslodavce i zaposlene?", "a": "Da, uz prethodnu proveru sukoba interesa."}, "q2": {"q": "Da li izrađujete interne pravilnike?", "a": "Da, pripremamo pravilnike i priručnike po meri."}}
     }
   }
 }

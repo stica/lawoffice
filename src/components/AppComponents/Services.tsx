@@ -139,8 +139,24 @@ const Services: React.FC<{ messages: any, locale: string }> = ({ messages, local
                     <h3>
                       <a
                         href={
-                          value.title.toLowerCase() === "it law" || value.title.toLowerCase() === "it pravo"
+                          value.title.toLowerCase() === "personal data protection (gdpr)" || value.title.toLowerCase() === "zaštita ličnih podataka (gdpr)"
+                            ? `/${locale}/zastita-licnih-podataka-gdpr`
+                            : value.title.toLowerCase() === "it law" || value.title.toLowerCase() === "it pravo"
                             ? `/${locale}/it-pravo`
+                            : value.title.toLowerCase() === "digitalna imovina" || value.title.toLowerCase() === "digital assets"
+                            ? `/${locale}/crypto-pravo`
+                            : value.title.toLowerCase() === "commercial law" || value.title.toLowerCase() === "privredno pravo"
+                            ? `/${locale}/privredno-pravo`
+                            : value.title.toLowerCase() === "obligation law" || value.title.toLowerCase() === "obligaciono pravo"
+                            ? `/${locale}/obligaciono-pravo`
+                            : value.title.toLowerCase() === "real estate" || value.title.toLowerCase() === "nekretnine"
+                            ? `/${locale}/nekretnine`
+                            : value.title.toLowerCase() === "inheritance law" || value.title.toLowerCase() === "nasljedno pravo"
+                            ? `/${locale}/nasljedno-pravo`
+                            : value.title.toLowerCase() === "family law" || value.title.toLowerCase() === "porodično pravo" || value.title.toLowerCase() === "porodično pravo"
+                            ? `/${locale}/porodicno-pravo`
+                            : value.title.toLowerCase() === "labor law" || value.title.toLowerCase() === "radno pravo"
+                            ? `/${locale}/radno-pravo`
                             : "#"
                         }
                       >

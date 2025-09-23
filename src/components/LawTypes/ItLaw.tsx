@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 interface Blog1Props {
   messages: any;
@@ -16,9 +17,9 @@ const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
       <section className="text-center py-16 bg-gray-100 rounded-2xl">
         <h1 className="text-4xl font-bold">{t('itLaw.hero.title')}</h1>
         <p className="mt-4 text-lg">{t("itLaw.hero.subtitle")}</p>
-        <button className="btn primary">
+        <Link href={`/${locale}/kontakt`} className="btn primary">
             {t("itLaw.hero.cta")}
-          </button>
+          </Link>
       </section>
 
       {/* What is IT Law */}
@@ -92,9 +93,9 @@ const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
           </div>
         </div>
         <div className="text-center mt-8">
-          <button className="btn primary">
+          <Link href={`/${locale}/kontakt`} className="btn primary">
             {t("itLaw.faq.cta")}
-          </button>
+          </Link>
         </div>
       </section>
 

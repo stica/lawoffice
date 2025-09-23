@@ -2,7 +2,7 @@ import React from "react";
 import NavbarTwo from "../../../components/Layouts/NavbarTwo";
 import Footer from "../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
-import CryptoLaw from "@/components/LawTypes/CryptoLaw";
+import DataProtectionLaw from "@/components/LawTypes/DataProtectionLaw";
 
 
 const supportedLanguages = ['en', 'sr']; // List of supported languages
@@ -17,7 +17,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
     <>
       <NavbarTwo />
 
-      <CryptoLaw messages={messages} locale={lang} />
+      <DataProtectionLaw messages={messages} locale={lang} />
 
       <Footer />
     </>
@@ -58,11 +58,6 @@ export const metadata = {
       "kriptovalute",
       "NFT",
       "DeFi",
-      "digitalna imovina",
-      "smart contracts",
-      "bitcoin",
-      "ethereum",
-      "solana",
-      "altcoins"
+      "digitalna imovina"
     ]
 }
