@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -96,23 +98,128 @@ const Services: React.FC<{ messages: any, locale: string }> = ({ messages, local
   // const aboutPath = `/${currentCode}/about`
   return (
     <>
-      <div className="quotes">
-        <div className="quote quote1">
-          <h1>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '25px',
+        padding: '60px 20px',
+        maxWidth: '1320px',
+        margin: '0 auto',
+      }}>
+        <div className="quote-card-modern quote-card-beige">
+          <div className="quote-card-bg-circle"></div>
+          <h1 className="quote-card-text">
             "Iustitia est constans et perpetua voluntas ius suum cuique tribuendi."
           </h1>
         </div>
-        <div className="quote quote2">
-          <h1>
+
+        <div className="quote-card-modern quote-card-dark">
+          <div className="quote-card-bg-circle"></div>
+          <h1 className="quote-card-text">
             "Ignorantia iuris nocet."
           </h1>
         </div>
-        <div className="quote quote3">
-          <h1>
+
+        <div className="quote-card-modern quote-card-gray">
+          <div className="quote-card-bg-circle"></div>
+          <h1 className="quote-card-text">
             "Nemo iudex in causa sua."
           </h1>
         </div>
       </div>
+
+      <style jsx>{`
+        .quote-card-modern {
+          padding: 40px 35px;
+          border-radius: 16px;
+          transition: all 0.4s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .quote-card-beige {
+          background: linear-gradient(135deg, #f7f0e8 0%, #e8dfd3 100%);
+          box-shadow: 0 8px 30px rgba(81, 61, 72, 0.08);
+          border: 1px solid rgba(247, 240, 232, 0.4);
+        }
+
+        .quote-card-beige:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 15px 45px rgba(81, 61, 72, 0.15);
+        }
+
+        .quote-card-beige .quote-card-bg-circle {
+          position: absolute;
+          top: -20px;
+          right: -20px;
+          width: 100px;
+          height: 100px;
+          background: rgba(81, 61, 72, 0.05);
+          border-radius: 50%;
+        }
+
+        .quote-card-beige .quote-card-text {
+          color: #513D48;
+        }
+
+        .quote-card-dark {
+          background: linear-gradient(135deg, #513D48 0%, #3d2e38 100%);
+          box-shadow: 0 8px 30px rgba(81, 61, 72, 0.15);
+        }
+
+        .quote-card-dark:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 15px 45px rgba(81, 61, 72, 0.25);
+        }
+
+        .quote-card-dark .quote-card-bg-circle {
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          width: 100px;
+          height: 100px;
+          background: rgba(247, 240, 232, 0.1);
+          border-radius: 50%;
+        }
+
+        .quote-card-dark .quote-card-text {
+          color: #f7f0e8;
+        }
+
+        .quote-card-gray {
+          background: linear-gradient(135deg, #646464 0%, #4a4a4a 100%);
+          box-shadow: 0 8px 30px rgba(100, 100, 100, 0.12);
+        }
+
+        .quote-card-gray:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 15px 45px rgba(100, 100, 100, 0.2);
+        }
+
+        .quote-card-gray .quote-card-bg-circle {
+          position: absolute;
+          bottom: -20px;
+          right: -20px;
+          width: 100px;
+          height: 100px;
+          background: rgba(247, 240, 232, 0.1);
+          border-radius: 50%;
+        }
+
+        .quote-card-gray .quote-card-text {
+          color: #ffffff;
+        }
+
+        .quote-card-text {
+          font-size: 20px;
+          line-height: 1.6;
+          font-weight: 500;
+          margin: 0;
+          font-style: italic;
+          position: relative;
+          z-index: 1;
+        }
+      `}</style>
 
       <div className="section-title-new">
         <h1>{t("ourServices")}</h1>
