@@ -83,12 +83,12 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
         <div className="container">
           <div className="section-title">
             <h2>
-              {t("clients")}
+              {/* {t("clients")} */}
             </h2>
           </div>
 
           <div className="row align-items-center justify-content-center">
-            {partnersData &&
+            {/* {partnersData &&
               partnersData.map((value, i) => (
                 <div className="col-lg-2 col-6 col-sm-4" key={i}>
                   <div
@@ -113,7 +113,7 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
                     </div>
                   </div>
                 </div>
-              ))}
+              ))} */}
           </div>
         </div>
       </div>

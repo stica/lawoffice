@@ -57,7 +57,7 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
       "name": "Law Office Nataša Tica",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Novice Cerovića 32",
+        "streetAddress": "Jevrejska 24",
         "addressLocality": "Banja Luka",
         "postalCode": "78000",
         "addressCountry": "Bosnia and Herzegovina"
@@ -89,7 +89,7 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
             "name": "Law Office Nataša Tica",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Novice Cerovića 32",
+              "streetAddress": "Jevrejska 24",
               "addressLocality": "Banja Luka",
               "postalCode": "78000",
               "addressCountry": "Bosnia and Herzegovina"

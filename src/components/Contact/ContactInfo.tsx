@@ -28,7 +28,7 @@ const ContactInfo: React.FC<{ messages: any }> = ({ messages }) => {
               </div>
               <h3>{t('visitHere')}</h3>
               <p>
-                Novice Cerovića 32, 78000 Banja Luka
+                Jevrejska 24, 78000 Banja Luka
               </p>
             </div>
           </div>
