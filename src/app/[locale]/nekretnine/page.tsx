@@ -38,14 +38,32 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Nekretnine: Kupoprodaje, zakupi, due diligence i imovinski sporovi",
-  description: "Pravna podrška za promet nekretnina: ugovori, zemljišnoknjižni upisi, zakupi, due diligence i rješavanje sporova.",
+  title: "Nekretnine | Advokat Banja Luka | Kupoprodaja, zakup i zemljišnoknjižni upisi",
+  description: "Advokat u Banjoj Luci specijalizovan za pravo nekretnina. Pravna podrška za kupoprodaju stanova i kuća, zakupe, zemljišnoknjižne upise, due diligence i rješavanje imovinskih sporova.",
   keywords: [
     "nekretnine",
-    "kupoprodaja",
+    "advokat Banja Luka",
+    "nekretnine Banja Luka",
+    "kupoprodaja nekretnina",
+    "kupoprodaja stanova",
     "zakup",
     "due diligence",
     "zemljišne knjige",
-    "imovinski sporovi"
-  ]
+    "imovinski sporovi",
+    "advokat za nekretnine",
+    "real estate lawyer",
+    "advokat Banja Luka nekretnine",
+    "pravo nekretnina Republika Srpska"
+  ],
+  openGraph: {
+    title: "Nekretnine | Advokat Banja Luka",
+    description: "Stručna pravna podrška za promet nekretnina - kupoprodaja, zakupi i zemljišnoknjižni upisi.",
+    images: [{ url: '/images/new/logojpg.jpg' }],
+  },
+  alternates: {
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en/nekretnine',
+      'sr': 'https://www.natasaticalawoffice.com/sr/nekretnine',
+    },
+  },
 };

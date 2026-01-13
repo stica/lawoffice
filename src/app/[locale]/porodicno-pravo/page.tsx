@@ -38,13 +38,32 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Porodično pravo: Razvod, starateljstvo, imovina i zaštita od nasilja",
-  description: "Stručna pravna pomoć u porodičnim predmetima: razvod, starateljstvo, podjela bračne imovine, mjere zaštite.",
+  title: "Porodično pravo | Advokat Banja Luka | Razvod, starateljstvo i alimentacija",
+  description: "Advokat u Banjoj Luci specijalizovan za porodično pravo. Stručna pravna pomoć u porodičnim predmetima: razvod braka, starateljstvo nad djecom, alimentacija, podjela bračne imovine i mjere zaštite od nasilja.",
   keywords: [
     "porodično pravo",
+    "advokat Banja Luka",
+    "porodično pravo Banja Luka",
     "razvod",
+    "razvod braka",
     "starateljstvo",
+    "alimentacija",
     "bračna imovina",
-    "zaštita od nasilja"
-  ]
+    "zaštita od nasilja",
+    "advokat za porodično pravo",
+    "family law",
+    "advokat Banja Luka porodično pravo",
+    "porodično pravo Republika Srpska"
+  ],
+  openGraph: {
+    title: "Porodično pravo | Advokat Banja Luka",
+    description: "Stručna pravna pomoć u porodičnim predmetima - razvod, starateljstvo, alimentacija i zaštita.",
+    images: [{ url: '/images/new/logojpg.jpg' }],
+  },
+  alternates: {
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en/porodicno-pravo',
+      'sr': 'https://www.natasaticalawoffice.com/sr/porodicno-pravo',
+    },
+  },
 };

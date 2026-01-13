@@ -47,22 +47,37 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-    title: "Kripto i Blockchain pravo: Pravna zaštita za kriptovalute, tokenizaciju i blockchain projekte",
-    description: "Pružamo stručnu pravnu podršku za kriptovalute, blockchain tehnologiju, tokenizaciju i digitalna sredstva. Obezbjeđujemo usklađenost sa globalnim regulacijama i lokalnim zakonodavstvom.",
+    title: "Kripto i Blockchain pravo | Advokat Banja Luka | Digitalna imovina i tokenizacija",
+    description: "Advokat u Banjoj Luci specijalizovan za kripto pravo, blockchain tehnologiju i digitalnu imovinu. Pravna podrška za kriptovalute, tokenizaciju, NFT, DeFi, pametne ugovore i usklađenost sa regulacijama.",
     keywords: [
       "kripto pravo",
       "blockchain pravo",
+      "advokat Banja Luka",
+      "digitalna imovina",
       "tokenizacija",
       "pametni ugovori",
-      "regulatorna usklađenost",
       "kriptovalute",
       "NFT",
       "DeFi",
-      "digitalna imovina",
       "smart contracts",
       "bitcoin",
       "ethereum",
-      "solana",
-      "altcoins"
-    ]
+      "crypto advokat",
+      "advokat Banja Luka kripto",
+      "blockchain advokat",
+      "crypto pravo Banja Luka",
+      "digitalna imovina Republika Srpska",
+      "kriptovalute BiH"
+    ],
+    openGraph: {
+      title: "Kripto i Blockchain pravo | Advokat Banja Luka",
+      description: "Stručna pravna podrška za kriptovalute, blockchain projekte, tokenizaciju i digitalnu imovinu.",
+      images: [{ url: '/images/new/logojpg.jpg' }],
+    },
+    alternates: {
+      languages: {
+        'en': 'https://www.natasaticalawoffice.com/en/crypto-pravo',
+        'sr': 'https://www.natasaticalawoffice.com/sr/crypto-pravo',
+      },
+    },
 }

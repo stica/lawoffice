@@ -47,20 +47,34 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-    title: "Kripto i Blockchain pravo: Pravna zaštita za kriptovalute, tokenizaciju i blockchain projekte",
-    description: "Pružamo stručnu pravnu podršku za kriptovalute, blockchain tehnologiju, tokenizaciju i digitalna sredstva. Obezbjeđujemo usklađenost sa globalnim regulacijama i lokalnim zakonodavstvom.",
+    title: "Zaštita ličnih podataka GDPR | Advokat Banja Luka | Data Protection Officer",
+    description: "Advokat u Banjoj Luci specijalizovan za zaštitu ličnih podataka i GDPR pravo. Certified Data Protection Officer (CDPO) - usklađenost sa GDPR propisima, pravna podrška za zaštitu privatnosti i obrada podataka.",
     keywords: [
-      "kripto pravo",
-      "blockchain pravo",
-      "tokenizacija",
-      "pametni ugovori",
-      "regulatorna usklađenost",
-      "kriptovalute",
-      "NFT",
-      "DeFi",
-      "digitalna imovina",
-      "GDPR",
-      "licni podaci",
+      "GDPR pravo",
+      "zaštita ličnih podataka",
+      "advokat Banja Luka",
       "data protection",
-    ]
+      "GDPR advokat",
+      "licni podaci",
+      "CDPO",
+      "certified data protection officer",
+      "usklađenost sa GDPR",
+      "privatnost",
+      "obrada podataka",
+      "advokat Banja Luka GDPR",
+      "GDPR pravo Banja Luka",
+      "zaštita podataka Republika Srpska",
+      "GDPR BiH"
+    ],
+    openGraph: {
+      title: "Zaštita ličnih podataka GDPR | Advokat Banja Luka",
+      description: "Stručna pravna podrška za GDPR i zaštitu ličnih podataka. Certified Data Protection Officer sa iskustvom u usklađenosti.",
+      images: [{ url: '/images/new/logojpg.jpg' }],
+    },
+    alternates: {
+      languages: {
+        'en': 'https://www.natasaticalawoffice.com/en/zastita-licnih-podataka-gdpr',
+        'sr': 'https://www.natasaticalawoffice.com/sr/zastita-licnih-podataka-gdpr',
+      },
+    },
 }

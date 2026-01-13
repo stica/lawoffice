@@ -38,13 +38,33 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Privredno pravo: Osnivanje firmi, korporativno upravljanje, ugovori",
-  description: "Pravna podrška za preduzeća i preduzetnike: osnivanje firmi, M&A, korporativno upravljanje, komercijalni ugovori.",
+  title: "Privredno pravo | Advokat Banja Luka | Osnivanje firmi, M&A i korporativno upravljanje",
+  description: "Advokat u Banjoj Luci specijalizovan za privredno pravo. Pravna podrška za osnivanje društava, korporativno upravljanje, M&A transakcije, komercijalne ugovore i poslovne sporove.",
   keywords: [
     "privredno pravo",
+    "advokat Banja Luka",
+    "privredno pravo Banja Luka",
     "osnivanje društva",
+    "osnivanje firme",
     "korporativno upravljanje",
     "M&A",
-    "komercijalni ugovori"
-  ]
+    "komercijalni ugovori",
+    "advokat za privredno pravo",
+    "poslovni advokat",
+    "company law",
+    "commercial law",
+    "advokat Banja Luka privredno pravo",
+    "privredno pravo Republika Srpska"
+  ],
+  openGraph: {
+    title: "Privredno pravo | Advokat Banja Luka",
+    description: "Stručna pravna podrška za preduzeća - osnivanje firmi, M&A, korporativno upravljanje i komercijalni ugovori.",
+    images: [{ url: '/images/new/logojpg.jpg' }],
+  },
+  alternates: {
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en/privredno-pravo',
+      'sr': 'https://www.natasaticalawoffice.com/sr/privredno-pravo',
+    },
+  },
 };

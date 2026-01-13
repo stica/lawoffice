@@ -66,22 +66,42 @@ module.exports = {
     const entries = []
     const now = new Date().toISOString()
 
-    const pushPath = (loc, priority = 0.8, changefreq = 'weekly') => {
-      entries.push({ loc, lastmod: now, priority, changefreq })
+    const pushPath = (loc, priority = 0.8, changefreq = 'weekly', alternateRefs = []) => {
+      entries.push({
+        loc,
+        lastmod: now,
+        priority,
+        changefreq,
+        alternateRefs
+      })
+    }
+
+    // Helper to create alternate language refs for a path segment
+    const getAlternateRefs = (pathSegment) => {
+      return locales.map(locale => ({
+        href: `${siteUrl}/${locale}${pathSegment}`,
+        hreflang: locale
+      }))
     }
 
     for (const locale of locales) {
+      // Static pages with hreflang
       for (const seg of staticPaths) {
-        const loc = seg ? `/${locale}/${seg}` : `/${locale}`
-        pushPath(loc, seg === '' ? 1.0 : 0.8)
+        const pathSegment = seg ? `/${seg}` : ''
+        const loc = `/${locale}${pathSegment}`
+        pushPath(loc, seg === '' ? 1.0 : 0.8, 'weekly', getAlternateRefs(pathSegment))
       }
 
+      // Law pages with hreflang
       for (const seg of lawPaths) {
-        pushPath(`/${locale}/${seg}`, 0.8)
+        const pathSegment = `/${seg}`
+        pushPath(`/${locale}${pathSegment}`, 0.8, 'weekly', getAlternateRefs(pathSegment))
       }
 
+      // Blog posts with hreflang
       for (const slug of blogPosts) {
-        pushPath(`/${locale}/blog/${slug}`, 0.6, 'monthly')
+        const pathSegment = `/blog/${slug}`
+        pushPath(`/${locale}${pathSegment}`, 0.6, 'monthly', getAlternateRefs(pathSegment))
       }
     }
 

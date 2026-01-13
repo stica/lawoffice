@@ -38,13 +38,32 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Obligaciono pravo: Ugovori, naplata potraživanja, sporovi i medijacija",
-  description: "Stručna pravna podrška u ugovornim odnosima: izrada ugovora, naplate potraživanja, medijacija i zastupanje u sporovima.",
+  title: "Obligaciono pravo | Advokat Banja Luka | Ugovori, potraživanja i sporovi",
+  description: "Advokat u Banjoj Luci specijalizovan za obligaciono pravo. Stručna pravna podrška u ugovornim odnosima: izrada i revizija ugovora, naplata potraživanja, medijacija i zastupanje u sporovima.",
   keywords: [
     "obligaciono pravo",
+    "advokat Banja Luka",
+    "obligaciono pravo Banja Luka",
     "ugovori",
+    "izrada ugovora",
     "naplata potraživanja",
     "medijacija",
-    "sporovi"
-  ]
+    "sporovi",
+    "ugovorno pravo",
+    "advokat za obligaciono pravo",
+    "advokat Banja Luka obligaciono pravo",
+    "obligation law",
+    "obligaciono pravo Republika Srpska"
+  ],
+  openGraph: {
+    title: "Obligaciono pravo | Advokat Banja Luka",
+    description: "Stručna pravna podrška u ugovornim odnosima - izrada ugovora, naplata potraživanja i sporovi.",
+    images: [{ url: '/images/new/logojpg.jpg' }],
+  },
+  alternates: {
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en/obligaciono-pravo',
+      'sr': 'https://www.natasaticalawoffice.com/sr/obligaciono-pravo',
+    },
+  },
 };

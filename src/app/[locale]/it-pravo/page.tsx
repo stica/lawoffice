@@ -46,36 +46,37 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-    title: "IT pravo: Ugovori o softveru, NDA, SaaS, PaaS i pravna zaštita u IT sektoru",
-    description: "Pružamo pravnu podršku za kompanije u IT sektoru, uključujući ugovore o poverljivosti (NDA), softverske licence, SaaS, PaaS, IaaS modele i SLA ugovore.",
+    title: "IT pravo | Advokat Banja Luka | SaaS, NDA, Softverske licence i IT ugovori",
+    description: "Advokat u Banjoj Luci specijalizovan za IT pravo i tehnološke kompanije. Pružamo pravnu podršku za softverske licence, NDA ugovore, SaaS, PaaS, IaaS modele, SLA ugovore i zaštitu intelektualne svojine u IT sektoru.",
     keywords: [
-      "IT pravo", 
-      "NDA", 
-      "SaaS ugovori", 
-      "softverske licence", 
-      "SLA", 
-      "PaaS", 
-      "IaaS", 
-      "pravna zaštita softvera", 
-      "specifikacije obima rada", 
-      "Statements of Work", 
-      "IT ugovori"
+      "IT pravo",
+      "advokat Banja Luka",
+      "IT pravo Banja Luka",
+      "advokat za IT kompanije",
+      "NDA",
+      "SaaS ugovori",
+      "softverske licence",
+      "SLA",
+      "PaaS",
+      "IaaS",
+      "pravna zaštita softvera",
+      "IT ugovori",
+      "advokat Banja Luka IT pravo",
+      "tehnološko pravo",
+      "startup advokat",
+      "software licensing",
+      "IT pravo Republika Srpska"
     ],
     openGraph: {
-      title: "IT pravo: Ugovori o softveru, NDA, SaaS, PaaS i pravna zaštita u IT sektoru",
-      description: "Saznajte kako zaštititi IT poslovanje kroz pravno regulisane ugovore – od NDA do SaaS i SLA modela.",
+      title: "IT pravo | Advokat Banja Luka | Softverski ugovori i pravna zaštita",
+      description: "Stručna pravna podrška za IT kompanije i startape - SaaS, NDA, softverske licence i tehnološki ugovori.",
       images: [{ url: '/images/new/logojpg.jpg' }],
     },
     alternates: {
       languages: {
-        'en': 'https://www.natasaticalawoffice.com/en/it-law',
+        'en': 'https://www.natasaticalawoffice.com/en/it-pravo',
         'sr': 'https://www.natasaticalawoffice.com/sr/it-pravo',
       },
-    },
-    linkedin: {
-      title: "IT pravo: Pravni ugovori za softver i digitalne servise",
-      description: "Otkrijte kako pravno zaštititi softver i digitalne servise kroz NDA, SaaS, PaaS, IaaS i druge ključne IT ugovore.",
-      image: '/images/new/logojpg.jpg',
     },
   };
   

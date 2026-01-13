@@ -13,8 +13,56 @@ const Footer = lazy(() => import("@/components/Layouts/Footer"));
 const LoadingFallback = () => <div className="loading-placeholder">Loading...</div>;
 
 export const metadata = {
-  title: "Advokatska Kancelarija Nataša Tica – Advokat Banja Luka",
-  description: "Advokatska Kancelarija Nataša Tica: Pravna pomoć i zastupanje u radnom, obligacionom, IT, porodičnom, nasljednom i privrednom pravu. Kontaktirajte nas!",
+  title: "Advokat Banja Luka | Nataša Tica | IT, GDPR, Privredno i Porodično pravo",
+  description: "Advokat u Banjoj Luci - Nataša Tica. Stručna pravna pomoć: IT pravo, GDPR (Certified Data Protection Officer), privredno, obligaciono, porodično, nasljedno i radno pravo. Jevrejska 24, Banja Luka. ☎ +387 65 231-276",
+  keywords: [
+    "advokat Banja Luka",
+    "advokat",
+    "Banja Luka",
+    "advokatska kancelarija Banja Luka",
+    "pravna pomoć Banja Luka",
+    "pravni savjet",
+    "IT pravo Banja Luka",
+    "GDPR advokat Banja Luka",
+    "privredno pravo Banja Luka",
+    "porodično pravo Banja Luka",
+    "nasljedno pravo Banja Luka",
+    "radno pravo Banja Luka",
+    "advokat za nekretnine Banja Luka",
+    "advokat Republika Srpska",
+    "lawyer Banja Luka",
+    "attorney Banja Luka",
+    "Nataša Tica advokat",
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'sr_RS',
+    url: 'https://www.natasaticalawoffice.com/sr',
+    siteName: 'Advokat Banja Luka - Nataša Tica',
+    title: "Advokat Banja Luka | Nataša Tica | IT, GDPR, Privredno pravo",
+    description: "Advokat u Banjoj Luci sa iskustvom u IT pravu, GDPR-u, privrednom i porodičnom pravu. Certified Data Protection Officer. Kontakt: +387 65 231-276",
+    images: [
+      {
+        url: 'https://www.natasaticalawoffice.com/images/new/logojpg.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Advokat Banja Luka - Advokatska kancelarija Nataša Tica',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Advokat Banja Luka | Nataša Tica",
+    description: "Stručna pravna pomoć - IT pravo, GDPR, privredno, porodično i nasljedno pravo u Banjoj Luci.",
+    images: ['https://www.natasaticalawoffice.com/images/new/logojpg.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.natasaticalawoffice.com/sr',
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en',
+      'sr': 'https://www.natasaticalawoffice.com/sr',
+    },
+  },
 };
 
 const supportedLanguages = ['en', 'sr'];

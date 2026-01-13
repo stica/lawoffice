@@ -26,18 +26,71 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
-  description: "Law Office Nataša Tica offers modern, innovative legal solutions with personalized attention...",
+  title: "Advokat Banja Luka | Advokatska Kancelarija Nataša Tica | Pravni Savjet",
+  description: "Advokat u Banjoj Luci - Advokatska kancelarija Nataša Tica. Stručna pravna pomoć u IT, GDPR, privredno, porodično, nasljedno i radno pravo. Certified Data Protection Officer. Pozovite +387 65 231-276",
+  keywords: [
+    "advokat Banja Luka",
+    "advokat",
+    "Banja Luka",
+    "advokatska kancelarija Banja Luka",
+    "pravna pomoć Banja Luka",
+    "pravni savjet Banja Luka",
+    "advokat IT pravo",
+    "advokat GDPR",
+    "advokat za privredno pravo",
+    "advokat Republika Srpska",
+    "najbolji advokat Banja Luka",
+    "advokat u Banjoj Luci",
+  ],
+  authors: [{ name: "Nataša Tica" }],
+  creator: "Nataša Tica",
+  publisher: "Law Office Nataša Tica",
+  formatDetection: {
+    telephone: true,
+  },
   openGraph: {
-    title: "Law Office Nataša Tica | Family Law, Business Law, Real Estate",
-    description: "Law Office Nataša Tica offers modern, innovative legal solutions...",
-    images: [{ url: '/images/new/logojpg.jpg' }],
+    type: 'website',
+    locale: 'sr_RS',
+    url: 'https://www.natasaticalawoffice.com',
+    siteName: 'Advokat Banja Luka - Nataša Tica',
+    title: "Advokat Banja Luka | Advokatska Kancelarija Nataša Tica",
+    description: "Iskusan advokat u Banjoj Luci. Specijalizovani za IT pravo, GDPR, privredno, porodično i nasljedno pravo. Certified Data Protection Officer.",
+    images: [
+      {
+        url: '/images/new/logojpg.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Advokat Banja Luka - Nataša Tica',
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Advokat Banja Luka | Nataša Tica",
+    description: "Stručna pravna pomoć u Banjoj Luci - IT pravo, GDPR, privredno i porodično pravo.",
+    images: ['/images/new/logojpg.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   alternates: {
+    canonical: 'https://www.natasaticalawoffice.com',
     languages: {
       'en': 'https://www.natasaticalawoffice.com/en',
       'sr': 'https://www.natasaticalawoffice.com/sr',
     },
+  },
+  verification: {
+    // Add your Google Search Console verification code here when available
+    // google: 'your-google-verification-code',
   },
 };
 
@@ -50,22 +103,103 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
   const messages = useMessages();
   const t = useTranslations("Layout");
 
-    // Prepare schema data
+    // Prepare enhanced schema data for local SEO
     const schemaData = {
       "@context": "https://schema.org",
-      "@type": "LegalService",
-      "name": "Law Office Nataša Tica",
+      "@type": "Attorney",
+      "name": "Advokatska kancelarija Nataša Tica",
+      "alternateName": "Advokat Banja Luka - Nataša Tica",
+      "description": "Advokat u Banjoj Luci specijalizovan za IT pravo, GDPR, privredno, porodično i nasljedno pravo. Certified Data Protection Officer.",
+      "url": `https://www.natasaticalawoffice.com/${locale}`,
+      "telephone": "+387-65-231-276",
+      "email": "natasa.tica@natasaticalawoffice.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jevrejska 24",
         "addressLocality": "Banja Luka",
+        "addressRegion": "Republika Srpska",
         "postalCode": "78000",
-        "addressCountry": "Bosnia and Herzegovina"
+        "addressCountry": "BA"
       },
-      "telephone": "+38765231276",
-      "url": `https://www.natasaticalawoffice.com/${locale}`,
-      "description": t('schemaDescription'),
-      "openingHours": "Mo-Fri 8:00-16:00"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "44.7722",
+        "longitude": "17.1910"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "16:00"
+        }
+      ],
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "Banja Luka"
+      },
+      "serviceArea": [
+        {
+          "@type": "City",
+          "name": "Banja Luka"
+        },
+        {
+          "@type": "State",
+          "name": "Republika Srpska"
+        }
+      ],
+      "knowsAbout": [
+        "IT Law",
+        "GDPR",
+        "Data Protection",
+        "Commercial Law",
+        "Family Law",
+        "Inheritance Law",
+        "Labor Law",
+        "Real Estate Law",
+        "Obligation Law",
+        "Crypto Law",
+        "Blockchain Law"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Legal Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT Pravo",
+              "description": "Pravna podrška za IT kompanije, SaaS, NDA, softverske licence"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "GDPR i zaštita podataka",
+              "description": "Certified Data Protection Officer - usklađenost sa GDPR propisima"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Privredno pravo",
+              "description": "Osnivanje firmi, M&A, korporativno upravljanje"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Porodično pravo",
+              "description": "Razvod, starateljstvo, alimentacija"
+            }
+          }
+        ]
+      }
     };
     
   return (
@@ -80,26 +214,32 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
             fetchPriority="high"
           />
 
-        {/* JSON-LD structured data with translations */}
+        {/* Enhanced Local Business Schema for SEO */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: `
-          {
+          __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LegalService",
-            "name": "Law Office Nataša Tica",
+            "@type": "Attorney",
+            "name": "Advokatska kancelarija Nataša Tica",
+            "alternateName": "Advokat Banja Luka",
+            "description": "Advokat u Banjoj Luci - IT pravo, GDPR, privredno, porodično i nasljedno pravo",
+            "url": `https://www.natasaticalawoffice.com/${locale}`,
+            "telephone": "+387-65-231-276",
+            "email": "natasa.tica@natasaticalawoffice.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Jevrejska 24",
               "addressLocality": "Banja Luka",
+              "addressRegion": "Republika Srpska",
               "postalCode": "78000",
-              "addressCountry": "Bosnia and Herzegovina"
+              "addressCountry": "BA"
             },
-            "telephone": "+38765231276",
-            "url": "https://www.natasaticalawoffice.com/${locale}",
-            "description": "${t('schemaDescription')}",
-            "openingHours": "Mo-Fri 8:00-16:00"
-          }
-          `
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "44.7722",
+              "longitude": "17.1910"
+            },
+            "areaServed": "Banja Luka"
+          })
         }} />
         </head>
         <body>

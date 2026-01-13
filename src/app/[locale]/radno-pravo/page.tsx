@@ -38,13 +38,33 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Radno pravo: Ugovori o radu, interni akti, usklađenost i radni sporovi",
-  description: "Pravna podrška u oblasti radnog prava: izrada ugovora o radu, interni akti, usklađenost i zastupanje u radnim sporovima.",
+  title: "Radno pravo | Advokat Banja Luka | Ugovori o radu, otpremnine i radni sporovi",
+  description: "Advokat u Banjoj Luci specijalizovan za radno pravo. Pravna podrška za poslodavce i zaposlene: izrada ugovora o radu, interni akti, otpremnine, otkazi, usklađenost sa zakonima i zastupanje u radnim sporovima.",
   keywords: [
     "radno pravo",
+    "advokat Banja Luka",
+    "radno pravo Banja Luka",
     "ugovor o radu",
     "interni akti",
     "radni sporovi",
-    "usklađenost"
-  ]
+    "otkaz",
+    "otpremnina",
+    "usklađenost",
+    "advokat za radno pravo",
+    "labor law",
+    "employment law",
+    "advokat Banja Luka radno pravo",
+    "radno pravo Republika Srpska"
+  ],
+  openGraph: {
+    title: "Radno pravo | Advokat Banja Luka",
+    description: "Pravna podrška u oblasti radnog prava - ugovori o radu, otpremnine i radni sporovi.",
+    images: [{ url: '/images/new/logojpg.jpg' }],
+  },
+  alternates: {
+    languages: {
+      'en': 'https://www.natasaticalawoffice.com/en/radno-pravo',
+      'sr': 'https://www.natasaticalawoffice.com/sr/radno-pravo',
+    },
+  },
 };
