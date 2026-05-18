@@ -17,12 +17,11 @@ export default function Blog3({ messages, locale }: Blog3Props) {
       <div className="blog-header-wrapper">
         <section className="blog-image-section">
           <Image
-            src="/images/new/startup-legal.svg"
+            src="/images/new/startup-legal.png"
             alt="Startup vs Privredno društvo"
-            width={500}
-            height={263}
+            width={1200}
+            height={630}
             className="blog-image"
-            unoptimized
           />
         </section>
         <section className="blog-hero">
