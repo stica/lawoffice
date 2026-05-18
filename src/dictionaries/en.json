@@ -160,7 +160,9 @@
     "more": "More details",
     "description": "Recent cases from European practice clearly show that an inadequate approach to this function can result in serious consequences – both financial and reputational.",
     "tokenizationTitle": "Tokenize Your Business - Turn Your Idea into Capital",
-    "tokenizationDescription": "Tokenization is a concept that is gaining increasing importance in modern business, representing a new financial paradigm."
+    "tokenizationDescription": "Tokenization is a concept that is gaining increasing importance in modern business, representing a new financial paradigm.",
+    "startupTitle": "A Startup is NOT Every Newly Founded Company",
+    "startupDescription": "The Law on Innovation Activity of the Republic of Srpska (2025) provides the first normative definition of a startup, drawing a clear distinction between startups and other newly founded companies."
   },
   "blog2": {
     "title": "Tokenize Your Business – Turn Your Idea into Capital",
@@ -187,6 +189,32 @@
     "faq": {
       "cta": "Contact us."
     }
+  },
+  "blog3": {
+    "title": "A Startup is NOT Every Newly Founded Company",
+    "intro": "In practice, the term 'startup' continues to be misused very frequently. Regardless of the nature of the business, growth model, or level of innovation, almost every newly founded company is automatically labeled as such.",
+    "wrongUnderstanding": "Such an understanding is not only superficial but also incorrect, as it ignores the essential elements that distinguish a startup from classical forms of business.",
+    "legalDefinitionHeading": "Legal Definition of a Startup in the Republic of Srpska",
+    "legalDefinition": "With the adoption of the Law on Innovation Activity of the Republic of Srpska in 2025, the concept of a startup received a clear normative definition in the domestic legal framework for the first time — as a newly founded company or entrepreneur developing an innovative product or service with the potential for rapid and significant growth. This introduces a clear boundary between startups and other newly founded entities, emphasizing that a startup is not just any 'new' company, but a specific form of business that implies innovation and scalability.",
+    "dynamicSystemHeading": "A Startup as a Dynamic System",
+    "dynamicSystem": "When a startup is treated as an 'ordinary' company, wrong decisions inevitably follow — both in business and legal terms. A startup is not a structure that is established once and then maintained in a stable form, but a dynamic system that continuously changes through product development, investor entry, and expansion into new markets. Precisely because of this nature, the legal framework and legal thinking must be structured differently — flexible enough to follow development, but at the same time precisely defined in key segments.",
+    "problemsText": "Problems arising from an inadequate legal approach rarely appear immediately. They most often manifest in phases when business stability is most needed, such as investor entry, partnership formation, or rapid growth. It is precisely then that the failure to establish legal foundations in time becomes apparent.",
+    "experienceHeading": "Common Legal Oversights of Early-Stage Startups",
+    "experienceIntro": "My professional experience shows that startups in the early development phase often neglect basic legal foundations, focusing primarily on product development and speed to market. However, it is precisely in this phase that critical oversights occur, such as:",
+    "neglect1": "founder relationships that remain unregulated or are based on informal agreements,",
+    "neglect2": "ownership of software and intellectual property is not clearly defined,",
+    "neglect3": "collaboration with developers and partners is not adequately regulated by contract,",
+    "neglect4": "personal data processing is not compliant with data protection regulations (GDPR),",
+    "neglect5": "and clearly defined terms of use and monetization models are often absent.",
+    "hiddenProblems": "These shortcomings initially go unnoticed, but as the business grows, they become a serious obstacle to further development — often insurmountable.",
+    "softwareHeading": "Software as a Subject of Law",
+    "softwareText1": "The problem is particularly pronounced in software startups, where the legal aspect becomes inseparable from the product itself. Software is not merely a technical solution, but a subject of ownership, licensing, and regulation — without clearly defined legal relationships, it is impossible to prove ownership of the product, safely enter an investment process, or establish a sustainable monetization model.",
+    "dataText": "Personal data processing adds further complexity, especially in SaaS and B2C business models, where non-compliance with regulations can lead to significant regulatory and reputational risks. For this reason, the legal aspect cannot be an afterthought in the development process — it must be an integral part of the product from the very start.",
+    "mythHeading": "The Myth: A Legal Framework Slows Down Startups",
+    "mythText": "One of the most common misconceptions is that a legal framework slows down startup development. In practice, the opposite is true — a legally structured startup enters investment processes more easily, forms partnerships faster, has a more clearly defined decision-making structure, and significantly reduces the risk of internal conflicts. In other words, a legal framework is not an administrative burden, but the infrastructure that enables stable and sustainable growth.",
+    "conclusionHeading": "Conclusion",
+    "conclusionText": "A startup requires a different way of thinking — both in business and legal terms. The Law on Innovation Activity of the Republic of Srpska sets the normative foundation for understanding this concept, but the real difference lies in how a startup is managed in practice. A startup without clearly established legal foundations is not ready for growth, regardless of the quality of the idea or product.",
+    "finalNote": "That is precisely why legal structure does not come at the end of the process — it is an integral part of it from the very beginning."
   },
   "lawtypes": {
     "itLaw": {

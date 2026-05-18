@@ -162,7 +162,9 @@
     "more": "Detaljnije",
     "description": "Nedavni slučajevi iz evropske prakse jasno pokazuju da neadekvatan pristup ovoj funkciji može rezultirati ozbiljnim posljedicama – kako finansijskim, tako i reputacionim.",
     "tokenizationTitle": "Tokenizuj svoj biznis – Pretvori ideju u kapital",
-    "tokenizationDescription": "Tokenizacija je koncept koji u modernom poslovanju stječe sve veće značenje, predstavljajući novi finansijski paradigmat."
+    "tokenizationDescription": "Tokenizacija je koncept koji u modernom poslovanju stječe sve veće značenje, predstavljajući novi finansijski paradigmat.",
+    "startupTitle": "Startup NIJE svako novoosnovano privredno društvo",
+    "startupDescription": "Zakon o inovacionoj djelatnosti RS iz 2025. godine po prvi put normativno definiše pojam startupa, uvodeći jasnu granicu između startupa i ostalih novoosnovanih privrednih društava."
   },
   "blog2": {
     "title": "Tokenizuj svoj biznis – Pretvori ideju u kapital",
@@ -189,6 +191,32 @@
     "faq": {
       "cta": "Kontaktirajte nas."
     }
+  },
+  "blog3": {
+    "title": "Startup NIJE svako novoosnovano privredno društvo",
+    "intro": "U praksi se i dalje vrlo često susreće pogrešno korištenje pojma „startup“. Bez obzira na prirodu poslovanja, model rasta ili stepen inovacije, najčešće se svako novoosnovano privredno društvo automatski tako determiniše.",
+    "wrongUnderstanding": "Takvo razumijevanje nije samo površno, već i pogrešno, jer zanemaruje suštinske elemente koji razlikuju startup od klasičnih oblika poslovanja.",
+    "legalDefinitionHeading": "Zakonska definicija startupa u Republici Srpskoj",
+    "legalDefinition": "Donošenjem Zakona o inovacionoj djelatnosti Republike Srpske iz 2025. godine, pojam startupa po prvi put dobija jasno normativno određenje u domaćem pravnom okviru i to kao novoosnovano privredno društvo ili preduzetnik koji razvija inovativni proizvod ili uslugu sa potencijalom brzog i značajnog rasta. Time se uvodi jasna granica između startupa i drugih novoosnovanih subjekata, naglašavajući da startup nije svako 'novo' društvo, već specifičan oblik poslovanja koji podrazumijeva inovaciju i skalabilnost.",
+    "dynamicSystemHeading": "Startup kao dinamičan sistem",
+    "dynamicSystem": "Kada se startup posmatra kao 'obično' privredno društvo, neminovno dolazi do pogrešnih odluka, kako u poslovnom, tako i u pravnom smislu. Startup nije struktura koja se jednom uspostavi i potom održava u stabilnom obliku, već dinamičan sistem koji se kontinuirano mijenja kroz razvoj proizvoda, ulazak investitora i širenje na nova tržišta. Upravo zbog takve prirode poslovanja, pravni okvir i pravno promišljanje moraju biti postavljeni drugačije, dovoljno fleksibilno da prate razvoj, ali istovremeno precizno definisani u ključnim segmentima.",
+    "problemsText": "Problemi koji nastaju usljed neadekvatnog pravnog pristupa rijetko se pojavljuju odmah. Oni se najčešće manifestuju u fazama kada je stabilnost poslovanja najpotrebnija, kao što su ulazak investitora, sklapanje partnerstava ili intenzivan rast. Upravo tada dolazi do izražaja činjenica da pravni temelji nisu postavljeni na vrijeme.",
+    "experienceHeading": "Česti pravni propusti startupa u ranoj fazi",
+    "experienceIntro": "Moje profesionalno iskustvo pokazuje da startupi u ranoj fazi razvoja često zanemaruju osnovne pravne postavke, fokusirajući se primarno na razvoj proizvoda i brzinu izlaska na tržište. Međutim, upravo u toj fazi nastaju ključni propusti kao što su:",
+    "neglect1": "odnosi između osnivača koji ostaju neuređeni ili se zasnivaju na neformalnim dogovorima,",
+    "neglect2": "vlasništvo nad softverom i intelektualnom svojinom nije jasno definisano,",
+    "neglect3": "saradnja sa developerima i partnerima nije adekvatno ugovorno regulisana,",
+    "neglect4": "obrada ličnih podataka nije usklađena sa ZZLP/GDPR-om,",
+    "neglect5": "a često izostaju i jasno definisani uslovi korištenja i modeli monetizacije.",
+    "hiddenProblems": "Ovi nedostaci u početku ostaju neprimjetni, ali kako poslovanje raste, postaju ozbiljna prepreka daljem razvoju, nerijetko i nepremostiva.",
+    "softwareHeading": "Softver kao predmet prava",
+    "softwareText1": "Posebno je izražen problem kod startupa koji razvijaju softver, gdje pravni aspekt postaje nerazdvojiv od samog proizvoda. Softver nije samo tehničko rješenje, već predmet vlasništva, licenciranja i regulacije, pa bez jasno definisanih pravnih odnosa nije moguće ni dokazati vlasništvo nad proizvodom, niti sigurno ući u investicioni proces ili uspostaviti održiv model monetizacije.",
+    "dataText": "Dodatnu složenost predstavlja obrada ličnih podataka, naročito kod SaaS i B2C modela poslovanja, gdje neusklađenost sa propisima može dovesti do značajnih regulatornih i reputacionih rizika. Upravo zbog toga, pravni aspekt ne može biti naknadna faza razvoja, već integralni dio samog proizvoda.",
+    "mythHeading": "Zabluda: Pravni okvir usporava startup",
+    "mythText": "Jedna od najčešćih zabluda jeste da pravni okvir usporava razvoj startupa. U praksi je situacija upravo suprotna – pravno uređen startup lakše ulazi u investicione procese, brže sklapa partnerstva, ima jasnije definisanu strukturu odlučivanja i značajno smanjuje rizik internih konflikata. Drugim riječima, pravni okvir ne predstavlja administrativni teret, već infrastrukturu koja omogućava stabilan i održiv rast.",
+    "conclusionHeading": "Zaključak",
+    "conclusionText": "Startup zahtijeva drugačiji način razmišljanja, kako poslovno, tako i pravno. Zakon o inovacionoj djelatnosti Republike Srpske postavlja normativnu osnovu za razumijevanje tog pojma, ali stvarna razlika nastaje u načinu na koji se startup vodi u praksi. Startup koji nema jasno postavljene pravne temelje nije spreman za rast, bez obzira na kvalitet ideje ili proizvoda.",
+    "finalNote": "Upravo zato, pravna struktura ne dolazi na kraju procesa – ona je njegov sastavni dio od samog početka."
   },
   "lawtypes": {
     "itLaw": {

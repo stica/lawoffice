@@ -11,6 +11,11 @@ const Blog: React.FC<{ messages: any }> = ({ messages }) => {
 
   const blogItems = [
     {
+      title: t('startupTitle'),
+      path: `/${currentCode}/blog/startup_NIJE_svako_novoosnovano_privredno_drustvo`,
+      description: t('startupDescription')
+    },
+    {
       title: t('tokenizationTitle'),
       path: `/${currentCode}/blog/tokenizuj-svoj-biznis-pretvori-ideju-u-kapital`,
       description: t('tokenizationDescription')

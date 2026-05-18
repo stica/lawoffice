@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b3a5c"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c46a"/>
+      <stop offset="100%" stop-color="#c49a3c"/>
+    </linearGradient>
+    <linearGradient id="rocketBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dde6f0"/>
+      <stop offset="100%" stop-color="#b8cce0"/>
+    </linearGradient>
+    <linearGradient id="flameOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9900"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="800" y2="105"/>
+    <line x1="0" y1="210" x2="800" y2="210"/>
+    <line x1="0" y1="315" x2="800" y2="315"/>
+    <line x1="133" y1="0" x2="133" y2="420"/>
+    <line x1="266" y1="0" x2="266" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="533" y1="0" x2="533" y2="420"/>
+    <line x1="666" y1="0" x2="666" y2="420"/>
+  </g>
+
+  <!-- ===== LEFT: Classical Building (Privredno društvo) ===== -->
+
+  <!-- Building shadow/glow -->
+  <rect x="78" y="125" width="244" height="178" rx="2" fill="#1a4a8a" opacity="0.15" filter="url(#softGlow)"/>
+
+  <!-- Pediment triangle -->
+  <polygon points="78,128 200,50 322,128" fill="url(#goldGrad)" opacity="0.9"/>
+  <polygon points="86,128 200,58 314,128" fill="#0d1b2a" opacity="0.6"/>
+
+  <!-- Scales of justice inside pediment -->
+  <!-- Beam -->
+  <rect x="184" y="85" width="32" height="4" rx="2" fill="url(#goldGrad)" filter="url(#softGlow)"/>
+  <!-- Center post -->
+  <rect x="199" y="72" width="3" height="30" rx="1" fill="url(#goldGrad)"/>
+  <!-- Left chain + pan -->
+  <line x1="185" y1="87" x2="183" y2="103" stroke="#e8c46a" stroke-width="1.5"/>
+  <line x1="192" y1="87" x2="194" y2="103" stroke="#e8c46a" stroke-width="1.5"/>
+  <path d="M 181 103 Q 189 110 197 103" fill="none" stroke="#e8c46a" stroke-width="1.5"/>
+  <!-- Right chain + pan -->
+  <line x1="207" y1="87" x2="209" y2="103" stroke="#e8c46a" stroke-width="1.5"/>
+  <line x1="214" y1="87" x2="212" y2="103" stroke="#e8c46a" stroke-width="1.5"/>
+  <path d="M 203 103 Q 211 110 219 103" fill="none" stroke="#e8c46a" stroke-width="1.5"/>
+
+  <!-- Entablature bar -->
+  <rect x="78" y="126" width="244" height="10" rx="1" fill="url(#goldGrad)" opacity="0.9"/>
+  <rect x="78" y="134" width="244" height="5" rx="1" fill="#a07830" opacity="0.6"/>
+
+  <!-- Columns (5 columns) -->
+  <rect x="98" y="139" width="22" height="158" rx="3" fill="#c8d8e8" opacity="0.75"/>
+  <rect x="139" y="139" width="22" height="158" rx="3" fill="#c8d8e8" opacity="0.75"/>
+  <rect x="180" y="139" width="22" height="158" rx="3" fill="#c8d8e8" opacity="0.75"/>
+  <rect x="221" y="139" width="22" height="158" rx="3" fill="#c8d8e8" opacity="0.75"/>
+  <rect x="262" y="139" width="22" height="158" rx="3" fill="#c8d8e8" opacity="0.75"/>
+
+  <!-- Column shading -->
+  <rect x="112" y="139" width="8" height="158" rx="0" fill="#0d1b2a" opacity="0.12"/>
+  <rect x="153" y="139" width="8" height="158" rx="0" fill="#0d1b2a" opacity="0.12"/>
+  <rect x="194" y="139" width="8" height="158" rx="0" fill="#0d1b2a" opacity="0.12"/>
+  <rect x="235" y="139" width="8" height="158" rx="0" fill="#0d1b2a" opacity="0.12"/>
+  <rect x="276" y="139" width="8" height="158" rx="0" fill="#0d1b2a" opacity="0.12"/>
+
+  <!-- Column capitals -->
+  <rect x="93" y="132" width="32" height="9" rx="2" fill="#dde8f2" opacity="0.9"/>
+  <rect x="134" y="132" width="32" height="9" rx="2" fill="#dde8f2" opacity="0.9"/>
+  <rect x="175" y="132" width="32" height="9" rx="2" fill="#dde8f2" opacity="0.9"/>
+  <rect x="216" y="132" width="32" height="9" rx="2" fill="#dde8f2" opacity="0.9"/>
+  <rect x="257" y="132" width="32" height="9" rx="2" fill="#dde8f2" opacity="0.9"/>
+
+  <!-- Column bases -->
+  <rect x="93" y="295" width="32" height="7" rx="2" fill="#dde8f2" opacity="0.7"/>
+  <rect x="134" y="295" width="32" height="7" rx="2" fill="#dde8f2" opacity="0.7"/>
+  <rect x="175" y="295" width="32" height="7" rx="2" fill="#dde8f2" opacity="0.7"/>
+  <rect x="216" y="295" width="32" height="7" rx="2" fill="#dde8f2" opacity="0.7"/>
+  <rect x="257" y="295" width="32" height="7" rx="2" fill="#dde8f2" opacity="0.7"/>
+
+  <!-- Base/steps -->
+  <rect x="78" y="300" width="244" height="10" rx="1" fill="#dde8f2" opacity="0.7"/>
+  <rect x="70" y="308" width="260" height="8" rx="1" fill="url(#goldGrad)" opacity="0.85"/>
+  <rect x="62" y="314" width="276" height="6" rx="1" fill="#a07830" opacity="0.6"/>
+
+  <!-- Label -->
+  <text x="200" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8c46a" letter-spacing="2" opacity="0.9">PRIVREDNO DRUŠTVO</text>
+
+  <!-- ===== CENTER: Not-Equal Symbol ===== -->
+  <text x="400" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="96" fill="url(#goldGrad)" opacity="0.95" filter="url(#glow)">≠</text>
+
+  <!-- ===== RIGHT: Rocket (Startup) ===== -->
+
+  <!-- Flame glow under rocket -->
+  <ellipse cx="600" cy="360" rx="28" ry="14" fill="#ff6600" opacity="0.25" filter="url(#softGlow)"/>
+
+  <!-- Outer flame tendrils -->
+  <ellipse cx="586" cy="346" rx="6" ry="24" fill="#ff4500" opacity="0.45"/>
+  <ellipse cx="614" cy="346" rx="6" ry="24" fill="#ff4500" opacity="0.45"/>
+  <ellipse cx="593" cy="358" rx="5" ry="20" fill="#ff8800" opacity="0.5"/>
+  <ellipse cx="607" cy="358" rx="5" ry="20" fill="#ff8800" opacity="0.5"/>
+
+  <!-- Main flame -->
+  <path d="M 582 328 Q 592 370 600 348 Q 608 370 618 328" fill="#ffcc00" opacity="0.85"/>
+  <path d="M 586 332 Q 594 365 600 350 Q 606 365 614 332" fill="#ff8800" opacity="0.7"/>
+
+  <!-- Rocket fins -->
+  <path d="M 573 308 L 548 348 L 573 325 Z" fill="url(#goldGrad)" opacity="0.92"/>
+  <path d="M 627 308 L 652 348 L 627 325 Z" fill="url(#goldGrad)" opacity="0.92"/>
+
+  <!-- Fin shading -->
+  <path d="M 573 308 L 560 330 L 573 325 Z" fill="#0d1b2a" opacity="0.2"/>
+  <path d="M 627 308 L 640 330 L 627 325 Z" fill="#0d1b2a" opacity="0.2"/>
+
+  <!-- Rocket body -->
+  <path d="M 573 320 L 573 175 Q 573 75 600 50 Q 627 75 627 175 L 627 320 Z" fill="url(#rocketBody)"/>
+
+  <!-- Rocket body shading (left) -->
+  <path d="M 573 320 L 573 175 Q 573 75 600 50 Q 586 75 586 175 L 586 320 Z" fill="#0d1b2a" opacity="0.12"/>
+
+  <!-- Rocket body shading (right) -->
+  <path d="M 614 320 L 614 175 Q 614 75 600 50 Q 627 75 627 175 L 627 320 Z" fill="#0d1b2a" opacity="0.08"/>
+
+  <!-- Rocket window ring -->
+  <circle cx="600" cy="215" r="24" fill="#0d2a4a" stroke="url(#goldGrad)" stroke-width="3.5" filter="url(#softGlow)"/>
+  <!-- Window glass -->
+  <circle cx="600" cy="215" r="18" fill="#1a4a8a" opacity="0.95"/>
+  <!-- Window reflection -->
+  <ellipse cx="593" cy="207" rx="7" ry="5" fill="#4a9adf" opacity="0.55" transform="rotate(-30, 593, 207)"/>
+  <ellipse cx="607" cy="222" rx="3" ry="2" fill="#4a9adf" opacity="0.3" transform="rotate(-30, 607, 222)"/>
+
+  <!-- Rocket horizontal detail lines -->
+  <line x1="573" y1="248" x2="627" y2="248" stroke="#a0b8cc" stroke-width="1.5" opacity="0.5"/>
+  <line x1="573" y1="278" x2="627" y2="278" stroke="#a0b8cc" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Rocket nose cone tip streak (launch trail) -->
+  <path d="M 600 50 C 600 35 608 18 616 8" stroke="#e8c46a" stroke-width="2" stroke-dasharray="4,5" opacity="0.55" fill="none"/>
+  <circle cx="617" cy="7" r="3.5" fill="#e8c46a" opacity="0.75" filter="url(#softGlow)"/>
+
+  <!-- Label -->
+  <text x="600" y="375" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8c46a" letter-spacing="2" opacity="0.9">STARTUP</text>
+
+  <!-- ===== Bottom decorative bar ===== -->
+  <line x1="50" y1="395" x2="750" y2="395" stroke="url(#goldGrad)" stroke-width="1" opacity="0.45"/>
+  <text x="400" y="411" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#8ab0cc" letter-spacing="2.5" opacity="0.75">ZAKON O INOVACIONOJ DJELATNOSTI RS · 2025</text>
+
+  <!-- Decorative corner dots -->
+  <circle cx="58" cy="38" r="2" fill="#e8c46a" opacity="0.55"/>
+  <circle cx="78" cy="22" r="1.2" fill="#ffffff" opacity="0.35"/>
+  <circle cx="42" cy="55" r="1.2" fill="#ffffff" opacity="0.25"/>
+  <circle cx="740" cy="32" r="2" fill="#e8c46a" opacity="0.55"/>
+  <circle cx="762" cy="50" r="1.2" fill="#ffffff" opacity="0.35"/>
+  <circle cx="758" cy="18" r="1.2" fill="#ffffff" opacity="0.25"/>
+  <circle cx="44" cy="382" r="1.2" fill="#ffffff" opacity="0.3"/>
+  <circle cx="756" cy="382" r="1.2" fill="#ffffff" opacity="0.3"/>
+</svg>
