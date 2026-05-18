@@ -32,14 +32,11 @@ export default function Blog3({ messages, locale }: Blog3Props) {
       </div>
 
       <section className="blog-content">
-        <h2>{t("legalDefinitionHeading")}</h2>
         <p>{t("legalDefinition")}</p>
 
-        <h2>{t("dynamicSystemHeading")}</h2>
         <p>{t("dynamicSystem")}</p>
         <p>{t("problemsText")}</p>
 
-        <h2>{t("experienceHeading")}</h2>
         <p>{t("experienceIntro")}</p>
         <ul className="advantages-list">
           <li>{t("neglect1")}</li>
@@ -50,14 +47,11 @@ export default function Blog3({ messages, locale }: Blog3Props) {
         </ul>
         <p>{t("hiddenProblems")}</p>
 
-        <h2>{t("softwareHeading")}</h2>
         <p>{t("softwareText1")}</p>
         <p>{t("dataText")}</p>
 
-        <h2>{t("mythHeading")}</h2>
         <p>{t("mythText")}</p>
 
-        <h2>{t("conclusionHeading")}</h2>
         <p>{t("conclusionText")}</p>
 
         <p className="blog-final-note">
