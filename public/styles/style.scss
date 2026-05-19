@@ -7291,26 +7291,29 @@ ul {
             position: absolute;
             top: 100px;
             width: 100%;
-            fill: #c4a35a;
+            fill: #ffffff;
             z-index: 1;
         }
     }
 
     .ntl-main-page-right {
         flex: 11450px;
-        height: 100%;
         background-color: #faf8f4;
-        background-image:
-            radial-gradient(ellipse at 88% 12%, rgba(196, 163, 90, 0.18) 0%, transparent 55%),
-            radial-gradient(ellipse at 12% 88%, rgba(26, 46, 74, 0.06) 0%, transparent 50%);
         height: 75vh;
         min-width: 300px;
-        min-height: 550px;
+        min-height: 750px;
         position: relative;
         border-left: 3px solid rgba(196, 163, 90, 0.55);
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            height: auto;
+            min-height: 750px;
+            border-left: none;
+            border-top: 3px solid rgba(196, 163, 90, 0.55);
+        }
 
         .svg2 {
             position: absolute;
@@ -7329,10 +7332,13 @@ ul {
         justify-content: center;
         height: auto;
         padding: 40px 60px;
-        color: #1a2e4a;
         text-align: center;
         position: relative;
         z-index: 1;
+
+        @media (max-width: 768px) {
+            padding: 50px 24px;
+        }
 
         .about-me-controls {
             height: 100%;
@@ -7345,7 +7351,7 @@ ul {
             .lawyer-moto {
                 font-size: 45px;
                 font-weight: 600;
-                color: #1a2e4a
+                color: #111111;
             }
 
             .btn.primary {
@@ -8537,7 +8543,7 @@ ul {
 
     .about-me-controls-headings {
         h1 {
-            color: #1a2e4a;
+            color: #111111;
             font-size: 45px;
             font-weight: 600;
         }

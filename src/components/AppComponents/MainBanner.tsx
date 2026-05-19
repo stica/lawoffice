@@ -31,9 +31,9 @@ const MainBanner: React.FC<{ messages: any, lang: string }> = ({ lang }) => {
           <div className="about-me">
             <div className="about-me-controls">
               <div className="about-me-controls-headings">
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">{t("lawyerBl")}</h1>
-                <p style={{ fontSize: '2.5rem' }} className="text-gray-600 mb-2">{t("lawyerMoto1")}</p>
-                <p style={{ fontSize: '2.5rem' }} className="text-gray-600">{t("lawyerMoto2")}</p>
+                <h1 className="text-4xl font-bold mb-4" style={{ color: '#111111' }}>{t("lawyerBl")}</h1>
+                <p style={{ fontSize: '2.5rem', color: '#333333' }} className="mb-2">{t("lawyerMoto1")}</p>
+                <p style={{ fontSize: '2.5rem', color: '#333333' }}>{t("lawyerMoto2")}</p>
               </div>
               <a
                 href={contactPath}
