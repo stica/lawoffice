@@ -26,10 +26,6 @@ export function menus(t: any): {
 			link: `/${currentCode}/publikacije/`,
 		},
 		{
-			label: t("partners"),
-			link: `/${currentCode}/partneri/`,
-		},
-		{
 			label: t("contact"),
 			link: `/${currentCode}/kontakt/`,
 		}

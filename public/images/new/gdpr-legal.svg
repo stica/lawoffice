@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(196,163,90,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="0" y="0" width="5" height="630" fill="#c4a35a"/>
+  <rect x="1195" y="0" width="5" height="630" fill="#c4a35a"/>
+  <rect x="0" y="0" width="1200" height="3" fill="#c4a35a"/>
+  <rect x="0" y="627" width="1200" height="3" fill="#c4a35a"/>
+  <path d="M600 95 L745 145 L745 300 Q745 420 600 478 Q455 420 455 300 L455 145 Z"
+        fill="none" stroke="#c4a35a" stroke-width="2.5"/>
+  <path d="M600 128 L722 172 L722 295 Q722 398 600 450 Q478 398 478 295 L478 172 Z"
+        fill="rgba(196,163,90,0.04)" stroke="#c4a35a" stroke-width="1" opacity="0.5"/>
+  <rect x="562" y="268" width="76" height="62" rx="7" fill="none" stroke="#c4a35a" stroke-width="2.5"/>
+  <path d="M576 268 L576 242 Q576 213 600 213 Q624 213 624 242 L624 268"
+        fill="none" stroke="#c4a35a" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="600" cy="292" r="7" fill="#c4a35a"/>
+  <rect x="596" y="293" width="8" height="17" rx="3" fill="#c4a35a"/>
+  <text x="600" y="525" text-anchor="middle" fill="#c4a35a"
+        font-family="Georgia, serif" font-size="33" letter-spacing="3" font-weight="bold">ZAŠTITA LIČNIH PODATAKA</text>
+  <text x="600" y="572" text-anchor="middle" fill="rgba(196,163,90,0.6)"
+        font-family="Georgia, serif" font-size="19" letter-spacing="6">GDPR  ·  ZZLP  ·  REPUBLIKA SRPSKA</text>
+  <path d="M50 50 L50 82 L82 82" fill="none" stroke="#c4a35a" stroke-width="1.5" opacity="0.4"/>
+  <path d="M1150 50 L1150 82 L1118 82" fill="none" stroke="#c4a35a" stroke-width="1.5" opacity="0.4"/>
+  <path d="M50 580 L50 548 L82 548" fill="none" stroke="#c4a35a" stroke-width="1.5" opacity="0.4"/>
+  <path d="M1150 580 L1150 548 L1118 548" fill="none" stroke="#c4a35a" stroke-width="1.5" opacity="0.4"/>
+</svg>

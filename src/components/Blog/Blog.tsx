@@ -13,17 +13,20 @@ const Blog: React.FC<{ messages: any }> = ({ messages }) => {
     {
       title: t('startupTitle'),
       path: `/${currentCode}/blog/startup_NIJE_svako_novoosnovano_privredno_drustvo`,
-      description: t('startupDescription')
+      description: t('startupDescription'),
+      image: '/images/new/startup-legal.png',
     },
     {
       title: t('tokenizationTitle'),
       path: `/${currentCode}/blog/tokenizuj-svoj-biznis-pretvori-ideju-u-kapital`,
-      description: t('tokenizationDescription')
+      description: t('tokenizationDescription'),
+      image: '/images/new/tokenization.png',
     },
     {
       title: t('title'),
       path: `/${currentCode}/blog/zakon-o-zastiti-licnih-podataka`,
-      description: t('description')
+      description: t('description'),
+      image: '/images/new/gdpr-legal.svg',
     }
   ];
 
@@ -33,6 +36,16 @@ const Blog: React.FC<{ messages: any }> = ({ messages }) => {
       <div className="blog-grid">
         {blogItems.map((item, index) => (
           <div key={index} className="blog-item">
+            <a href={item.path} className="blog-card-image-link">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={600}
+                height={315}
+                className="blog-card-image"
+                unoptimized={item.image.endsWith('.svg')}
+              />
+            </a>
             <div className="blog-content">
               <h2 className="blog-heading">{item.title}</h2>
               <p className="blog-description">{item.description}</p>

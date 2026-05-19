@@ -41,7 +41,7 @@ const NavbarTwo: React.FC = () => {
         right: 0,
         zIndex: 1000,
         backgroundColor: isScrolled ? "#fff" : "transparent",
-        boxShadow: isScrolled ? "0 2px 20px rgba(81, 61, 72, 0.08)" : "none",
+        boxShadow: isScrolled ? "0 2px 20px rgba(26, 46, 74, 0.1)" : "none",
         transition: "all 0.3s ease",
       }}
     >
@@ -74,7 +74,10 @@ const NavbarTwo: React.FC = () => {
           }}
         >
           <Image
-            src={`data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.84 484.37"><polygon fill="%23513D48" points="195.68 364.12 208.44 376.88 221.2 364.07 221.2 287.04 195.68 261.52 195.68 364.12"/><polygon fill="%23513D48" points="144.43 312.81 170.05 338.44 170.05 192.78 144.43 167.15 144.43 312.81"/><polygon fill="%23513D48" points="246.92 153.96 272.56 128.34 144.43 128.34 170.05 153.96 195.68 153.96 195.68 218.63 221.3 244.25 221.3 153.96 246.92 153.96"/><polygon fill="%23513D48" points="246.92 338.44 272.55 312.84 272.55 167.15 246.92 192.79 246.92 338.44"/></svg>`}
+            src={isScrolled
+              ? `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.84 484.37"><polygon fill="%231a2e4a" points="195.68 364.12 208.44 376.88 221.2 364.07 221.2 287.04 195.68 261.52 195.68 364.12"/><polygon fill="%231a2e4a" points="144.43 312.81 170.05 338.44 170.05 192.78 144.43 167.15 144.43 312.81"/><polygon fill="%231a2e4a" points="246.92 153.96 272.56 128.34 144.43 128.34 170.05 153.96 195.68 153.96 195.68 218.63 221.3 244.25 221.3 153.96 246.92 153.96"/><polygon fill="%231a2e4a" points="246.92 338.44 272.55 312.84 272.55 167.15 246.92 192.79 246.92 338.44"/></svg>`
+              : `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.84 484.37"><polygon fill="%23c4a35a" points="195.68 364.12 208.44 376.88 221.2 364.07 221.2 287.04 195.68 261.52 195.68 364.12"/><polygon fill="%23c4a35a" points="144.43 312.81 170.05 338.44 170.05 192.78 144.43 167.15 144.43 312.81"/><polygon fill="%23c4a35a" points="246.92 153.96 272.56 128.34 144.43 128.34 170.05 153.96 195.68 153.96 195.68 218.63 221.3 244.25 221.3 153.96 246.92 153.96"/><polygon fill="%23c4a35a" points="246.92 338.44 272.55 312.84 272.55 167.15 246.92 192.79 246.92 338.44"/></svg>`
+            }
             alt="Logo"
             width={35}
             height={43}
@@ -114,31 +117,31 @@ const NavbarTwo: React.FC = () => {
                       href={menuItem.link}
                       style={{
                         padding: "12px 28px",
-                        backgroundColor: active ? "#513D48" : "#f7f0e8",
-                        color: active ? "#fff" : "#513D48",
+                        backgroundColor: active ? "#1a2e4a" : "#c4a35a",
+                        color: active ? "#fff" : "#fff",
                         borderRadius: "50px",
                         textDecoration: "none",
                         fontSize: "15px",
                         fontWeight: 600,
                         transition: "all 0.3s ease",
                         display: "inline-block",
-                        boxShadow: "0 4px 15px rgba(247, 240, 232, 0.4)",
+                        boxShadow: "0 4px 15px rgba(196, 163, 90, 0.35)",
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.backgroundColor = "#513D48";
-                        e.currentTarget.style.color = "#fff";
+                        e.currentTarget.style.backgroundColor = "#ffffff";
+                        e.currentTarget.style.color = "#c4a35a";
                         e.currentTarget.style.transform = "translateY(-2px)";
                         e.currentTarget.style.boxShadow =
-                          "0 6px 20px rgba(81, 61, 72, 0.3)";
+                          "0 6px 20px rgba(196, 163, 90, 0.4)";
                       }}
                       onMouseLeave={(e) => {
                         if (!active) {
-                          e.currentTarget.style.backgroundColor = "#f7f0e8";
-                          e.currentTarget.style.color = "#513D48";
+                          e.currentTarget.style.backgroundColor = "#c4a35a";
+                          e.currentTarget.style.color = "#fff";
                         }
                         e.currentTarget.style.transform = "translateY(0)";
                         e.currentTarget.style.boxShadow =
-                          "0 4px 15px rgba(247, 240, 232, 0.4)";
+                          "0 4px 15px rgba(196, 163, 90, 0.35)";
                       }}
                     >
                       {menuItem.label}
@@ -152,22 +155,33 @@ const NavbarTwo: React.FC = () => {
                   <Link
                     href={menuItem.link}
                     style={{
-                      color: active ? "#513D48" : "#646464",
+                      color: active
+                        ? (isScrolled ? "#1a2e4a" : "#c4a35a")
+                        : (isScrolled ? "#646464" : "#c4a35a"),
                       textDecoration: "none",
                       fontSize: "15px",
                       fontWeight: active ? 600 : 500,
                       position: "relative",
                       transition: "all 0.3s ease",
                       display: "inline-block",
+                      padding: "8px 16px",
+                      borderRadius: "50px",
+                      backgroundColor: "transparent",
                     }}
                     onMouseEnter={(e) => {
                       if (!active) {
-                        e.currentTarget.style.color = "#513D48";
+                        e.currentTarget.style.backgroundColor = "#c4a35a";
+                        e.currentTarget.style.color = "#ffffff";
+                        e.currentTarget.style.transform = "translateY(-1px)";
+                        e.currentTarget.style.boxShadow = "0 4px 15px rgba(196, 163, 90, 0.35)";
                       }
                     }}
                     onMouseLeave={(e) => {
                       if (!active) {
-                        e.currentTarget.style.color = "#646464";
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = isScrolled ? "#646464" : "#c4a35a";
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow = "none";
                       }
                     }}
                   >
@@ -180,7 +194,7 @@ const NavbarTwo: React.FC = () => {
                           left: 0,
                           right: 0,
                           height: "2px",
-                          backgroundColor: "#f7f0e8",
+                          backgroundColor: "#c4a35a",
                           borderRadius: "2px",
                         }}
                       />
@@ -222,7 +236,7 @@ const NavbarTwo: React.FC = () => {
               style={{
                 width: "100%",
                 height: "3px",
-                backgroundColor: "#513D48",
+                backgroundColor: isScrolled ? "#1a2e4a" : "#ffffff",
                 borderRadius: "3px",
                 transition: "all 0.3s ease",
                 transform: isOpen ? "rotate(45deg) translateY(8px)" : "none",
@@ -232,7 +246,7 @@ const NavbarTwo: React.FC = () => {
               style={{
                 width: "100%",
                 height: "3px",
-                backgroundColor: "#513D48",
+                backgroundColor: isScrolled ? "#1a2e4a" : "#ffffff",
                 borderRadius: "3px",
                 transition: "all 0.3s ease",
                 opacity: isOpen ? 0 : 1,
@@ -242,7 +256,7 @@ const NavbarTwo: React.FC = () => {
               style={{
                 width: "100%",
                 height: "3px",
-                backgroundColor: "#513D48",
+                backgroundColor: isScrolled ? "#1a2e4a" : "#ffffff",
                 borderRadius: "3px",
                 transition: "all 0.3s ease",
                 transform: isOpen ? "rotate(-45deg) translateY(-8px)" : "none",
@@ -295,8 +309,8 @@ const NavbarTwo: React.FC = () => {
                     onClick={() => setIsOpen(false)}
                     style={{
                       padding: "16px 24px",
-                      backgroundColor: active ? "#513D48" : "#f7f0e8",
-                      color: active ? "#fff" : "#513D48",
+                      backgroundColor: active ? "#1a2e4a" : "#c4a35a",
+                      color: "#fff",
                       borderRadius: "12px",
                       textDecoration: "none",
                       fontSize: "16px",
@@ -319,7 +333,7 @@ const NavbarTwo: React.FC = () => {
                   onClick={() => setIsOpen(false)}
                   style={{
                     padding: "16px 20px",
-                    color: active ? "#513D48" : "#646464",
+                    color: active ? "#1a2e4a" : "#646464",
                     textDecoration: "none",
                     fontSize: "16px",
                     fontWeight: active ? 600 : 500,

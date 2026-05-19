@@ -7,7 +7,11 @@ import "../../../node_modules/aos/dist/aos.css";
 const AosAnimation = () => {
  
   React.useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+      offset: 50,
+      duration: 800,
+    });
   }, []);
 
   return (

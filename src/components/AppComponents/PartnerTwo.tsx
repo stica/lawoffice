@@ -70,15 +70,6 @@ const PartnerTwo: React.FC<{ messages: any }> = ({ messages }) => {
 
   return (
     <>
-      <Image
-        src="/images/new/sign-mockup.webp"
-        alt="Description of SVG"
-        width={1920}
-        height={1080}
-        loading="lazy"
-        quality={75}
-      />
-
       <div className="partner-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">

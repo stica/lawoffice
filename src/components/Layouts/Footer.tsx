@@ -27,16 +27,23 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="footer-area" style={{
-        backgroundImage: `url(/images/new/footer.webp)`,
-        backgroundSize: 'cover',     // Keep the image size as is
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center', // Center the image within the container
-        width: '100%',                // Ensure the container is full width
-        height: '100%'
-      }}>
+      <footer className="footer-area" style={{ position: 'relative', overflow: 'hidden' }}>
 
-        <div className="container" >
+        {/* Logo watermark */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          pointerEvents: 'none', zIndex: 0,
+        }}>
+          <svg viewBox="0 0 387.84 484.37" style={{ width: '420px', height: '420px', opacity: 0.18, fill: '#ffffff' }}>
+            <polygon points="195.68 364.12 208.44 376.88 221.2 364.07 221.2 287.04 195.68 261.52 195.68 364.12"/>
+            <polygon points="144.43 312.81 170.05 338.44 170.05 192.78 144.43 167.15 144.43 312.81"/>
+            <polygon points="246.92 153.96 272.56 128.34 144.43 128.34 170.05 153.96 195.68 153.96 195.68 218.63 221.3 244.25 221.3 153.96 246.92 153.96"/>
+            <polygon points="246.92 338.44 272.55 312.84 272.55 167.15 246.92 192.79 246.92 338.44"/>
+          </svg>
+        </div>
+
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="row justify-content-center">
             <div className="col-lg-3 col-sm-6">
               <div
