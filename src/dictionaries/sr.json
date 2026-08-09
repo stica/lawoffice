@@ -51,7 +51,12 @@
     "crypto_market_regulation": "Koliko je zakonski (ne)uređeno tržište kriptovaluta u BiH?",
     "seminar": "Seminar",
     "law_faculty": "Pravni fakultet univerziteta u Banjoj Luci",
-    "podcast": "Podcast"
+    "podcast": "Podcast",
+    "kolumna": "Kolumna",
+    "sloboda_govora_title": "Sloboda govora u digitalnom kavezu",
+    "intervju": "Intervju",
+    "gerila_intervju_title": "Milionske kazne su nam pred vratima",
+    "gerila_youtube_title": "Advokat Nataša Tica za Gerilu — video intervju"
   },
   "Partners": {
     "about0": "Drobnjak Legal & Partners, kao naš partner u Srbiji, pokriva sve oblasti prava i pruža sveobuhvatne pravne usluge na teritoriji Srbije. Zahvaljujući ovoj saradnji, možemo osigurati stručnu podršku i pravno zastupanje klijentima u Srbiji na najvišem nivou.",
@@ -370,7 +375,7 @@
       },
       "clients": {
         "title": "Kome su namenjene naše usluge?",
-        "description": "Preduzećima svih veličina koja obrađuju lične podatke, uključujući e-trgovinske platforme, zdravstvene ustanove, finansijske institucije i tehnološke kompanije"
+        "description": "Privrednim društvima svih veličina koja obrađuju lične podatke, uključujući e-trgovinske platforme, zdravstvene ustanove, finansijske institucije i tehnološke kompanije"
       },
       "whyUs": {
         "title": "Zašto izabrati Advokatsku kancelariju Nataša Tica?",
@@ -384,7 +389,7 @@
         "title": "Šta kažu naši klijenti",
         "quote1": "Profesionalna i temeljna usluga usklađenosti sa GDPR-om. Učinili su složen proces upravljivim.",
         "quote2": "Brzi odgovor na naš incident sa povredom podataka. Njihova stručnost bila je neprocenjiva u rešavanju situacije.",
-        "quote3": "Jasni i praktični saveti o pitanjima zaštite podataka. Toplo preporučujem za svako preduzeće."
+        "quote3": "Jasni i praktični saveti o pitanjima zaštite podataka. Toplo preporučujem za svako privredno društvo."
       },
       "faq": {
         "title": "Često postavljana pitanja",
@@ -400,7 +405,7 @@
       }
     },
     "commercialLaw": {
-      "hero": {"title": "Privredno pravo", "subtitle": "Sveobuhvatna pravna podrška za preduzeća i preduzetnike.", "cta": "Kontaktirajte nas"},
+      "hero": {"title": "Privredno pravo", "subtitle": "Sveobuhvatna pravna podrška za privredna društva i preduzetnike.", "cta": "Kontaktirajte nas"},
       "whatIs": {"title": "Šta je privredno pravo?", "description": "Privredno pravo obuhvata osnivanje kompanija, korporativno upravljanje, spajanja i akvizicije i komercijalne ugovore koji podržavaju poslovanje."},
       "services": {
         "title": "Naše usluge",
@@ -409,7 +414,7 @@
         "mna": {"title": "M&A", "description": "Due diligence, strukturiranje i dokumentacija transakcija."},
         "commercialContracts": {"title": "Komercijalni ugovori", "description": "Izrada i pregovaranje B2B i B2C ugovora."}
       },
-      "clients": {"title": "Ko su naši klijenti?", "description": "Mala i srednja preduzeća, startapi, investitori i korporativni klijenti."},
+      "clients": {"title": "Ko su naši klijenti?", "description": "Privredna društva, startapi, investitori i korporativni klijenti."},
       "whyUs": {"title": "Zašto Advokatska kancelarija Nataša Tica?", "point1": "Poslovno orijentisan pravni savet", "point2": "Efikasna podrška transakcijama", "point3": "Jasna dokumentacija i upravljanje rizicima", "point4": "Iskustvo sa startapima i MSP", "point5": "Dvojezična podrška (SRB/EN)"},
       "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Profesionalan i precizan savet.", "quote2": "Olakšali su nam osnivanje firme.", "quote3": "Odlična podrška u pregovorima."},
       "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li pomažete oko registracije firme?", "a": "Da, pružamo kompletnu podršku pri osnivanju."}, "q2": {"q": "Da li radite ugovore članova?", "a": "Da, izrađujemo i revidiramo ugovore članova i investicione ugovore."}}

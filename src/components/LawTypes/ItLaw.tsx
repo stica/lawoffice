@@ -2,100 +2,107 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-interface Blog1Props {
+interface Props {
   messages: any;
   locale: string;
 }
 
-const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
+const ItLaw: React.FC<Props> = ({ messages, locale }) => {
   const t = useTranslations("lawtypes");
 
   return (
-    <div className="blog-wrapper space-y-16">
+    <div className="law-page">
 
-      {/* Hero Section */}
-      <section className="text-center py-16 bg-gray-100 rounded-2xl">
-        <h1 className="text-4xl font-bold">{t('itLaw.hero.title')}</h1>
-        <p className="mt-4 text-lg">{t("itLaw.hero.subtitle")}</p>
-        <Link href={`/${locale}/kontakt`} className="btn primary">
+      <section className="law-hero">
+        <div className="law-hero-inner">
+          <span className="law-hero-badge">{t("itLaw.hero.title")}</span>
+          <h1>{t("itLaw.hero.subtitle")}</h1>
+          <Link href={`/${locale}/kontakt`} className="law-hero-btn">
             {t("itLaw.hero.cta")}
           </Link>
+        </div>
       </section>
 
-      {/* What is IT Law */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">{t("itLaw.whatIs.title")}</h2>
-        <p>{t("itLaw.whatIs.description")}</p>
+      <section className="law-section">
+        <div className="law-container">
+          <h2>{t("itLaw.whatIs.title")}</h2>
+          <p className="law-lead">{t("itLaw.whatIs.description")}</p>
+        </div>
       </section>
 
-      {/* Key Services */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.services.title")}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="service-card">
-            <h3>{t("itLaw.services.nda.title")}</h3>
-            <p>{t("itLaw.services.nda.description")}</p>
-          </div>
-          <div className="service-card">
-            <h3>{t("itLaw.services.sla.title")}</h3>
-            <p>{t("itLaw.services.sla.description")}</p>
-          </div>
-          <div className="service-card">
-            <h3>{t("itLaw.services.contracts.title")}</h3>
-            <p>{t("itLaw.services.contracts.description")}</p>
-          </div>
-          <div className="service-card">
-            <h3>{t("itLaw.services.disputes.title")}</h3>
-            <p>{t("itLaw.services.disputes.description")}</p>
+      <section className="law-section law-section-alt">
+        <div className="law-container">
+          <h2>{t("itLaw.services.title")}</h2>
+          <div className="law-services-grid">
+            <div className="law-service-card">
+              <h3>{t("itLaw.services.nda.title")}</h3>
+              <p>{t("itLaw.services.nda.description")}</p>
+            </div>
+            <div className="law-service-card">
+              <h3>{t("itLaw.services.sla.title")}</h3>
+              <p>{t("itLaw.services.sla.description")}</p>
+            </div>
+            <div className="law-service-card">
+              <h3>{t("itLaw.services.contracts.title")}</h3>
+              <p>{t("itLaw.services.contracts.description")}</p>
+            </div>
+            <div className="law-service-card">
+              <h3>{t("itLaw.services.disputes.title")}</h3>
+              <p>{t("itLaw.services.disputes.description")}</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Client Types */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.clients.title")}</h2>
-        <p>{t("itLaw.clients.description")}</p>
-      </section>
-
-      {/* Why Us - USPs */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">{t("itLaw.whyUs.title")}</h2>
-        <ul className="space-y-2 list-disc list-inside">
-          <li>{t("itLaw.whyUs.point1")}</li>
-          <li>{t("itLaw.whyUs.point2")}</li>
-          <li>{t("itLaw.whyUs.point3")}</li>
-          <li>{t("itLaw.whyUs.point4")}</li>
-          <li>{t("itLaw.whyUs.point5")}</li>
-        </ul>
-      </section>
-
-      {/* Testimonials */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.testimonials.title")}</h2>
-        <div className="space-y-6">
-          <blockquote>{t("itLaw.testimonials.quote1")}</blockquote>
-          <blockquote>{t("itLaw.testimonials.quote2")}</blockquote>
-          <blockquote>{t("itLaw.testimonials.quote3")}</blockquote>
-        </div>
-      </section>
-
-      {/* FAQ + CTA */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">{t("itLaw.faq.title")}</h2>
-        <div className="space-y-6">
+      <section className="law-section">
+        <div className="law-container law-two-col">
           <div>
-            <strong>{t("itLaw.faq.q1.q")}</strong>
-            <p>{t("itLaw.faq.q1.a")}</p>
+            <h2>{t("itLaw.clients.title")}</h2>
+            <p className="law-lead">{t("itLaw.clients.description")}</p>
           </div>
           <div>
-            <strong>{t("itLaw.faq.q2.q")}</strong>
-            <p>{t("itLaw.faq.q2.a")}</p>
+            <h2>{t("itLaw.whyUs.title")}</h2>
+            <ul className="law-why-list">
+              <li>{t("itLaw.whyUs.point1")}</li>
+              <li>{t("itLaw.whyUs.point2")}</li>
+              <li>{t("itLaw.whyUs.point3")}</li>
+              <li>{t("itLaw.whyUs.point4")}</li>
+              <li>{t("itLaw.whyUs.point5")}</li>
+            </ul>
           </div>
         </div>
-        <div className="text-center mt-8">
-          <Link href={`/${locale}/kontakt`} className="btn primary">
-            {t("itLaw.faq.cta")}
-          </Link>
+      </section>
+
+      <section className="law-section law-section-alt">
+        <div className="law-container">
+          <h2>{t("itLaw.testimonials.title")}</h2>
+          <div className="law-testimonials">
+            <div className="law-testimonial"><p>{t("itLaw.testimonials.quote1")}</p></div>
+            <div className="law-testimonial"><p>{t("itLaw.testimonials.quote2")}</p></div>
+            <div className="law-testimonial"><p>{t("itLaw.testimonials.quote3")}</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="law-section">
+        <div className="law-container">
+          <h2>{t("itLaw.faq.title")}</h2>
+          <div className="law-faq">
+            <div className="law-faq-item">
+              <strong>{t("itLaw.faq.q1.q")}</strong>
+              <p>{t("itLaw.faq.q1.a")}</p>
+            </div>
+            <div className="law-faq-item">
+              <strong>{t("itLaw.faq.q2.q")}</strong>
+              <p>{t("itLaw.faq.q2.a")}</p>
+            </div>
+          </div>
+          <div className="law-cta-strip">
+            <p>{t("itLaw.faq.cta")}</p>
+            <Link href={`/${locale}/kontakt`} className="custom-btn">
+              {t("itLaw.hero.cta")}
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -103,4 +110,4 @@ const Blog1: React.FC<Blog1Props> = ({ messages, locale }) => {
   );
 };
 
-export default Blog1;
+export default ItLaw;

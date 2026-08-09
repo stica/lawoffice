@@ -6,6 +6,66 @@ import CommercialLaw from "@/components/LawTypes/CommercialLaw";
 
 const supportedLanguages = ['en', 'sr'];
 
+const commercialLawJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'LegalService',
+      '@id': 'https://www.natasaticalawoffice.com/sr/privredno-pravo',
+      name: 'Privredno pravo | Osnivanje DOO | Advokatska kancelarija Nataša Tica',
+      description: 'Advokat Banja Luka za privredno pravo — osnivanje DOO, registracija firme, korporativno upravljanje, M&A, radno pravo i nekretnine u Republici Srpskoj.',
+      url: 'https://www.natasaticalawoffice.com/sr/privredno-pravo',
+      telephone: '+38765231276',
+      email: 'natasa.tica@natasaticalawoffice.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Jevrejska 24',
+        addressLocality: 'Banja Luka',
+        addressCountry: 'BA',
+      },
+      areaServed: 'BA',
+      serviceType: 'Commercial Law',
+      provider: {
+        '@type': 'Attorney',
+        name: 'Nataša Tica',
+        url: 'https://www.natasaticalawoffice.com/sr',
+        jobTitle: 'Advokat',
+        worksFor: {
+          '@type': 'LegalService',
+          name: 'Advokatska kancelarija Nataša Tica',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Jevrejska 24',
+            addressLocality: 'Banja Luka',
+            addressCountry: 'BA',
+          },
+        },
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Da li pomažete oko registracije firme?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Da, pružamo kompletnu podršku pri osnivanju — od izbora pravne forme do registracije DOO u Republici Srpskoj.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Da li radite ugovore članova?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Da, izrađujemo i revidiramo ugovore članova i investicione ugovore.',
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export default async function Page({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
   const lang = supportedLanguages.includes(params.locale) ? params.locale : 'en';
@@ -13,6 +73,10 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(commercialLawJsonLd) }}
+      />
       <NavbarTwo />
       <CommercialLaw messages={messages} locale={lang} />
       <Footer />
@@ -32,8 +96,8 @@ async function fetchMessages(locale: string) {
 
 export async function generateStaticParams() {
   return [
-    { lang: 'en' },
-    { lang: 'sr' },
+    { locale: 'en' },
+    { locale: 'sr' },
   ];
 }
 
@@ -68,9 +132,10 @@ export const metadata = {
   openGraph: {
     title: "Privredno pravo | Osnivanje DOO | Advokat Banja Luka",
     description: "Advokat Banja Luka za privredno pravo – osnivanje DOO, registracija firme, korporativno upravljanje, M&A, radno pravo i nekretnine.",
-    images: [{ url: '/images/new/logojpg.jpg' }],
+    images: [{ url: 'https://www.natasaticalawoffice.com/images/new/logojpg.jpg' }],
   },
   alternates: {
+    canonical: 'https://www.natasaticalawoffice.com/sr/privredno-pravo',
     languages: {
       'en': 'https://www.natasaticalawoffice.com/en/privredno-pravo',
       'sr': 'https://www.natasaticalawoffice.com/sr/privredno-pravo',

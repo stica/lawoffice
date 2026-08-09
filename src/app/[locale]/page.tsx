@@ -4,6 +4,81 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import NavbarTwo from "@/components/Layouts/NavbarTwo";
 import MainBanner from "@/components/AppComponents/MainBanner";
 
+const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ['LegalService', 'LocalBusiness'],
+      '@id': 'https://www.natasaticalawoffice.com/sr',
+      name: 'Advokatska kancelarija Nataša Tica',
+      description: 'Advokat u Banjoj Luci — IT pravo, GDPR, privredno, obligaciono, porodično, nasljedno i radno pravo. Certified Data Protection Officer.',
+      url: 'https://www.natasaticalawoffice.com/sr',
+      telephone: '+38765231276',
+      email: 'natasa.tica@natasaticalawoffice.com',
+      image: 'https://www.natasaticalawoffice.com/images/new/logojpg.jpg',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Jevrejska 24',
+        addressLocality: 'Banja Luka',
+        addressCountry: 'BA',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '44.7722',
+        longitude: '17.1910',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Banja Luka' },
+        { '@type': 'State', name: 'Republika Srpska' },
+        { '@type': 'Country', name: 'Bosnia and Herzegovina' },
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Pravne usluge',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'IT pravo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Zaštita ličnih podataka (GDPR)' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Privredno pravo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Osnivanje DOO' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Porodično pravo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Nasljedno pravo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Radno pravo' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Nekretnine' } },
+        ],
+      },
+    },
+    {
+      '@type': 'Attorney',
+      '@id': 'https://www.natasaticalawoffice.com/sr/o-advokatu',
+      name: 'Nataša Tica',
+      jobTitle: 'Advokat',
+      url: 'https://www.natasaticalawoffice.com/sr',
+      telephone: '+38765231276',
+      email: 'natasa.tica@natasaticalawoffice.com',
+      image: 'https://www.natasaticalawoffice.com/images/new/logojpg.jpg',
+      worksFor: {
+        '@type': 'LegalService',
+        name: 'Advokatska kancelarija Nataša Tica',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Jevrejska 24',
+          addressLocality: 'Banja Luka',
+          addressCountry: 'BA',
+        },
+      },
+      knowsAbout: [
+        'IT pravo',
+        'GDPR',
+        'Privredno pravo',
+        'Porodično pravo',
+        'Nasljedno pravo',
+        'Radno pravo',
+        'Digitalna imovina',
+      ],
+    },
+  ],
+};
+
 // Lazy load non-critical components
 const Services = lazy(() => import("@/components/AppComponents/Services"));
 const PartnerTwo = lazy(() => import("@/components/AppComponents/PartnerTwo"));
@@ -75,6 +150,10 @@ export default async function Home({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+      />
       <NavbarTwo />
       <main>
         <MainBanner messages={messages} lang={lang}/>
@@ -103,8 +182,8 @@ async function fetchMessages(locale: string) {
 }
 
 export const generateStaticParams = () => [
-  { lang: 'en' },
-  { lang: 'sr' },
+  { locale: 'en' },
+  { locale: 'sr' },
 ];
 
 // Add page-level metadata
