@@ -32,38 +32,35 @@ async function fetchMessages(locale: string) {
 
 export async function generateStaticParams() {
   return [
-    { lang: 'en' },
-    { lang: 'sr' },
+    { locale: 'en' },
+    { locale: 'sr' },
   ];
 }
 
-export const metadata = {
-  title: "Nekretnine | Advokat Banja Luka | Kupoprodaja, zakup i zemljišnoknjižni upisi",
-  description: "Advokat u Banjoj Luci specijalizovan za pravo nekretnina. Pravna podrška za kupoprodaju stanova i kuća, zakupe, zemljišnoknjižne upise, due diligence i rješavanje imovinskih sporova.",
-  keywords: [
-    "nekretnine",
-    "advokat Banja Luka",
-    "nekretnine Banja Luka",
-    "kupoprodaja nekretnina",
-    "kupoprodaja stanova",
-    "zakup",
-    "due diligence",
-    "zemljišne knjige",
-    "imovinski sporovi",
-    "advokat za nekretnine",
-    "real estate lawyer",
-    "advokat Banja Luka nekretnine",
-    "pravo nekretnina Republika Srpska"
-  ],
-  openGraph: {
-    title: "Nekretnine | Advokat Banja Luka",
-    description: "Stručna pravna podrška za promet nekretnina - kupoprodaja, zakupi i zemljišnoknjižni upisi.",
-    images: [{ url: '/images/new/logojpg.jpg' }],
-  },
-  alternates: {
-    languages: {
-      'en': 'https://www.natasaticalawoffice.com/en/nekretnine',
-      'sr': 'https://www.natasaticalawoffice.com/sr/nekretnine',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const base = 'https://www.natasaticalawoffice.com';
+  const path = '/nekretnine';
+  return {
+    title: "Nekretnine | Advokat Banja Luka | Kupoprodaja, zakup i zemljišnoknjižni upisi",
+    description: "Advokat u Banjoj Luci specijalizovan za pravo nekretnina. Pravna podrška za kupoprodaju stanova i kuća, zakupe, zemljišnoknjižne upise, due diligence i rješavanje imovinskih sporova.",
+    keywords: [
+      "nekretnine", "advokat Banja Luka", "nekretnine Banja Luka",
+      "kupoprodaja nekretnina", "kupoprodaja stanova", "zakup", "due diligence",
+      "zemljišne knjige", "imovinski sporovi", "advokat za nekretnine",
+      "real estate lawyer", "advokat Banja Luka nekretnine",
+      "pravo nekretnina Republika Srpska"
+    ],
+    openGraph: {
+      title: "Nekretnine | Advokat Banja Luka",
+      description: "Stručna pravna podrška za promet nekretnina - kupoprodaja, zakupi i zemljišnoknjižni upisi.",
+      images: [{ url: `${base}/images/new/logojpg.jpg` }],
     },
-  },
-};
+    alternates: {
+      canonical: `${base}/${params.locale}${path}`,
+      languages: {
+        'en': `${base}/en${path}`,
+        'sr': `${base}/sr${path}`,
+      },
+    },
+  };
+}

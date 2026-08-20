@@ -101,44 +101,31 @@ export async function generateStaticParams() {
   ];
 }
 
-export const metadata = {
-  title: "Privredno pravo | Osnivanje DOO | Advokat Banja Luka",
-  description: "Advokat Banja Luka za privredno pravo – osnivanje DOO, registracija firme, korporativno upravljanje, M&A, radno pravo i nekretnine. Brza i stručna pravna podrška u Republici Srpskoj.",
-  keywords: [
-    "privredno pravo",
-    "osnivanje",
-    "osnivanje DOO",
-    "osnivanje firme",
-    "osnivanje firme Banja Luka",
-    "DOO",
-    "doo Banja Luka",
-    "registracija firme",
-    "registracija DOO",
-    "radno pravo",
-    "radno pravo Banja Luka",
-    "nekretnine",
-    "nekretnine Banja Luka",
-    "privredno pravo Banja Luka",
-    "advokat Banja Luka",
-    "advokat za privredno pravo",
-    "korporativno upravljanje",
-    "M&A",
-    "komercijalni ugovori",
-    "poslovni advokat Banja Luka",
-    "privredno pravo Republika Srpska",
-    "commercial law",
-    "company formation Bosnia"
-  ],
-  openGraph: {
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const base = 'https://www.natasaticalawoffice.com';
+  const path = '/privredno-pravo';
+  return {
     title: "Privredno pravo | Osnivanje DOO | Advokat Banja Luka",
-    description: "Advokat Banja Luka za privredno pravo – osnivanje DOO, registracija firme, korporativno upravljanje, M&A, radno pravo i nekretnine.",
-    images: [{ url: 'https://www.natasaticalawoffice.com/images/new/logojpg.jpg' }],
-  },
-  alternates: {
-    canonical: 'https://www.natasaticalawoffice.com/sr/privredno-pravo',
-    languages: {
-      'en': 'https://www.natasaticalawoffice.com/en/privredno-pravo',
-      'sr': 'https://www.natasaticalawoffice.com/sr/privredno-pravo',
+    description: "Advokat Banja Luka za privredno pravo – osnivanje DOO, registracija firme, korporativno upravljanje, M&A, radno pravo i nekretnine. Brza i stručna pravna podrška u Republici Srpskoj.",
+    keywords: [
+      "privredno pravo", "osnivanje", "osnivanje DOO", "osnivanje firme",
+      "osnivanje firme Banja Luka", "DOO", "doo Banja Luka", "registracija firme",
+      "registracija DOO", "privredno pravo Banja Luka", "advokat Banja Luka",
+      "advokat za privredno pravo", "korporativno upravljanje", "M&A",
+      "komercijalni ugovori", "poslovni advokat Banja Luka",
+      "privredno pravo Republika Srpska", "commercial law", "company formation Bosnia"
+    ],
+    openGraph: {
+      title: "Privredno pravo | Osnivanje DOO | Advokat Banja Luka",
+      description: "Advokat Banja Luka za privredno pravo – osnivanje DOO, registracija firme, korporativno upravljanje, M&A, radno pravo i nekretnine.",
+      images: [{ url: `${base}/images/new/logojpg.jpg` }],
     },
-  },
-};
+    alternates: {
+      canonical: `${base}/${params.locale}${path}`,
+      languages: {
+        'en': `${base}/en${path}`,
+        'sr': `${base}/sr${path}`,
+      },
+    },
+  };
+}

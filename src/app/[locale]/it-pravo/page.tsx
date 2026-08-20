@@ -102,38 +102,29 @@ export async function generateStaticParams() {
   ];
 }
 
-export const metadata = {
-  title: "IT pravo | Advokat Banja Luka | SaaS, NDA, Softverske licence i IT ugovori",
-  description: "Advokat u Banjoj Luci specijalizovan za IT pravo i tehnološke kompanije. Pružamo pravnu podršku za softverske licence, NDA ugovore, SaaS, PaaS, IaaS modele, SLA ugovore i zaštitu intelektualne svojine u IT sektoru.",
-  keywords: [
-    "IT pravo",
-    "advokat Banja Luka",
-    "IT pravo Banja Luka",
-    "advokat za IT kompanije",
-    "NDA",
-    "SaaS ugovori",
-    "softverske licence",
-    "SLA",
-    "PaaS",
-    "IaaS",
-    "pravna zaštita softvera",
-    "IT ugovori",
-    "advokat Banja Luka IT pravo",
-    "tehnološko pravo",
-    "startup advokat",
-    "software licensing",
-    "IT pravo Republika Srpska"
-  ],
-  openGraph: {
-    title: "IT pravo | Advokat Banja Luka | Softverski ugovori i pravna zaštita",
-    description: "Stručna pravna podrška za IT kompanije i startape - SaaS, NDA, softverske licence i tehnološki ugovori.",
-    images: [{ url: 'https://www.natasaticalawoffice.com/images/new/logojpg.jpg' }],
-  },
-  alternates: {
-    canonical: 'https://www.natasaticalawoffice.com/sr/it-pravo',
-    languages: {
-      'en': 'https://www.natasaticalawoffice.com/en/it-pravo',
-      'sr': 'https://www.natasaticalawoffice.com/sr/it-pravo',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const base = 'https://www.natasaticalawoffice.com';
+  const path = '/it-pravo';
+  return {
+    title: "IT pravo | Advokat Banja Luka | SaaS, NDA, Softverske licence i IT ugovori",
+    description: "Advokat u Banjoj Luci specijalizovan za IT pravo i tehnološke kompanije. Pružamo pravnu podršku za softverske licence, NDA ugovore, SaaS, PaaS, IaaS modele, SLA ugovore i zaštitu intelektualne svojine u IT sektoru.",
+    keywords: [
+      "IT pravo", "advokat Banja Luka", "IT pravo Banja Luka", "advokat za IT kompanije",
+      "NDA", "SaaS ugovori", "softverske licence", "SLA", "PaaS", "IaaS",
+      "pravna zaštita softvera", "IT ugovori", "advokat Banja Luka IT pravo",
+      "tehnološko pravo", "startup advokat", "software licensing", "IT pravo Republika Srpska"
+    ],
+    openGraph: {
+      title: "IT pravo | Advokat Banja Luka | Softverski ugovori i pravna zaštita",
+      description: "Stručna pravna podrška za IT kompanije i startape - SaaS, NDA, softverske licence i tehnološki ugovori.",
+      images: [{ url: `${base}/images/new/logojpg.jpg` }],
     },
-  },
-};
+    alternates: {
+      canonical: `${base}/${params.locale}${path}`,
+      languages: {
+        'en': `${base}/en${path}`,
+        'sr': `${base}/sr${path}`,
+      },
+    },
+  };
+}
