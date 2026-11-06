@@ -3,6 +3,7 @@ import NavbarTwo from "../../../../components/Layouts/NavbarTwo";
 import Footer from "../../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from "next-intl/server";
 import Blog3 from "@/components/Blog/Blog3";
+import { BLOG_POSTS, articleJsonLd, buildMetadata } from "@/lib/seo";
 
 const supportedLanguages = ["en", "sr"];
 
@@ -19,6 +20,12 @@ export default async function Page({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd(params.locale, BLOG_POSTS.startup, { datePublished: BLOG_POSTS.startup.datePublished })),
+        }}
+      />
       <NavbarTwo />
       <Blog3 messages={messages} locale={lang} />
       <Footer />
@@ -39,26 +46,11 @@ async function fetchMessages(locale: string) {
 
 export async function generateStaticParams() {
   return [
-    { lang: "en" },
-    { lang: "sr" },
+    { locale: 'en' },
+    { locale: 'sr' },
   ];
 }
 
-export const metadata = {
-  title:
-    "Startup NIJE svako novoosnovano privredno društvo",
-  description:
-    "Zakon o inovacionoj djelatnosti RS iz 2025. godine po prvi put normativno definiše pojam startupa. Saznajte zašto pravni okvir nije administrativni teret već infrastruktura za stabilan rast.",
-  openGraph: {
-    title: "Startup NIJE svako novoosnovano privredno društvo",
-    description:
-      "Zakon o inovacionoj djelatnosti RS iz 2025. godine po prvi put normativno definiše pojam startupa. Saznajte zašto pravni okvir nije administrativni teret već infrastruktura za stabilan rast.",
-    images: [{ url: "/images/new/startup-legal.png", width: 1200, height: 630, alt: "Startup NIJE svako novoosnovano privredno društvo" }],
-  },
-  alternates: {
-    languages: {
-      en: "https://www.natasaticalawoffice.com/en",
-      sr: "https://www.natasaticalawoffice.com/sr",
-    },
-  },
-};
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, BLOG_POSTS.startup);
+}

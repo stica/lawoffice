@@ -3,6 +3,7 @@ import NavbarTwo from "../../../components/Layouts/NavbarTwo";
 import Footer from "../../../components/Layouts/Footer";
 import PartnersAbout from "@/components/AppComponents/PartnersAbout";
 import { unstable_setRequestLocale } from 'next-intl/server';
+import { STATIC_PAGES, buildMetadata } from "@/lib/seo";
 
 const supportedLanguages = ['en', 'sr']; // List of supported languages
 
@@ -39,7 +40,10 @@ async function fetchMessages(locale: string) {
 // Generate static paths for all supported locales
 export async function generateStaticParams() {
   return [
-    { lang: 'en' }, // Pre-render English page
-    { lang: 'sr' }, // Pre-render Spanish page
+    { locale: 'en' }, // Pre-render English page
+    { locale: 'sr' }, // Pre-render Spanish page
   ];
+}
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, STATIC_PAGES.partners);
 }

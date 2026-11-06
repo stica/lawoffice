@@ -3,6 +3,7 @@ import NavbarTwo from "../../../../components/Layouts/NavbarTwo";
 import Footer from "../../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Blog2 from "@/components/Blog/Blog2";
+import { BLOG_POSTS, articleJsonLd, buildMetadata } from "@/lib/seo";
 
 const supportedLanguages = ['en', 'sr']; // List of supported languages
 
@@ -14,6 +15,12 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd(params.locale, BLOG_POSTS.tokenize, { datePublished: BLOG_POSTS.tokenize.datePublished })),
+        }}
+      />
       <NavbarTwo />
 
       <Blog2 messages={messages} locale={lang} />
@@ -40,32 +47,11 @@ async function fetchMessages(locale: string) {
 // Generate static paths for all supported locales
 export async function generateStaticParams() {
   return [
-    { lang: 'en' }, // Pre-render English page
-    { lang: 'sr' }, // Pre-render Spanish page
+    { locale: 'en' }, // Pre-render English page
+    { locale: 'sr' }, // Pre-render Spanish page
   ];
 }
 
-export const metadata = {
-  title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
-  description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-  openGraph: {
-    title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
-    description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-    images: [{ 
-      url: 'https://www.natasaticalawoffice.com/images/new/tokenization.png',
-      width: 1200,
-      height: 630,
-      alt: "Tokenizacija biznisa"
-    }],  },
-  alternates: {
-    languages: {
-      'en': 'https://www.natasaticalawoffice.com/en',
-      'sr': 'https://www.natasaticalawoffice.com/sr',
-    },
-  },
-  linkedin: {
-    title: "Tokenizuj svoj biznis – Pretvori ideju u kapital",
-    description: "Saznajte više o tokenizaciji i kako može pomoći vašem poslovanju. Alternativno finansiranje, niži troškovi i veća likvidnost - sve to je moguće kroz tokenizaciju.",
-    image: 'https://www.natasaticalawoffice.com/images/new/tokenization.png',
-  },
-};
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, BLOG_POSTS.tokenize);
+}

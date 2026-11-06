@@ -33,6 +33,7 @@ const lawPaths = [
 
 // Known blog post slugs (without leading slash)
 const blogPosts = [
+  'startup_NIJE_svako_novoosnovano_privredno_drustvo',
   'tokenizuj-svoj-biznis-pretvori-ideju-u-kapital',
   'zakon-o-zastiti-licnih-podataka',
 ]
@@ -45,7 +46,8 @@ module.exports = {
   changefreq: 'weekly',
   priority: 0.7,
   outDir: './public',
-  exclude: [],
+  // Localized routes are added explicitly below (with hreflang); skip auto-discovered duplicates
+  exclude: ['/*'],
   // Force a single sitemap file (no index or numbered files)
   generateIndexSitemap: false,
   autoLastmod: true,
@@ -78,10 +80,15 @@ module.exports = {
 
     // Helper to create alternate language refs for a path segment
     const getAlternateRefs = (pathSegment) => {
-      return locales.map(locale => ({
-        href: `${siteUrl}/${locale}${pathSegment}`,
-        hreflang: locale
-      }))
+      // hrefIsAbsolute stops next-sitemap from appending the page path to href again
+      return [
+        ...locales.map(locale => ({
+          href: `${siteUrl}/${locale}${pathSegment}`,
+          hreflang: locale,
+          hrefIsAbsolute: true,
+        })),
+        { href: `${siteUrl}/sr${pathSegment}`, hreflang: 'x-default', hrefIsAbsolute: true },
+      ]
     }
 
     for (const locale of locales) {

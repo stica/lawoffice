@@ -188,6 +188,9 @@ const Services: React.FC<{ messages: any, locale: string }> = ({ messages, local
 
       <div className="section-title-new">
         <h2>{t("ourServices")}</h2>
+        <p style={{ maxWidth: 820, margin: "16px auto 0", textAlign: "center", lineHeight: 1.7 }}>
+          {t("seoIntro")}
+        </p>
       </div>
 
       <div className="bg-fcfbfb pt-100 pb-70 services-container-wrapper">

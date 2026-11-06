@@ -3,8 +3,10 @@ import NavbarTwo from "../../../components/Layouts/NavbarTwo";
 import Footer from "../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import FamilyLaw from "@/components/LawTypes/FamilyLaw";
+import { buildMetadata, servicePage, servicePageJsonLd } from "@/lib/seo";
 
 const supportedLanguages = ['en', 'sr'];
+const seo = servicePage('/porodicno-pravo');
 
 export default async function Page({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
@@ -13,6 +15,10 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicePageJsonLd(params.locale, seo)) }}
+      />
       <NavbarTwo />
       <FamilyLaw messages={messages} locale={lang} />
       <Footer />
@@ -37,29 +43,6 @@ export async function generateStaticParams() {
   ];
 }
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
-  const base = 'https://www.natasaticalawoffice.com';
-  const path = '/porodicno-pravo';
-  return {
-    title: "Porodično pravo | Advokat Banja Luka | Razvod, starateljstvo i alimentacija",
-    description: "Advokat u Banjoj Luci specijalizovan za porodično pravo. Stručna pravna pomoć u porodičnim predmetima: razvod braka, starateljstvo nad djecom, alimentacija, podjela bračne imovine i mjere zaštite od nasilja.",
-    keywords: [
-      "porodično pravo", "advokat Banja Luka", "porodično pravo Banja Luka",
-      "razvod", "razvod braka", "starateljstvo", "alimentacija", "bračna imovina",
-      "zaštita od nasilja", "advokat za porodično pravo", "family law",
-      "advokat Banja Luka porodično pravo", "porodično pravo Republika Srpska"
-    ],
-    openGraph: {
-      title: "Porodično pravo | Advokat Banja Luka",
-      description: "Stručna pravna pomoć u porodičnim predmetima - razvod, starateljstvo, alimentacija i zaštita.",
-      images: [{ url: `${base}/images/new/logojpg.jpg` }],
-    },
-    alternates: {
-      canonical: `${base}/${params.locale}${path}`,
-      languages: {
-        'en': `${base}/en${path}`,
-        'sr': `${base}/sr${path}`,
-      },
-    },
-  };
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, seo);
 }

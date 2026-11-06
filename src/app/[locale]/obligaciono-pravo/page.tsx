@@ -3,8 +3,10 @@ import NavbarTwo from "../../../components/Layouts/NavbarTwo";
 import Footer from "../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import ObligationLaw from "@/components/LawTypes/ObligationLaw";
+import { buildMetadata, servicePage, servicePageJsonLd } from "@/lib/seo";
 
 const supportedLanguages = ['en', 'sr'];
+const seo = servicePage('/obligaciono-pravo');
 
 export default async function Page({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
@@ -13,6 +15,10 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicePageJsonLd(params.locale, seo)) }}
+      />
       <NavbarTwo />
       <ObligationLaw messages={messages} locale={lang} />
       <Footer />
@@ -37,30 +43,6 @@ export async function generateStaticParams() {
   ];
 }
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
-  const base = 'https://www.natasaticalawoffice.com';
-  const path = '/obligaciono-pravo';
-  return {
-    title: "Obligaciono pravo | Advokat Banja Luka | Ugovori, potraživanja i sporovi",
-    description: "Advokat u Banjoj Luci specijalizovan za obligaciono pravo. Stručna pravna podrška u ugovornim odnosima: izrada i revizija ugovora, naplata potraživanja, medijacija i zastupanje u sporovima.",
-    keywords: [
-      "obligaciono pravo", "advokat Banja Luka", "obligaciono pravo Banja Luka",
-      "ugovori", "izrada ugovora", "naplata potraživanja", "medijacija", "sporovi",
-      "ugovorno pravo", "advokat za obligaciono pravo",
-      "advokat Banja Luka obligaciono pravo", "obligation law",
-      "obligaciono pravo Republika Srpska"
-    ],
-    openGraph: {
-      title: "Obligaciono pravo | Advokat Banja Luka",
-      description: "Stručna pravna podrška u ugovornim odnosima - izrada ugovora, naplata potraživanja i sporovi.",
-      images: [{ url: `${base}/images/new/logojpg.jpg` }],
-    },
-    alternates: {
-      canonical: `${base}/${params.locale}${path}`,
-      languages: {
-        'en': `${base}/en${path}`,
-        'sr': `${base}/sr${path}`,
-      },
-    },
-  };
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, seo);
 }

@@ -3,6 +3,7 @@ import NavbarTwo from "../../../../components/Layouts/NavbarTwo";
 import Footer from "../../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Blog1 from "@/components/Blog/Blog1";
+import { BLOG_POSTS, articleJsonLd, buildMetadata } from "@/lib/seo";
 
 const supportedLanguages = ['en', 'sr']; // List of supported languages
 
@@ -14,6 +15,12 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd(params.locale, BLOG_POSTS.dpo, { datePublished: BLOG_POSTS.dpo.datePublished })),
+        }}
+      />
       <NavbarTwo />
 
       <Blog1 messages={messages} locale={lang} />
@@ -39,28 +46,11 @@ async function fetchMessages(locale: string) {
 // Generate static paths for all supported locales
 export async function generateStaticParams() {
   return [
-    { lang: 'en' }, // Pre-render English page
-    { lang: 'sr' }, // Pre-render Spanish page
+    { locale: 'en' }, // Pre-render English page
+    { locale: 'sr' }, // Pre-render Spanish page
   ];
 }
 
-export const metadata = {
-  title: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
-  description: "Saznajte više o značaju imenovanja službenika za zaštitu podataka (DPO) prema Zakonu o zaštiti ličnih podataka BiH i kako to može uticati na vašu organizaciju.",
-  openGraph: {
-    title: "Zakon o zaštiti ličnih podataka BiH: Zašto je važno ozbiljno shvatiti imenovanje službenika za zaštitu podataka (DPO)?",
-    description: "Saznajte više o značaju imenovanja službenika za zaštitu podataka (DPO) prema Zakonu o zaštiti ličnih podataka BiH i kako to može uticati na vašu organizaciju.",
-    images: [{ url: '/images/new/logojpg.jpg' }],
-  },
-  alternates: {
-    languages: {
-      'en': 'https://www.natasaticalawoffice.com/en',
-      'sr': 'https://www.natasaticalawoffice.com/sr',
-    },
-  },
-  linkedin: {
-    title: "Zakon o zaštiti ličnih podataka BiH",
-    description: "Pročitajte zašto je imenovanje službenika za zaštitu podataka (DPO) ključno za usklađenost sa Zakonom o zaštiti ličnih podataka BiH.",
-    image: '/images/new/logojpg.jpg',
-  },
-};
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, BLOG_POSTS.dpo);
+}

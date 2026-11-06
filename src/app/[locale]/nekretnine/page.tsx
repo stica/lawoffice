@@ -3,8 +3,10 @@ import NavbarTwo from "../../../components/Layouts/NavbarTwo";
 import Footer from "../../../components/Layouts/Footer";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import RealEstateLaw from "@/components/LawTypes/RealEstateLaw";
+import { buildMetadata, servicePage, servicePageJsonLd } from "@/lib/seo";
 
 const supportedLanguages = ['en', 'sr'];
+const seo = servicePage('/nekretnine');
 
 export default async function Page({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
@@ -13,6 +15,10 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicePageJsonLd(params.locale, seo)) }}
+      />
       <NavbarTwo />
       <RealEstateLaw messages={messages} locale={lang} />
       <Footer />
@@ -37,30 +43,6 @@ export async function generateStaticParams() {
   ];
 }
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
-  const base = 'https://www.natasaticalawoffice.com';
-  const path = '/nekretnine';
-  return {
-    title: "Nekretnine | Advokat Banja Luka | Kupoprodaja, zakup i zemljišnoknjižni upisi",
-    description: "Advokat u Banjoj Luci specijalizovan za pravo nekretnina. Pravna podrška za kupoprodaju stanova i kuća, zakupe, zemljišnoknjižne upise, due diligence i rješavanje imovinskih sporova.",
-    keywords: [
-      "nekretnine", "advokat Banja Luka", "nekretnine Banja Luka",
-      "kupoprodaja nekretnina", "kupoprodaja stanova", "zakup", "due diligence",
-      "zemljišne knjige", "imovinski sporovi", "advokat za nekretnine",
-      "real estate lawyer", "advokat Banja Luka nekretnine",
-      "pravo nekretnina Republika Srpska"
-    ],
-    openGraph: {
-      title: "Nekretnine | Advokat Banja Luka",
-      description: "Stručna pravna podrška za promet nekretnina - kupoprodaja, zakupi i zemljišnoknjižni upisi.",
-      images: [{ url: `${base}/images/new/logojpg.jpg` }],
-    },
-    alternates: {
-      canonical: `${base}/${params.locale}${path}`,
-      languages: {
-        'en': `${base}/en${path}`,
-        'sr': `${base}/sr${path}`,
-      },
-    },
-  };
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return buildMetadata(params.locale, seo);
 }
