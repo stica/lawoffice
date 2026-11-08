@@ -120,11 +120,6 @@ const Footer: React.FC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={partnersPath}>
-                      {t('partners')}
-                    </Link>
-                  </li>
-                  <li>
                     <Link href={contactPath}>
                       {t('contact')}
                     </Link>
