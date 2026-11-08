@@ -11,6 +11,12 @@ const Blog: React.FC<{ messages: any }> = ({ messages }) => {
 
   const blogItems = [
     {
+      title: t('paymentsTitle'),
+      path: `/${currentCode}/blog/novi-zakon-o-platnim-uslugama`,
+      description: t('paymentsDescription'),
+      image: '/images/new/zakon-o-platnim-uslugama-EN.webp',
+    },
+    {
       title: t('startupTitle'),
       path: `/${currentCode}/blog/startup_NIJE_svako_novoosnovano_privredno_drustvo`,
       description: t('startupDescription'),

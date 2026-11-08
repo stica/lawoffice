@@ -170,7 +170,9 @@
     "tokenizationTitle": "Tokenizuj svoj biznis – Pretvori ideju u kapital",
     "tokenizationDescription": "Tokenizacija je koncept koji u modernom poslovanju stječe sve veće značenje, predstavljajući novi finansijski paradigmat.",
     "startupTitle": "Startup NIJE svako novoosnovano privredno društvo",
-    "startupDescription": "Zakon o inovacionoj djelatnosti RS iz 2025. godine po prvi put normativno definiše pojam startupa, uvodeći jasnu granicu između startupa i ostalih novoosnovanih privrednih društava."
+    "startupDescription": "Zakon o inovacionoj djelatnosti RS iz 2025. godine po prvi put normativno definiše pojam startupa, uvodeći jasnu granicu između startupa i ostalih novoosnovanih privrednih društava.",
+    "paymentsTitle": "Novi Zakon o platnim uslugama: više izbora za korisnike, više prostora za inovacije",
+    "paymentsDescription": "Novi Zakon o platnim uslugama Republike Srpske stupa na snagu 1. januara 2027. godine. Poseban osvrt na elektronski novac, zaštitu sredstava korisnika i otvoreno bankarstvo."
   },
   "blog2": {
     "title": "Tokenizuj svoj biznis – Pretvori ideju u kapital",
@@ -495,5 +497,53 @@
       "testimonials": {"title": "Šta kažu naši klijenti", "quote1": "Odlični interni akti.", "quote2": "Rešen radni spor.", "quote3": "Odličan savet pri otkazima."},
       "faq": {"title": "Često postavljana pitanja", "cta": "Imate još pitanja? Kontaktirajte nas.", "q1": {"q": "Da li zastupate i poslodavce i zaposlene?", "a": "Da, uz prethodnu proveru sukoba interesa."}, "q2": {"q": "Da li izrađujete interne pravilnike?", "a": "Da, pripremamo pravilnike i priručnike po meri."}}
     }
+  },
+  "blog4": {
+    "title": "Novi Zakon o platnim uslugama: više izbora za korisnike, više prostora za inovacije",
+    "subtitle": "Poseban osvrt na ulogu izdavalaca elektronskog novca",
+    "imageAlt": "Novi Zakon o platnim uslugama Republike Srpske – elektronski novac, zaštita sredstava i otvoreno bankarstvo",
+    "intro": [
+      "Čini se da razgovor o bankarskim i platnim sistemima nikada nije bio aktuelniji. Način na koji plaćamo, prenosimo novac i upravljamo svojim finansijama mijenja se, a zakonodavstvo sve intenzivnije prati te promjene. Kao advokat koji sarađuje s finansijskim institucijama, imam potrebu da podijelim šta te promjene mogu značiti u svakodnevnom životu i poslovanju.",
+      "Novi Zakon o platnim uslugama Republike Srpske, koji stupa na snagu 1. januara 2027. godine, otvara prostor za širi krug pružalaca usluga i razvoj novih načina plaćanja. Uz banke, značajniju ulogu dobijaju platne institucije, društva za izdavanje elektronskog novca i specijalizovani pružaoci novih platnih usluga.",
+      "Za korisnika je najvažnija mogućnost izbora: više ponuđača može donijeti jednostavnije usluge, konkurentnije naknade i rješenja prilagođena njegovim potrebama. U tome se ogleda i demokratizacija tržišta platnih usluga: otvaranje prostora za nove učesnike i dostupnije finansijske usluge."
+    ],
+    "sections": [
+      {
+        "heading": "Zašto elektronski novac zaslužuje posebnu pažnju?",
+        "paragraphs": [
+          "Elektronski novac predstavlja elektronski pohranjenu novčanu vrijednost, izdatu nakon prijema novčanih sredstava, koja se koristi za plaćanje i koju prihvataju i druga lica osim samog izdavaoca. U praksi, korisniku može biti dostupan putem digitalnog novčanika na telefonu.",
+          "Njegova prednost najbolje se vidi kroz jednostavno pitanje: koliko vremena i koraka nam je potrebno da nešto platimo?",
+          "U zavisnosti od funkcionalnosti konkretnog servisa, elektronski novac može omogućiti plaćanje i prenos sredstava iz aplikacije, lakši pregled transakcija i jednostavnije upravljanje iznosom koji smo odvojili za svakodnevnu potrošnju. Korisniku donosi praktičnost, a trgovcima dodatni kanal naplate i mogućnost da kupovinu učine jednostavnijom.",
+          "Poseban potencijal ima u približavanju digitalnih plaćanja ljudima kojima su postojeće usluge složene ili nedovoljno prilagođene. Konkretne naknade, dostupnost i uslovi korišćenja zavise od izabranog pružaoca. Ipak, veća konkurencija stvara podsticaj da se usluge unapređuju upravo iz perspektive korisnika."
+        ]
+      },
+      {
+        "heading": "Kako su zaštićena sredstva korisnika?",
+        "paragraphs": [
+          "Iz pravničkog ugla, posebno je važno što iza jednostavnog korišćenja stoje propisana pravila poslovanja, licenciranje i nadzor Agencije za bankarstvo Republike Srpske.",
+          "Zakon propisuje konkretne mehanizme zaštite novca koji korisnici povjeravaju društvu za izdavanje elektronskog novca. Jedan način zaštite podrazumijeva odvajanje sredstava koja odgovaraju iznosu neiskorišćenog elektronskog novca od sopstvenih sredstava društva, uz njihovo deponovanje na poseban račun kod banke ili ulaganje u likvidnu i niskorizičnu imovinu.",
+          "Kod ovog načina zaštite, ta sredstva ne predstavljaju imovinu izdavaoca: ne ulaze u njegovu likvidacionu ili stečajnu masu i ne mogu se koristiti za namirenje njegovih povjerilaca u postupku prinudnog izvršenja. Ako su deponovana na posebnom računu kod banke, ne ulaze ni u likvidacionu ili stečajnu masu te banke.",
+          "Kao alternativu, zakon dopušta osiguranje ili odgovarajuću bankarsku garanciju, koji obezbjeđuju naplatu sredstava korisnika ako izdavalac postane nesposoban da izmiruje svoje obaveze. Osiguravač odnosno banka koja daje garanciju ne smiju pripadati istoj grupi društava kao izdavalac.",
+          "Korisnik ima i pravo na otkup neiskorišćenog elektronskog novca. Iako elektronski novac nije obuhvaćen sistemom osiguranja bankarskih depozita, njegova zaštita uređena je posebnim zakonskim mehanizmima. Istovremeno, važno je razumjeti njegovu namjenu: služi plaćanju i na njega se ne obračunava kamata."
+        ]
+      },
+      {
+        "heading": "Otvoreno bankarstvo: više mogućnosti uz kontrolisanu razmjenu podataka",
+        "paragraphs": [
+          "Podaci postaju sve značajniji resurs u razvoju finansijskih usluga. Koncept otvorenog bankarstva omogućava korisniku da, uz izričitu saglasnost i u propisanom obimu, omogući pristup podacima o svom platnom računu odabranom ovlašćenom pružaocu usluga.",
+          "Tako nastaje prostor za nove funkcionalnosti: od iniciranja plaćanja do objedinjenog pregleda informacija o računima koje korisnik ima kod različitih banaka. FinTech rješenja mogu mu pomoći da jednostavnije prati potrošnju, planira obaveze i upravlja svojim finansijama.",
+          "Iz ugla zaštite ličnih podataka, presudno je da razmjena bude bezbjedna, ograničena na potrebne podatke i svrhu za koju je pristup odobren. Povjerenje zavisi i od toga da korisnik razumije kome omogućava pristup, kojim podacima i radi čega.",
+          "Širi razvoj ovog koncepta vodi prema otvorenim finansijama, odnosno mogućnosti da se kontrolisana razmjena podataka proširi i na osiguranje, investicije i penzijske fondove. To je pravac daljeg razvoja, za koji su potrebni odgovarajući pravni i tehnički uslovi."
+        ]
+      },
+      {
+        "heading": "Koliko je domaće tržište spremno?",
+        "paragraphs": [
+          "Novi zakon predstavlja važan polazni okvir za konkurenciju i inovacije. Njegovi praktični efekti zavisiće od podzakonskih pravila, tehničke spremnosti tržišta i ulaska novih nebankarskih pružalaca usluga.",
+          "Potrebni su saradnja banaka, FinTech društava i regulatora, razvoj javne digitalne infrastrukture i bolje razumijevanje novih usluga među korisnicima. Jednako su važni djelotvoran nadzor, zaštita privatnosti i podizanje svijesti o mogućnostima i uslovima dijeljenja finansijskih podataka.",
+          "Za mene je upravo tu najveća vrijednost ovih promjena: mogućnost da dobijemo više izbora i praktičnije finansijske usluge, uz jasnu odgovornost onih koji ih pružaju. Elektronski novac u tom razvoju ima značajno mjesto, a povjerenje korisnika gradiće se kroz jednostavnost korišćenja, transparentne uslove i dosljednu zaštitu njihovih sredstava i podataka."
+        ]
+      }
+    ]
   }
 }

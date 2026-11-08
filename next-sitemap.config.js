@@ -33,6 +33,7 @@ const lawPaths = [
 
 // Known blog post slugs (without leading slash)
 const blogPosts = [
+  'novi-zakon-o-platnim-uslugama',
   'startup_NIJE_svako_novoosnovano_privredno_drustvo',
   'tokenizuj-svoj-biznis-pretvori-ideju-u-kapital',
   'zakon-o-zastiti-licnih-podataka',

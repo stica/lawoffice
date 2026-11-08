@@ -486,6 +486,40 @@ export const STATIC_PAGES: Record<string, PageSeo> = {
 };
 
 export const BLOG_POSTS: Record<string, PageSeo & { datePublished: string }> = {
+  payments: {
+    path: "/blog/novi-zakon-o-platnim-uslugama",
+    image: "/images/new/zakon-o-platnim-uslugama-EN.webp",
+    type: "article",
+    datePublished: "2026-11-08",
+    sr: {
+      title: "Novi Zakon o platnim uslugama RS: elektronski novac i otvoreno bankarstvo",
+      description:
+        "Novi Zakon o platnim uslugama Republike Srpske stupa na snagu 1. januara 2027. Šta donosi korisnicima: elektronski novac, zaštita sredstava i otvoreno bankarstvo.",
+      keywords: [
+        "Zakon o platnim uslugama",
+        "Zakon o platnim uslugama Republike Srpske",
+        "elektronski novac",
+        "izdavalac elektronskog novca",
+        "otvoreno bankarstvo",
+        "platne institucije",
+        "FinTech Republika Srpska",
+        "Agencija za bankarstvo Republike Srpske",
+      ],
+    },
+    en: {
+      title: "New Law on Payment Services in Republika Srpska: E-Money and Open Banking",
+      description:
+        "Republika Srpska's new Law on Payment Services applies from 1 January 2027. What it means for users: electronic money, safeguarding of funds and open banking.",
+      keywords: [
+        "Law on Payment Services Republika Srpska",
+        "electronic money",
+        "e-money institution",
+        "open banking",
+        "payment institutions",
+        "FinTech lawyer Banja Luka",
+      ],
+    },
+  },
   startup: {
     path: "/blog/startup_NIJE_svako_novoosnovano_privredno_drustvo",
     image: "/images/new/startup-legal.png",

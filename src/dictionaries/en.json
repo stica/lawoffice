@@ -168,7 +168,9 @@
     "tokenizationTitle": "Tokenize Your Business - Turn Your Idea into Capital",
     "tokenizationDescription": "Tokenization is a concept that is gaining increasing importance in modern business, representing a new financial paradigm.",
     "startupTitle": "A Startup is NOT Every Newly Founded Company",
-    "startupDescription": "The Law on Innovation Activity of the Republic of Srpska (2025) provides the first normative definition of a startup, drawing a clear distinction between startups and other newly founded companies."
+    "startupDescription": "The Law on Innovation Activity of the Republic of Srpska (2025) provides the first normative definition of a startup, drawing a clear distinction between startups and other newly founded companies.",
+    "paymentsTitle": "The New Law on Payment Services: More Choice for Users, More Room for Innovation",
+    "paymentsDescription": "Republika Srpska's new Law on Payment Services enters into force on 1 January 2027. A closer look at electronic money, the safeguarding of users' funds and open banking."
   },
   "blog2": {
     "title": "Tokenize Your Business – Turn Your Idea into Capital",
@@ -493,5 +495,53 @@
       "testimonials": {"title": "What Our Clients Say", "quote1": "Excellent HR policies.", "quote2": "Resolved workplace dispute.", "quote3": "Great advice on terminations."},
       "faq": {"title": "Frequently Asked Questions", "cta": "Still have questions? Contact us.", "q1": {"q": "Do you support both employers and employees?", "a": "Yes, we represent both, subject to conflict checks."}, "q2": {"q": "Can you draft internal policies?", "a": "Yes, we prepare tailored policies and handbooks."}}
     }
+  },
+  "blog4": {
+    "title": "The New Law on Payment Services: More Choice for Users, More Room for Innovation",
+    "subtitle": "A closer look at the role of electronic money issuers",
+    "imageAlt": "The new Law on Payment Services of Republika Srpska – e-money, safeguarding of funds and open banking",
+    "intro": [
+      "It seems that the conversation about banking and payment systems has never been more relevant. The way we pay, transfer money and manage our finances is changing, and legislation is following these changes ever more closely. As a lawyer who works with financial institutions, I feel the need to share what these changes may mean for everyday life and business.",
+      "The new Law on Payment Services of Republika Srpska, which enters into force on 1 January 2027, opens the door to a wider range of service providers and the development of new ways of paying. Alongside banks, payment institutions, electronic money institutions and specialised providers of new payment services are gaining a more significant role.",
+      "For users, the most important thing is choice: more providers can bring simpler services, more competitive fees and solutions tailored to their needs. This also reflects the democratisation of the payment services market: making room for new participants and more accessible financial services."
+    ],
+    "sections": [
+      {
+        "heading": "Why does electronic money deserve special attention?",
+        "paragraphs": [
+          "Electronic money is electronically stored monetary value, issued on receipt of funds, which is used to make payments and is accepted by persons other than the issuer itself. In practice, it may be available to users through a digital wallet on their phone.",
+          "Its advantage is best illustrated by a simple question: how much time and how many steps does it take us to pay for something?",
+          "Depending on the functionality of a particular service, electronic money can enable payments and transfers of funds from an app, an easier overview of transactions and simpler management of the amount we have set aside for everyday spending. It brings convenience to users, and gives merchants an additional payment channel and a way to make purchasing simpler.",
+          "It has particular potential to bring digital payments closer to people for whom existing services are complicated or not sufficiently adapted. Specific fees, availability and terms of use depend on the chosen provider. Nevertheless, greater competition creates an incentive to improve services precisely from the user's perspective."
+        ]
+      },
+      {
+        "heading": "How are users' funds protected?",
+        "paragraphs": [
+          "From a legal standpoint, it is especially important that this ease of use is backed by prescribed rules of business conduct, licensing and supervision by the Banking Agency of Republika Srpska.",
+          "The law sets out specific mechanisms for protecting the money that users entrust to an electronic money institution. One method of protection involves segregating funds corresponding to the amount of outstanding electronic money from the institution's own funds, and either depositing them in a separate account with a bank or investing them in liquid, low-risk assets.",
+          "Under this method of protection, those funds do not form part of the issuer's assets: they are not included in its liquidation or bankruptcy estate and cannot be used to satisfy its creditors in enforcement proceedings. If they are deposited in a separate account with a bank, they are not included in that bank's liquidation or bankruptcy estate either.",
+          "As an alternative, the law permits an insurance policy or an appropriate bank guarantee, which secures the payment of users' funds if the issuer becomes unable to meet its obligations. The insurer or the bank providing the guarantee must not belong to the same group of companies as the issuer.",
+          "Users also have the right to redeem unused electronic money. Although electronic money is not covered by the bank deposit insurance scheme, its protection is governed by specific statutory mechanisms. At the same time, it is important to understand its purpose: it is intended for payments, and no interest is paid on it."
+        ]
+      },
+      {
+        "heading": "Open banking: more possibilities through controlled data sharing",
+        "paragraphs": [
+          "Data is becoming an increasingly important resource in the development of financial services. The concept of open banking allows users, with their explicit consent and to the extent prescribed, to grant a chosen authorised service provider access to data about their payment account.",
+          "This creates room for new functionalities: from payment initiation to a consolidated overview of the accounts a user holds with different banks. FinTech solutions can help users track their spending more easily, plan their obligations and manage their finances.",
+          "From a personal data protection perspective, it is crucial that such sharing is secure and limited to the data necessary and the purpose for which access has been granted. Trust also depends on users understanding to whom they are granting access, to which data and for what purpose.",
+          "The broader development of this concept leads towards open finance, that is, the possibility of extending controlled data sharing to insurance, investments and pension funds. This is the direction of further development, which requires the appropriate legal and technical conditions."
+        ]
+      },
+      {
+        "heading": "How ready is the domestic market?",
+        "paragraphs": [
+          "The new law represents an important starting framework for competition and innovation. Its practical effects will depend on secondary legislation, the technical readiness of the market and the entry of new non-bank service providers.",
+          "What is needed is cooperation between banks, FinTech companies and regulators, the development of public digital infrastructure and a better understanding of new services among users. Equally important are effective supervision, privacy protection and raising awareness of the possibilities and conditions of sharing financial data.",
+          "For me, this is precisely where the greatest value of these changes lies: the opportunity to have more choice and more convenient financial services, with clear accountability on the part of those who provide them. Electronic money has a significant place in this development, and user trust will be built through ease of use, transparent terms and consistent protection of their funds and data."
+        ]
+      }
+    ]
   }
 }

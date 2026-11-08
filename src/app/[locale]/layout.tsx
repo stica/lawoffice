@@ -1,20 +1,18 @@
-import React from "react";
+// Global styles: keep first and in this order (vendor → theme → overrides),
+// so component CSS (e.g. aos.css in AosAnimation) still loads after them.
 import "../../../public/styles/bootstrap.min.css";
-// import "../../../public/styles/animate.min.css";
-// import "animate.css";
 import "../../../public/styles/all.min.css";
-// import "react-accessible-accordion/dist/fancy-example.css";
-
-// Global Style
 import "../../../public/styles/style.scss";
 import "../../../public/styles/responsive.css";
-import "./../globals.css";
+import "../globals.css";
 
+import type React from "react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { NextIntlClientProvider, useMessages } from "next-intl";
+
 import AosAnimation from "@/components/Layouts/AosAnimation";
 import GoTop from "@/components/Layouts/GoTop";
-import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { BUSINESS, OG_IMAGE, SITE_URL, siteJsonLd } from "@/lib/seo";
 
 const poppins = Poppins({
